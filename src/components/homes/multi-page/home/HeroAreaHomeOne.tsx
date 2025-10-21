@@ -54,6 +54,9 @@ const setting =  {
   spaceBetween: 0,
   loop: true,
   effect: 'fade',
+  fadeEffect: {
+    crossFade: true // Enable crossfade for smoother transitions
+  },
   autoplay: {
     delay: 5000,
   },
@@ -65,8 +68,11 @@ const setting =  {
   pagination: {
     el: ".tp-hero-pagination",
     clickable: true
-    },
-  }
+  },
+  speed: 800, // Control transition speed
+  allowTouchMove: true,
+  watchSlidesProgress: true
+}
 const HeroAreaHomeOne = () => {
   return (
     <>
@@ -145,6 +151,7 @@ const HeroAreaHomeOne = () => {
                modules={[Navigation, EffectFade]}
                effect="fade"
                className="tp-hero-active swiper-container"
+               style={{ overflow: 'hidden', position: 'relative', width: '100%', height: 'auto' }}
                onSlideChangeTransitionStart={() => {
                  // Reset animations by removing and re-adding animation classes
                  const titles = document.querySelectorAll('.tp-promises-title');
@@ -162,7 +169,13 @@ const HeroAreaHomeOne = () => {
                  });
                }}>
                 {hero_data.map((item, index) => (
-                  <SwiperSlide key={index} className="swiper-slide pt-160 pb-115" style={{backgroundColor: '#16243E' }}>
+                  <SwiperSlide key={index} className="swiper-slide pt-160 pb-115" style={{
+                    backgroundColor: '#16243E',
+                    position: 'relative',
+                    width: '100%',
+                    height: 'auto',
+                    overflow: 'hidden'
+                  }}>
 
                     <div className="tp-hero-bg" style={{  backgroundImage: `url(/assets/img/hero/shape-bg.png)` }}></div> 
                     

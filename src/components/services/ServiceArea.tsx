@@ -18,20 +18,30 @@ const ServiceArea = () => {
           <div className="row">
             {services.map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
-                <div className="tp-service-item-wrapper p-relative mb-80 wow fadeInUp" data-wow-duration="1s" data-wow-delay={item.delay}>
+                <div className="tp-service-item-wrapper p-relative mb-80 wow fadeInUp d-flex flex-column"
+                     style={{ height: '475px' }}
+                     data-wow-duration="1s"
+                     data-wow-delay={item.delay}>
                   <div className="tp-service-item-icon">
                     <span>
                       {item.id === 1 && <ServiceIconOne />}
                       {item.id === 2 && <ServiceIconTwo />}
                       {item.id === 3 && <ServiceIconThree />}
+                      {item.id === 4 && <ServiceIconOne />}
+                      {item.id === 5 && <ServiceIconTwo />}
+                      {item.id === 6 && <ServiceIconThree />}
+                      {item.id === 7 && <ServiceIconOne />}
+                      {item.id === 8 && <ServiceIconTwo />}
+                      {item.id === 9 && <ServiceIconThree />}
+                      {item.id === 10 && <ServiceIconOne />}
                     </span>
                   </div>
-                  <div className="tp-service-item-content">
-                    <h4 className="tp-service-item-title"><Link href="/service-details">{item.title}</Link></h4>
-                    <p>{item.sm_des}</p>
+                  <div className="tp-service-item-content flex-grow-1 d-flex flex-column">
+                    <h4 className="tp-service-item-title"><Link href={`/services-details/${item.id}`}>{item.title}</Link></h4>
+                    <p className="mb-3" style={{ minHeight: '80px', maxHeight: '150px', overflow: 'hidden' }}>{item.sm_des}</p>
                   </div>
-                  <div className="tp-service-item-thumb">
-                    <Link href="/service-details">
+                  <div className="tp-service-item-thumb mt-auto">
+                    <Link href={`/services-details/${item.id}`}>
                       <Image src={item.img} alt="image-title-here" />
                     </Link>
                   </div>
