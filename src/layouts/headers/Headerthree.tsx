@@ -8,8 +8,6 @@ import OnPageMenu from './Menu/OnPageMenu';
 import Image from 'next/image';
 import Offcanvas from './Menu/Offcanvas';
 import SearchBar from './Menu/SearchBar';
-import HeaderLogo from "@/assets/img/logo/logo.png";
-import HeaderLogoDark from "@/assets/img/logo/logo-black.png";
 import { SocialLinksTwo } from '@/components/common/SocialLinks';
 
 const Headerthree = ({ onePageHomeOne }: any) => {
@@ -23,7 +21,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
             <div className="tp-header-box-3">
                <div className="tp-header-logo-3 d-none d-xl-block">
                   <Link href="/">
-                     <Image src={HeaderLogo} alt="image-title-here" />
+                     <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                   </Link>
                </div>
 
@@ -69,7 +67,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                               <div className="tp-main-menu home-3 align-items-center justify-content-between d-flex">
                                  <div className="tp-main-menu-logo d-block d-xl-none">
                                     <Link href="/">
-                                       <Image src={HeaderLogoDark} alt="image-title-here" />
+                                       <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                                     </Link>
                                  </div>
                                  <div className="d-none d-xl-flex">
@@ -122,7 +120,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                      <div className="col-xl-3 col-6">
                         <div className="tp-header-logo-2 p-relative">
                            <Link href="/">
-                              <Image src={HeaderLogoDark} alt="image-title-here" />
+                              <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                            </Link>
                         </div>
                      </div>

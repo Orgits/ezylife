@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-import HeaderLogo from "@/assets/img/logo/logo-black.png";
 import UseSticky from '@/hooks/UseSticky';
 import NavMenu from './Menu/NavMenu';
 import OnPageMenu from './Menu/OnPageMenu';
@@ -25,7 +24,7 @@ const HeaderTwo = ({onePageHomeOne} : any) => {
                   <div className="col-xl-3 col-6">
                      <div className="tp-header-logo-2 p-relative">
                         <Link href="/">
-                           <Image src={HeaderLogo} alt="image-title-here" />
+                           <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                         </Link>
                      </div>
                   </div>

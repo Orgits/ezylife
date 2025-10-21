@@ -7,7 +7,7 @@ const CtaAreaHomeOne = () => {
   return (
     <>
       <section className="tp-cta-area p-relative">
-        <div className="tp-cta-bg"></div>
+        {/* <div className="tp-cta-bg"></div> */}
         <div className="container">
           <div className="tp-cta-bg-wrapper p-relative" style={{ backgroundImage: `url(/assets/img/cta/bg-shape.png)` }}>
             <div className="row">

@@ -1,8 +1,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-import Logo from "@/assets/img/logo/logo-black.png";
-import Link from 'next/link'; 
+import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import OnePageMobileMenu from './OnePageMobileMenu';
 
@@ -23,7 +22,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
             <div className="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/" onClick={() => setMenuOpen(false)}>
-                  <Image src={Logo} alt="logo" />
+                  <Image width={180} height={60} src='/logo.png' alt="logo" style={{ objectFit: 'contain' }} />
                 </Link>
               </div>
             </div>

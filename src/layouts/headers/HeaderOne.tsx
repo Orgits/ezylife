@@ -10,9 +10,6 @@ import UseSticky from '@/hooks/UseSticky';
 import OnPageMenu from './Menu/OnPageMenu';
 import HeaderLogo from "@/assets/img/logo/logo.png";
 import SocialLinks from '@/components/common/SocialLinks';
-import HeaderLogoBlack from "@/assets/img/logo/logo-black.png";
-
-
 
 const HeaderOne = ({ onePageHomeOne }: any) => {
 
@@ -27,15 +24,15 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
          <header className="tp-header-area p-relative">
             <div className="tp-header-box p-relative">
                <div className="tp-header-logo p-relative">
-                  <span className="tp-header-logo-bg"></span>
+                  <span className=""></span>
                   <Link href="/">
-                     <Image src={HeaderLogo} alt="image-title-here" />
+                     <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                   </Link>
                </div>
                <div className="tp-header-wrapper-inner header__sticky p-relative">
                   <div className="tp-header-top d-none d-xl-flex">
                      <div className="tp-header-top-info">
-                        <a href="https://www.google.com/maps/search/6391+Elgin+St,+Wilmington,+DE,+USA/@39.7298967,-75.5645038,13z/data=!3m1!4b1" target="_blank"><span><i className="fa-sharp fa-solid fa-location-dot"></i></span>6391 Elgin St. Celina, 10299</a>
+                        <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span><i className="fa-sharp fa-solid fa-location-dot"></i></span>Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001</a>
                      </div>
                      <div className="tp-header-top-right d-flex justify-content-end align-items-center">
                         <div className="header-social ">
@@ -53,9 +50,9 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      </div>
                      <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
                         <div className="tp-header-contact d-xl-flex align-items-center d-none">
-                           <div className="tp-header-contact-search search-open-btn d-none d-xxl-block">
+                           {/* <div className="tp-header-contact-search search-open-btn d-none d-xxl-block">
                               <span onClick={() => setSearchOpen(true)}><i className="fa-solid fa-magnifying-glass"></i></span>
-                           </div>
+                           </div> */}
                            <div className="tp-header-contact-inner d-flex align-items-center">
                               <div className="tp-header-contact-icon">
                                  <span><i className="fa-solid fa-phone"></i></span>
@@ -76,8 +73,8 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      </div>
                   </div>
                </div>
-               <div className="tp-header-btn">
-                  <Link className="tp-btn d-none d-xl-block" href="/contact">Get a quote <i className="fa-regular fa-arrow-right"></i></Link>
+               <div className="tp-header-btn" style={{backgroundColor: 'white'}}>
+                  <Link className="tp-btn d-none d-xl-block" href="/contact">Get in touch <i className="fa-regular fa-arrow-right"></i></Link>
                   <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn">
                      <button className="hamburger-btn" onClick={() => setMenuOpen(true)}>
                         <span></span>
@@ -96,7 +93,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      <div className="col-xl-3 col-6">
                         <div className="tp-header-logo-2 p-relative">
                            <Link href="/">
-                              <Image src={HeaderLogoBlack} alt="image-title-here" />
+                              <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                            </Link>
                         </div>
                      </div>
@@ -111,9 +108,9 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      <div className="col-xl-3 col-6">
                         <div className="tp-header-main-right-2 d-flex align-items-center justify-content-xl-end">
                            <div className="tp-header-contact-2 d-flex align-items-center">
-                              <div className="tp-header-contact-search search-open-btn d-none d-xxl-block">
+                              {/* <div className="tp-header-contact-search search-open-btn d-none d-xxl-block">
                                  <span onClick={() => setSearchOpen(true)}><i className="fa-solid fa-magnifying-glass"></i></span>
-                              </div>
+                              </div> */}
                               <div className="tp-header-contact-inner d-none d-xl-flex align-items-center">
                                  <div className="tp-header-contact-icon">
                                     <span><i className="fa-solid fa-phone"></i></span>

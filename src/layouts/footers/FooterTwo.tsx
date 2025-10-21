@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import footer_logo from "@/assets/img/logo/logo.png";
 
 import footer_shape_1 from "@/assets/img/footer/home-2/shape-1.png";
 import footer_shape_2 from "@/assets/img/footer/home-2/shape-2.png";
@@ -73,7 +72,7 @@ const FooterTwo = () => {
                 <div className="tp-footer-widget tp-footer-2-col-1 mb-50">
                   <div className="tp-footer-logo mb-20">
                     <Link href="/">
-                      <Image src={footer_logo} alt="image-title-here" />
+                      <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                     </Link>
                   </div>
                   <div className="tp-footer-widget-content">

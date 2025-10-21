@@ -7,7 +7,6 @@ import Image from 'next/image';
 import footer_shpa_1 from "@/assets/img/footer/home-3/shape-1.png";
 import footer_shpa_2 from "@/assets/img/footer/home-3/shape-2.png";
 import footer_icon_1 from "@/assets/img/footer/home-3/icon.svg";
-import footer_logo from "@/assets/img/logo/logo.png";
 import SocialLinks, { CopyRight } from '@/components/common/SocialLinks';
 
 interface Datatype {
@@ -96,7 +95,7 @@ const FooterThree = () => {
                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                   <div className="tp-footer-widget tp-footer-3-col-1 mb-50">
                     <div className="tp-footer-logo mb-20">
-                      <Link href="/"> <Image src={footer_logo} alt="image-title-here" /></Link>
+                      <Link href="/"> <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} /></Link>
                     </div>
                     <div className="tp-footer-widget-content">
                       <p>{info}</p>
