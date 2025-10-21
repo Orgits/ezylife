@@ -13,13 +13,13 @@ const contact_data: DataType[] = [
   {
     icon: 'fa-solid fa-location-dot',
     title: 'Address',
-    info_1: '2118 Thornridge Cir. Syracuse, Connecticut 35624'
+    info_1: 'Ezylife Financial Services Pvt. Ltd.Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001'
   },
   {
     icon: 'fa-solid fa-envelope',
     title: 'Mail Us',
-    info_1: 'tanya.hill@example.com',
-    info_2: 'sara.cruz@example.com'
+    info_1: 'info@ezylife.in',
+    // info_2: 'sara.cruz@example.com'
   },
   {
     icon: 'fa-solid fa-phone',
