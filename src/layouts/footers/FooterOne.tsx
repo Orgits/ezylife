@@ -79,7 +79,13 @@ const FooterOne = () => {
                   <div className="tp-footer-logo mb-20">
                     <Link href="/">
                       {" "}
-                      <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
+                      <Image
+                        width={180}
+                        height={60}
+                        src="/logo.png"
+                        alt="image-title-here"
+                        style={{ objectFit: "contain" }}
+                      />
                     </Link>
                   </div>
                   <div className="tp-footer-widget-content">
@@ -124,14 +130,20 @@ const FooterOne = () => {
               </div>
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-4 mb-50">
-                  <h3 className="tp-footer-widget-title">Contact us</h3>
+                  <h3 className="tp-footer-widget-title" style={{marginBottom: '0'}}>Contact us</h3>
                   <div className="tp-footer-widget-content">
-                    <div className="tp-footer-widget-contact" style={{backgroundColor: '#5CB85C', border: 'none'}}>
+                    <div
+                      className="tp-footer-widget-contact"
+                      style={{ backgroundColor: "#5CB85C", border: "none" }}
+                    >
                       <div className="tp-footer-widget-contact-inner">
-                        <a href="https://maps.app.goo.gl/S8XKGo4GgUjRrX4S9" target="_blank">
+                        <a
+                          href="https://maps.app.goo.gl/S8XKGo4GgUjRrX4S9"
+                          target="_blank"
+                        >
                           <i className="fa-sharp fa-solid fa-location-dot"></i>{" "}
-                          Office No. 74D,
-                          7th Floor, Himalaya House,KG Marg, New Delhi –110001
+                          Office No. 74D, 7th Floor, Himalaya House,KG Marg, New
+                          Delhi –110001
                         </a>
                       </div>
                       <div className="tp-footer-widget-contact-inner">

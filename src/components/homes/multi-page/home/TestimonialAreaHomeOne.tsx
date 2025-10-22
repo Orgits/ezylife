@@ -1,17 +1,16 @@
-'use client'
-import React from 'react'; 
+"use client";
+import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Navigation} from "swiper/modules";
-import { Rating } from 'react-simple-star-rating'
+import { Navigation } from "swiper/modules";
+import { Rating } from "react-simple-star-rating";
 
 import testimonial_img_1 from "@/assets/img/testimonial/img-1.jpg";
-import testimonial_img_2 from "@/assets/img/testimonial/img-2.jpg"; 
-import testimonial_quot from "@/assets/img/testimonial/quot.png"; 
-import testimonial_shape from "@/assets/img/testimonial/bg-shape.png"; 
+import testimonial_img_2 from "@/assets/img/testimonial/img-2.jpg";
+import testimonial_quot from "@/assets/img/testimonial/quot.png";
+import testimonial_shape from "@/assets/img/testimonial/bg-shape.png";
 
-
-interface DataType{
+interface DataType {
   id: number;
   ratting: number;
   img: StaticImageData;
@@ -25,7 +24,8 @@ const testimonial_data: DataType[] = [
     id: 1,
     ratting: 5,
     img: testimonial_img_1,
-    sm_des: "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
+    sm_des:
+      "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
     name: "Hardli sefa",
     designation: "Customer",
   },
@@ -33,16 +33,18 @@ const testimonial_data: DataType[] = [
     id: 2,
     ratting: 4,
     img: testimonial_img_2,
-    sm_des: "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
+    sm_des:
+      "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
     name: "Sefa Hardli",
     designation: "Customer",
   },
-  // for swiper 
+  // for swiper
   {
     id: 3,
     ratting: 4,
     img: testimonial_img_1,
-    sm_des: "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
+    sm_des:
+      "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
     name: "Hardli sefa",
     designation: "Customer",
   },
@@ -50,96 +52,120 @@ const testimonial_data: DataType[] = [
     id: 4,
     ratting: 3,
     img: testimonial_img_2,
-    sm_des: "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
+    sm_des:
+      "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
     name: "Sefa Hardli",
     designation: "Customer",
   },
-]
+];
 
 const setting = {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   breakpoints: {
-    '1700':{
-      slidesPerView:2,
+    "1700": {
+      slidesPerView: 2,
     },
-    '1400':{
-      slidesPerView:2,
+    "1400": {
+      slidesPerView: 2,
     },
-    '1200':{
-      slidesPerView:2,
+    "1200": {
+      slidesPerView: 2,
     },
-    '992':{
-      slidesPerView:2,
+    "992": {
+      slidesPerView: 2,
     },
-    '767': {
-      slidesPerView:1,
+    "767": {
+      slidesPerView: 1,
     },
-    '576': {
-      slidesPerView:1,
+    "576": {
+      slidesPerView: 1,
     },
-    '0': {
-      slidesPerView:1,
+    "0": {
+      slidesPerView: 1,
     },
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: ".testimonial-button-next-1",
-      prevEl: ".testimonial-button-prev-1",
-    },
-}
-
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".testimonial-button-next-1",
+    prevEl: ".testimonial-button-prev-1",
+  },
+};
 
 const TestimonialAreaHomeOne = () => {
   return (
     <>
-       <section className="tp-testimonial-area tp-testimonial-bg-color p-relative pt-80 pb-50" style={{ backgroundColor: '#F6F6F9' }}>
-            <div className="tp-testimonial-bg">
-               <Image src={testimonial_shape} alt="image-title-here" />
+      <section
+        className="tp-testimonial-area tp-testimonial-bg-color p-relative pt-80 pb-50"
+        style={{ backgroundColor: "#F6F6F9" }}
+      >
+        <div className="tp-testimonial-bg">
+          <Image src={testimonial_shape} alt="image-title-here" />
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="tp-testimonial-title">
+                <span
+                  className="tp-section-title-pre"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  Clients Testomonial
+                </span>
+                <h3 className="tp-section-title">
+                  Unleashing the power of <br /> your business
+                </h3>
+              </div>
             </div>
-            <div className="container">
-               <div className="row">
-                  <div className="col-lg-12">
-                     <div className="tp-testimonial-title">
-                        <span className="tp-section-title-pre">Clients Testomonial</span>
-                        <h3 className="tp-section-title">Unleashing the power of <br /> your business</h3>
-                     </div>
+            <Swiper
+              {...setting}
+              loop={true}
+              modules={[Navigation]}
+              className="tp-testimonial-active swiper-container px-0"
+            >
+              {testimonial_data.map((item, index) => (
+                <SwiperSlide key={index} className="swiper-slide mb-30 mt-20">
+                  <div className="tp-testimonial-item-wrapper d-flex align-items-center">
+                    <div className="tp-testimonial-item-thumb">
+                      <Image src={item.img} alt="image-title-here" />
+                    </div>
+                    <div className="tp-testimonial-item-content p-relative">
+                      <div className="tp-testimonial-item-rating">
+                        <Rating
+                          initialValue={item.ratting}
+                          size={16}
+                          readonly={true}
+                        />
+                      </div>
+                      <p>{item.sm_des}</p>
+                      <h4 className="tp-testimonial-item-title">{item.name}</h4>
+                      <span>{item.designation}</span>
+                      <div className="tp-testimonial-item-quot">
+                        <Image src={testimonial_quot} alt="image-title-here" />
+                      </div>
+                    </div>
                   </div>
-                  <Swiper {...setting} loop={true} modules={[Navigation]} className="tp-testimonial-active swiper-container px-0">
-
-                    {testimonial_data.map((item, index) => (
-                      <SwiperSlide key={index} className="swiper-slide mb-30 mt-20">
-                          <div className="tp-testimonial-item-wrapper d-flex align-items-center">
-                            <div className="tp-testimonial-item-thumb">
-                                <Image src={item.img} alt="image-title-here" />
-                            </div>
-                            <div className="tp-testimonial-item-content p-relative">
-                                <div className="tp-testimonial-item-rating">
-                                   <Rating initialValue={item.ratting} size={16} readonly={true} /> 
-                                </div>
-                                <p>{item.sm_des}</p>
-                                <h4 className="tp-testimonial-item-title">{item.name}</h4>
-                                <span>{item.designation}</span>
-                                <div className="tp-testimonial-item-quot">
-                                  <Image src={testimonial_quot} alt="image-title-here" />
-                                </div>
-                            </div>
-                          </div>
-                      </SwiperSlide>     
-                    ))} 
-
-                  </Swiper>
-                  <div className="tp-testimonial-nav text-end">
-
-                     <button type="button" className="testimonial-button-prev-1"><i className="fa-regular fa-arrow-left"></i>
-                     </button>
-                     <button type="button" className="testimonial-button-next-1"><i className="fa-regular fa-arrow-right"></i>
-                     </button>
-                  </div>
-               </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="tp-testimonial-nav text-end">
+              <button type="button" className="testimonial-button-prev-1">
+                <i className="fa-regular fa-arrow-left"></i>
+              </button>
+              <button type="button" className="testimonial-button-next-1">
+                <i className="fa-regular fa-arrow-right"></i>
+              </button>
             </div>
-         </section>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

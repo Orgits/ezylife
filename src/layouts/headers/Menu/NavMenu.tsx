@@ -39,7 +39,15 @@ const NavMenu = () => {
               </div>
             )}
 
-            {item.has_dropdown &&
+            {item.has_dropdown && item.title === "Service" ? (
+              <ul className="submenu submenu-two-column">
+                {item.sub_menus?.map((sub_item, i) => (
+                  <li key={i}>
+                    <Link href={sub_item.link}><span>{sub_item.title}</span></Link>
+                  </li>
+                ))}
+              </ul>
+            ) : item.has_dropdown ? (
               <ul className="submenu">
                 {item.sub_menus?.map((sub_item, i) => (
                   <li key={i}>
@@ -47,7 +55,7 @@ const NavMenu = () => {
                   </li>
                 ))}
               </ul>
-            }
+            ) : null}
           </li>
         ))}
       </ul>

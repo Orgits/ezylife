@@ -142,19 +142,35 @@
                     }
                 }
             }
+
+            & .submenu-two-column{
+                width: 520px;
+                columns: 2;
+                column-gap: 30px;
+                padding: 25px 0 25px 0;
+                & li{
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                    padding: 0 30px;
+                    &:not(:last-of-type){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
             &:hover{
-				& > a{
-					color: var(--tp-theme-primary);
+    & > a{
+     color: var(--tp-theme-primary);
                     &::after{
                         color: var(--tp-theme-primary);
                     }
-				}
-				& .submenu{
+    }
+    & .submenu{
                     opacity: 1;
                     visibility: visible;
                     top: 100%;
-				}
-			}
+    }
+   }
 
 
             & .has-homemenu {

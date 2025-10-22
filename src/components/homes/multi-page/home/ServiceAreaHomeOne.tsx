@@ -146,7 +146,18 @@ const ServiceAreaHomeOne = () => {
           <div className="row">
             <div className="col-lg-6 col-md-8">
               <div className="tp-service-title-wrapper mb-40">
-                <span className="tp-section-title-pre">Our services</span>
+                <span
+                  className="tp-section-title-pre"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  Our services
+                </span>
                 <h3 className="tp-section-title">
                   Innovate to dominate <br /> with us
                 </h3>
@@ -173,15 +184,29 @@ const ServiceAreaHomeOne = () => {
             >
               {service_data.map((item, index) => (
                 <SwiperSlide key={index} className="swiper-slide mb-30 mt-40">
-                  <div className="tp-service-item-wrapper p-relative d-flex flex-column" style={{ height: '475px' }}>
+                  <div
+                    className="tp-service-item-wrapper p-relative d-flex flex-column"
+                    style={{ height: "475px" }}
+                  >
                     <div className="tp-service-item-icon">
                       <span>{item.icon}</span>
                     </div>
                     <div className="tp-service-item-content flex-grow-1 d-flex flex-column">
                       <h4 className="tp-service-item-title">
-                        <Link href={`/services-details/${item.id}`}>{item.title}</Link>
+                        <Link href={`/services-details/${item.id}`}>
+                          {item.title}
+                        </Link>
                       </h4>
-                      <p className="mb-3" style={{ minHeight: '80px', maxHeight: '150px', overflow: 'hidden' }}>{item.sm_des}</p>
+                      <p
+                        className="mb-3"
+                        style={{
+                          minHeight: "80px",
+                          maxHeight: "150px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {item.sm_des}
+                      </p>
                     </div>
                     <div className="tp-service-item-thumb">
                       <Link href={`/services-details/${item.id}`}>

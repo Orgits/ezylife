@@ -32,7 +32,13 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                <div className="tp-header-wrapper-inner header__sticky p-relative">
                   <div className="tp-header-top d-none d-xl-flex">
                      <div className="tp-header-top-info">
-                        <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span><i className="fa-sharp fa-solid fa-location-dot"></i></span>Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001</a>
+                        <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span style={{
+                            background:
+                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            backgroundClip: "text",
+                          }}><i className="fa-sharp fa-solid fa-location-dot"></i></span>Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001</a>
                      </div>
                      <div className="tp-header-top-right d-flex justify-content-end align-items-center">
                         <div className="header-social ">

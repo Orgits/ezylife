@@ -24,13 +24,9 @@ const on_page_menu_data: DataType[] = [
   {
     id: 1,
     title: "Home",
-    link: "#",
-    img_dropdown: true,
-    sub_menus: [
-      { link: "/",       title: "Home 01", one_page_link: "/home-1-one-page", demo_img: demo_img_1, },
-      { link: "/home-2", title: "Home 02", one_page_link: "/home-2-one-page", demo_img: demo_img_2, },
-      { link: "/home-3", title: "Home 03", one_page_link: "/home-3-one-page", demo_img: demo_img_3, },
-    ],
+    link: "/",
+    img_dropdown: false,
+    sub_menus: [],
   },
 ]
 
@@ -47,35 +43,8 @@ const OnPageMenu = ({ onePageHomeOne, onePageHomeTwo, onePageHomeThree }: styleT
     <>
       <ul className="tp-onepage-menu d-flex">
         {on_page_menu_data.map((item, i) =>
-          <li key={i} className="has-dropdown">
+          <li key={i}>
             <Link href={item.link}>{item.title}</Link>
-            {item.img_dropdown && (
-              <div className="tp-submenu submenu has-homemenu">
-                <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-3">
-                  {item.sub_menus?.map((sub_item, index) => (
-                    <div key={index} className="col homemenu">
-                      <div className="homemenu-thumb mb-15">
-                        <Image src={sub_item.demo_img} alt="image-title-here" />
-                        <div className="homemenu-btn">
-                          <Link className="menu-btn show-1" href={sub_item.link}>
-                            Multi Page
-                          </Link>
-                          <br />
-                          <Link className="menu-btn show-2" href={sub_item.one_page_link}>
-                            One Page
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="homemenu-content text-center">
-                        <h4 className="homemenu-title">
-                          <Link href={sub_item.link}>{sub_item.title}</Link>
-                        </h4>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </li>
         )}
         {onePageHomeOne &&

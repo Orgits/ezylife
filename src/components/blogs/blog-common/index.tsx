@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import post_thumb_1 from "@/assets/img/blog/postbox/img-5.jpg";
 import post_thumb_2 from "@/assets/img/blog/postbox/img-6.jpg";
@@ -26,9 +26,8 @@ const post_data = [
     img: post_thumb_3,
     title: "Navigating challenges to reach new heights",
     date: "October 19, 2024",
-  }
-]
-
+  },
+];
 
 const BlogSlidebar = () => {
   return (
@@ -41,7 +40,9 @@ const BlogSlidebar = () => {
                 <form onSubmit={(e) => e.preventDefault()}>
                   <div className="tp-sidebar-search-input">
                     <input type="text" placeholder="Search" />
-                    <button type="submit"><i className="far fa-search"></i></button>
+                    <button type="submit">
+                      <i className="far fa-search"></i>
+                    </button>
                   </div>
                 </form>
               </div>
@@ -52,9 +53,51 @@ const BlogSlidebar = () => {
             <h3 className="tp-sidebar-widget-title">Categories</h3>
             <div className="tp-sidebar-widget-content">
               <ul>
-                <li><Link href="/blog-details"><i className="fa-solid fa-chevrons-right"></i> Agency</Link></li>
-                <li><Link href="/blog-details"><i className="fa-solid fa-chevrons-right"></i> Corporate</Link></li>
-                <li><Link href="/blog-details"><i className="fa-solid fa-chevrons-right"></i> Business</Link></li>
+                <li>
+                  <Link href="/blog-details">
+                    <i
+                      className="fa-solid fa-chevrons-right"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                      }}
+                    ></i>{" "}
+                    Agency
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog-details">
+                    <i
+                      className="fa-solid fa-chevrons-right"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                      }}
+                    ></i>{" "}
+                    Corporate
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog-details">
+                    <i
+                      className="fa-solid fa-chevrons-right"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                      }}
+                    ></i>{" "}
+                    Business
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -64,26 +107,47 @@ const BlogSlidebar = () => {
             <div className="tp-sidebar-widget-content">
               <div className="tp-sidebar-post tp-rc__post">
                 {post_data.map((item) => (
-                  <div key={item.id} className="tp-rc__post d-flex align-items-center">
+                  <div
+                    key={item.id}
+                    className="tp-rc__post d-flex align-items-center"
+                  >
                     <div className="tp-rc__post-thumb mr-25">
-                      <Link href="/blog-details"><Image src={item.img} alt="image-title-here" /></Link>
+                      <Link href="/blog-details">
+                        <Image src={item.img} alt="image-title-here" />
+                      </Link>
                     </div>
                     <div className="tp-rc__post-content">
                       <h3 className="tp-rc__post-title">
                         <Link href="/blog-details">{item.title}</Link>
                       </h3>
                       <div className="tp-rc__post-meta">
-                        <span><i className="fa-regular fa-calendar-days"></i> {item.date}</span>
+                        <span>
+                          <i
+                            className="fa-regular fa-calendar-days"
+                            style={{
+                              background:
+                                "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              WebkitBackgroundClip: "text",
+                              WebkitTextFillColor: "transparent",
+                              backgroundClip: "text",
+                            }}
+                          ></i>{" "}
+                          {item.date}
+                        </span>
                       </div>
                     </div>
                   </div>
-                ))} 
-
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="tp-sidebar-work mb-40 p-relative" style={{ backgroundImage: "url(/assets/img/blog/postbox/img-8.jpg)" }}>
+          <div
+            className="tp-sidebar-work mb-40 p-relative"
+            style={{
+              backgroundImage: "url(/assets/img/blog/postbox/img-8.jpg)",
+            }}
+          >
             <h3 className="tp-sidebar-work-title text-center">Work with us</h3>
             <div className="tp-sidebar-work-content text-center">
               <div className="tp-sidebar-work-icon">
@@ -91,7 +155,10 @@ const BlogSlidebar = () => {
                   <Image src={post_icon} alt="image-title-here" />
                 </span>
               </div>
-              <p>Aliquam posuere loborti viverra atti ullamcer posuere viverra .Aliquam er.Aliquam r justo, posuere loborti viverra atti ullam</p>
+              <p>
+                Aliquam posuere loborti viverra atti ullamcer posuere viverra
+                .Aliquam er.Aliquam r justo, posuere loborti viverra atti ullam
+              </p>
             </div>
           </div>
 
@@ -107,7 +174,6 @@ const BlogSlidebar = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>

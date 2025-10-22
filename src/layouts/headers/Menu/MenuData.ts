@@ -25,13 +25,8 @@ const menu_data: DataType[] = [
   {
     id: 1,
     title: "Home",
-    link: "#",
-    img_dropdown: true,
-    sub_menus: [
-      { link: "/",       title: "Home 01", one_page_link: "/home-1-one-page",  demo_img: demo_img_1,  },
-      { link: "/home-2", title: "Home 02", one_page_link: "/home-2-one-page",  demo_img: demo_img_2,  },
-      { link: "/home-3", title: "Home 03", one_page_link: "/home-3-one-page",  demo_img: demo_img_3,  }, 
-    ],
+    link: "/",
+    has_dropdown: false,
   },
   {
     id: 2,
@@ -45,8 +40,16 @@ const menu_data: DataType[] = [
     link: "#",
     has_dropdown: true,
     sub_menus: [
-      { link: "/services", title: "Services" },
-      { link: "/services-details", title: "Services Details" },
+      { link: "/services-details/1", title: "Equity & Derivatives Trading" },
+      { link: "/services-details/2", title: "Mutual Funds & SIPs" },
+      { link: "/services-details/3", title: "IPO Investments" },
+      { link: "/services-details/4", title: "Bonds & Debentures" },
+      { link: "/services-details/5", title: "Portfolio Advisory" },
+      { link: "/services-details/6", title: "Financial Planning" },
+      { link: "/services-details/7", title: "Retirement Planning" },
+      { link: "/services-details/8", title: "Portfolio Management Services (PMS)" },
+      { link: "/services-details/9", title: "Insurance Services" },
+      { link: "/services-details/10", title: "Tax Planning" },
     ],
   },
   {
