@@ -534,7 +534,16 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                   <div className="tp-service-widget-contact-content text-center">
                     <div className="tp-service-widget-contact-icon">
                       <span>
-                        <i className="fa-solid fa-phone"></i>
+                        <i
+                          className="fa-solid fa-phone"
+                          style={{
+                            background:
+                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            backgroundClip: "text",
+                          }}
+                        ></i>
                       </span>
                     </div>
                     <p>Requesting A Call:</p>
@@ -546,7 +555,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                   <a href="#">
                     <span>
                       Download Profile
-                      <Image src={features_doc} alt="image-title-here" />
+                      <Image src={'/assets/img/process/pdf.png'} alt="icon" width={40} height={40} />
                     </span>
                   </a>
                 </div>
