@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Count from "@/components/common/Count";
 
-import process_icon_1 from "@/assets/img/process/icon-1.svg";
-import process_icon_2 from "@/assets/img/process/icon-2.svg";
-import process_icon_3 from "@/assets/img/process/icon-3.svg";
+import process_icon_1 from "@/assets/img/process/business.png";
+import process_icon_2 from "@/assets/img/process/growth.png";
+import process_icon_3 from "@/assets/img/process/global-network.png";
 
 import process_img_1 from "@/assets/img/process/img-1.jpg";
 import process_img_2 from "@/assets/img/process/img-2.jpg";
@@ -28,13 +28,13 @@ const process_counter: DataType = {
   ),
   features: [
     {
-      img: process_icon_1,
-      title: "Best emplementation",
+      img: process_icon_2,
+      title: "Best Implementation",
       sm_des:
         "Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.",
     },
     {
-      img: process_icon_2,
+      img: process_icon_1,
       title: "Design make for you",
       sm_des:
         "Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.",
@@ -84,7 +84,13 @@ const ProcessAreaHomeOne = () => {
                   >
                     <div className="tp-process-item-icon">
                       <span>
-                        <Image src={item.img} alt="image-title-here" />
+                        {/* <Image src={item.img} alt="image-title-here" /> */}
+                        <Image
+                          src={item.img}
+                          alt="icon"
+                          width={64}
+                          height={64}
+                        />
                       </span>
                     </div>
                     <div className="tp-process-item-content">
@@ -114,7 +120,7 @@ const ProcessAreaHomeOne = () => {
                 <div className="tp-process-counter d-flex align-items-center">
                   <div className="tp-process-counter-icon">
                     <span>
-                      <i className="flaticon-030-machine-repair"></i>
+                      <Image src={'/assets/img/process/computer.png'} alt="icon" width={40} height={40} />
                     </span>
                   </div>
                   <div className="tp-process-content">
