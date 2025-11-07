@@ -1,9 +1,44 @@
 
+"use client";
 import React from 'react';
 
 const GoogleMap = () => {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 991px) {
+          .tp-contact-map-area {
+            margin-bottom: 80px !important;
+          }
+          
+          .tp-contact-map iframe {
+            width: 100% !important;
+            height: 350px !important;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .tp-contact-map-area {
+            margin-bottom: 60px !important;
+            padding: 0 15px;
+          }
+          
+          .tp-contact-map iframe {
+            height: 300px !important;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .tp-contact-map-area {
+            margin-bottom: 50px !important;
+            padding: 0 10px;
+          }
+          
+          .tp-contact-map iframe {
+            height: 250px !important;
+          }
+        }
+      `}</style>
       <div className="tp-contact-map-area map-margin" style={{'marginBottom': '120px'}}>
         <div className="tp-contact-map">
           <iframe

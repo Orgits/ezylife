@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Count from "@/components/common/Count";
@@ -53,6 +54,186 @@ const { subtitle, title, features } = process_counter;
 const ProcessAreaHomeOne = () => {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 991px) {
+          .tp-process-arae {
+            padding-top: 80px !important;
+            padding-bottom: 80px !important;
+          }
+          
+          .tp-process-thumb-wrapper {
+            margin-top: 40px;
+          }
+          
+          .tp-process-title {
+            text-align: center !important;
+          }
+          
+          .tp-process-item {
+            margin-bottom: 30px;
+          }
+          
+          .tp-process-item-icon {
+            border-left: none !important;
+          }
+          
+          .tp-process-item-icon span img {
+            width: 50px !important;
+            height: 50px !important;
+          }
+          
+          .tp-process-counter {
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+          
+          .tp-process-trusted {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            margin-top: 20px;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .tp-process-arae {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+          }
+          
+          .tp-section-title {
+            font-size: 28px !important;
+            line-height: 1.4 !important;
+            margin-bottom: 20px;
+            letter-spacing: -0.3px;
+          }
+          
+          .tp-process-item-content h4 {
+            font-size: 20px !important;
+            line-height: 1.4 !important;
+            margin-bottom: 12px;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-process-item-content p {
+            font-size: 16px !important;
+            line-height: 1.7 !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-process-thumb-wrapper .main img {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover;
+          }
+          
+          .tp-process-thumb img {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover;
+          }
+          
+          .tp-process-thumb-wrapper .shape-1 {
+            display: none;
+          }
+          
+          .tp-process-counter-title {
+            font-size: 24px !important;
+          }
+          
+          .tp-process-thumb .main img {
+            max-width: 350px !important;
+            width: 350px !important;
+            height: auto !important;
+            object-fit: cover;
+          }
+          
+          .tp-process-thumb .shape-1 img {
+            max-width: 200px !important;
+            width: 200px !important;
+            height: auto !important;
+          }
+          
+          .tp-process-counter p {
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-process-trusted p {
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-process-trusted span {
+            font-size: 20px !important;
+            letter-spacing: 0.2px;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .tp-process-arae {
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+          }
+          
+          .tp-section-title {
+            font-size: 20px !important;
+            line-height: 1.4 !important;
+          }
+          
+          .tp-section-title-pre {
+            font-size: 12px !important;
+            margin-bottom: 10px;
+          }
+          
+          .tp-process-item {
+            flex-direction: column !important;
+            text-align: center;
+            margin-bottom: 25px;
+          }
+          
+          .tp-process-item-icon {
+            margin-bottom: 15px;
+            margin-right: 0 !important;
+          }
+          
+          .tp-process-item-content h4 {
+            font-size: 16px !important;
+          }
+          
+          .tp-process-item-content p {
+            font-size: 13px !important;
+            padding: 0 10px;
+          }
+          
+          .tp-process-counter {
+            display: none !important;
+          }
+          
+          .tp-process-trusted {
+            display: none !important;
+          }
+          
+          .tp-process-thumb .main img {
+            max-width: 280px !important;
+            width: 280px !important;
+            height: auto !important;
+          }
+          
+          .tp-process-thumb .shape-1 img {
+            max-width: 150px !important;
+            width: 150px !important;
+            height: auto !important;
+          }
+        }
+      `}</style>
       <section
         className="tp-process-arae pt-120 pb-120"
         style={{ backgroundColor: "#F6F6F9" }}

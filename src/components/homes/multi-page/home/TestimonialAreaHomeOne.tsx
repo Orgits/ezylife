@@ -189,6 +189,114 @@ const TestimonialAreaHomeOne = () => {
               display: none;
             }
           }
+          
+          @media (max-width: 991px) {
+            .tp-testimonial-area {
+              padding-top: 60px !important;
+              padding-bottom: 40px !important;
+            }
+            
+            .tp-testimonial-title {
+              margin-bottom: 30px !important;
+              text-align: center;
+            }
+            
+            .tp-testimonial-item-content {
+              padding: 20px !important;
+            }
+          }
+          
+          @media (max-width: 767px) {
+            .tp-testimonial-area {
+              padding-top: 50px !important;
+              padding-bottom: 30px !important;
+            }
+            
+            .tp-section-title {
+              font-size: 24px !important;
+              line-height: 1.3 !important;
+              margin-bottom: 20px;
+            }
+            
+            .tp-testimonial-item-content {
+              padding: 15px !important;
+            }
+            
+            .tp-testimonial-item-content h5 {
+              font-size: 16px !important;
+              margin-bottom: 10px !important;
+            }
+            
+            .testimonial-description {
+              font-size: 13px !important;
+              line-height: 1.6 !important;
+              margin-bottom: 15px !important;
+            }
+            
+            .tp-testimonial-item-title {
+              font-size: 14px !important;
+            }
+            
+            .tp-testimonial-nav {
+              margin-top: 20px;
+              text-align: center !important;
+            }
+            
+            .tp-testimonial-nav button {
+              width: 35px !important;
+              height: 35px !important;
+              font-size: 12px !important;
+              margin: 0 5px;
+            }
+          }
+          
+          @media (max-width: 575px) {
+            .tp-testimonial-area {
+              padding-top: 40px !important;
+              padding-bottom: 25px !important;
+            }
+            
+            .tp-section-title {
+              font-size: 20px !important;
+              line-height: 1.4 !important;
+            }
+            
+            .tp-section-title-pre {
+              font-size: 12px !important;
+              margin-bottom: 10px;
+            }
+            
+            .tp-testimonial-title {
+              margin-bottom: 25px !important;
+            }
+            
+            .tp-testimonial-item-content {
+              padding: 12px !important;
+            }
+            
+            .tp-testimonial-item-content h5 {
+              font-size: 15px !important;
+            }
+            
+            .testimonial-description {
+              font-size: 12px !important;
+              margin-bottom: 12px !important;
+            }
+            
+            .tp-testimonial-item-title {
+              font-size: 13px !important;
+            }
+            
+            .tp-testimonial-nav button {
+              width: 30px !important;
+              height: 30px !important;
+              font-size: 10px !important;
+            }
+            
+            .swiper-container {
+              padding-bottom: 20px !important;
+            }
+          }
         `}</style>
         <div className="tp-testimonial-bg">
           <Image
