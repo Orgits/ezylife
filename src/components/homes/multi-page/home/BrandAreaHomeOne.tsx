@@ -20,7 +20,7 @@ const BrandAreaHomeOne = () => {
          <div className="tp-brand-area tp-brand-background p-relative pb-120">
             <div className="container">
                <div className="tp-brand-wrapper p-relative wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"
-                  style={{ backgroundColor: "#5CB85C" }}>
+                  style={{ backgroundColor: "#2E7D32" }}>
                   <div className="row">
                      {brand_data.map((item, index) => (
                         <div key={index} className="col-lg-3">

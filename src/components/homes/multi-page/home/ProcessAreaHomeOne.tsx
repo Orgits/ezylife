@@ -20,30 +20,30 @@ interface DataType {
 }
 
 const process_counter: DataType = {
-  subtitle: "Our work process",
+  subtitle: "Our Investment Process",
   title: (
     <>
-      Strategy is the key to <br /> success
+      Strategic planning drives <br /> financial success
     </>
   ),
   features: [
     {
       img: process_icon_2,
-      title: "Best Implementation",
+      title: "Client Assessment & Goal Analysis",
       sm_des:
-        "Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.",
+        "We understand your financial requirements, life goals, and risk appetite. Our Chartered Accountants evaluate your current position to build a foundation for your personalized investment strategy.",
     },
     {
       img: process_icon_1,
-      title: "Design make for you",
+      title: "Comprehensive Plan Development",
       sm_des:
-        "Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.",
+        "We create a detailed financial plan covering investment strategies, risk management, tax planning, and wealth creation. Every aspect is discussed to ensure clarity and alignment with your objectives.",
     },
     {
       img: process_icon_3,
-      title: "Finished the process",
+      title: "Strategic Implementation & Monitoring",
       sm_des:
-        "Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.",
+        "We execute your plan through partnerships with IIFL Capital and other platforms. Our team continuously monitors your portfolio to ensure investments progress toward your defined goals.",
     },
   ],
 };
@@ -66,7 +66,7 @@ const ProcessAreaHomeOne = () => {
                     className="tp-section-title-pre"
                     style={{
                       background:
-                        "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                        "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -127,12 +127,12 @@ const ProcessAreaHomeOne = () => {
                     <h4 className="tp-process-counter-title d-flex">
                       <Count number={10} /> k+
                     </h4>
-                    <p>Project Complete</p>
+                    <p>Clients Served</p>
                   </div>
                 </div>
                 <div className="tp-process-trusted text-center">
                   <p>
-                    Trusted By <br /> <span>2345</span>
+                    Trusted By <br /> <span>2345+</span> Investors
                   </p>
                 </div>
               </div>

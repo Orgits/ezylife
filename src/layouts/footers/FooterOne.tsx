@@ -23,39 +23,37 @@ interface DataType {
 
 const footer_content: DataType = {
   sm_info:
-    "Payment processing is a critical component of any business that sells goods or se Payment processing is a critical component of any.",
+    "Ezylife Financial Services is your trusted partner for comprehensive financial planning, investment advisory, and wealth management solutions. We are SEBI-registered and committed to helping you achieve your financial goals.",
   link_title: "Quick links",
   link_list: [
-    { title: "About us", link: "#" },
-    { title: "Categories", link: "#" },
-    { title: "Services", link: "#" },
-    { title: "Blog Grid", link: "#" },
-    { title: "Contact Us", link: "#" },
+    { title: "About us", link: "/about" },
+    { title: "Services", link: "/services" },
+    { title: "Investment Planning", link: "/services" },
+    { title: "Wealth Management", link: "/services" },
+    { title: "Contact Us", link: "/contact" },
   ],
-  post_title: "Popular Post",
+  post_title: "Our Services",
   post_list: [
     {
-      title: "Ished fact that a reader",
-      publish: "October 19, 2023",
-      link: "#",
+      title: "Financial Planning & Advisory",
+      publish: "Comprehensive Solutions",
+      link: "/services",
     },
     {
-      title: "Will distrol acted desig",
-      publish: "October 20, 2023",
-      link: "#",
+      title: "Investment Portfolio Management",
+      publish: "Expert Guidance",
+      link: "/services",
     },
     {
-      title: "Transforming Business For You",
-      publish: "October 22, 2023",
-      link: "#",
+      title: "Tax Planning & Optimization",
+      publish: "Strategic Approach",
+      link: "/services",
     },
   ],
   footer_links: [
-    "About us",
-    "Categories",
-    "Services",
-    "Blog Grid",
-    "Contact Us",
+    "Disclaimer",
+    "Privacy Policy",
+    "Risk Disclosure",
   ],
 };
 const { sm_info, link_title, link_list, post_title, post_list, footer_links } =
@@ -66,7 +64,7 @@ const FooterOne = () => {
     <>
       <footer
         className="tp-footer-area pt-80  z-index-1"
-        style={{ backgroundColor: "#5CB85C" }}
+        style={{ backgroundColor: "#2E7D32" }}
       >
         <div className="tp-footer-bg-shape">
           <Image src={footer_shape_1} alt="image-title-here" />
@@ -130,11 +128,16 @@ const FooterOne = () => {
               </div>
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-4 mb-50">
-                  <h3 className="tp-footer-widget-title" style={{marginBottom: '0'}}>Contact us</h3>
+                  <h3
+                    className="tp-footer-widget-title"
+                    style={{ marginBottom: "0" }}
+                  >
+                    Contact us
+                  </h3>
                   <div className="tp-footer-widget-content">
                     <div
                       className="tp-footer-widget-contact"
-                      style={{ backgroundColor: "#5CB85C", border: "none" }}
+                      style={{ backgroundColor: "#2E7D32", border: "none" }}
                     >
                       <div className="tp-footer-widget-contact-inner">
                         <a
@@ -148,7 +151,7 @@ const FooterOne = () => {
                       </div>
                       <div className="tp-footer-widget-contact-inner">
                         <a href="tel:123456765">
-                          <i className="fa-solid fa-phone"></i> (629) 555-0129
+                          <i className="fa-solid fa-phone"></i> 011-45584780
                         </a>
                       </div>
                       <div className="tp-footer-widget-contact-inner">
@@ -161,6 +164,21 @@ const FooterOne = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="text-center p-4 mb-4" style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              borderRadius: '8px',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              color: 'white',
+              fontSize: '14px',
+              lineHeight: '1.6'
+            }}>
+              <strong>Ezylife Financial Services Pvt. Ltd.</strong> is a SEBI-registered
+              Sub-Broker with IIFL Capital (IIFL Securities) and an
+              AMFI-registered Mutual Fund Distributor. Investments in securities
+              are subject to market risks. Please read all related documents
+              carefully before investing. Ezylife does not guarantee returns.
+              For grievances, write to <a href="mailto:compliance@ezylife.in" style={{ color: '#FFD700', textDecoration: 'underline' }}>compliance@ezylife.in</a>.
             </div>
           </div>
         </div>
@@ -177,11 +195,9 @@ const FooterOne = () => {
               </div>
               <div className="col-md-12 col-lg-6">
                 <div className="tp-footer-copyright-inner text-lg-end">
-                  {footer_links.map((item, index) => (
-                    <a key={index} href="#">
-                      {item}
-                    </a>
-                  ))}
+                  <Link href="/disclaimer">Disclaimer</Link>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
+                  <Link href="/risk-disclosure">Risk Disclosure</Link>
                 </div>
               </div>
             </div>

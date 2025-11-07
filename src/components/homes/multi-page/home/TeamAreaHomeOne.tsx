@@ -20,7 +20,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                   className="tp-section-title-pre"
                   style={{
                     background:
-                      "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                      "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -34,11 +34,11 @@ const TeamAreaHomeOne = ({ style }: any) => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {team_data.slice(0, 4).map((item, index) => (
               <>
                 {item.home === 1 && (
-                  <div key={index} className="col-lg-3 col-md-6">
+                  <div key={index} className="col-lg-3 col-md-6 col-sm-8 col-10">
                     <div
                       className="tp-team-item p-relative wow fadeInUp"
                       data-wow-duration="1s"
@@ -50,6 +50,8 @@ const TeamAreaHomeOne = ({ style }: any) => {
                             src={item.img}
                             style={{ width: "100%", height: "auto" }}
                             alt="image-title-here"
+                            height={400}
+                            width={400}
                           />
                         </Link>
                       </div>
@@ -60,7 +62,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                         <h4 className="tp-team-info-title">
                           <Link href="/team-details">{item.title}</Link>
                         </h4>
-                        <p>{item.designatio}</p>
+                        <p>{item.designation}</p>
                       </div>
                     </div>
                   </div>

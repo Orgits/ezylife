@@ -91,7 +91,7 @@ const HeroAreaHomeOne = () => {
           width: 12px;
           height: 12px;
           border-radius: 50%;
-          background: linear-gradient(to right, #5CB85C, #7FD957);
+          background: linear-gradient(to right, #2E7D32, #388E3C);
           flex-shrink: 0;
         }
 
@@ -183,7 +183,7 @@ const HeroAreaHomeOne = () => {
                 key={index}
                 className="swiper-slide pt-160 pb-115"
                 style={{
-                  backgroundColor: "#5CB85C",
+                  backgroundColor: "#2E7D32",
                   position: "relative",
                   width: "100%",
                   height: "auto",
@@ -288,8 +288,8 @@ const HeroAreaHomeOne = () => {
                                     y2="11.5808"
                                     gradientUnits="userSpaceOnUse"
                                   >
-                                    <stop stopColor="#5CB85C" />
-                                    <stop offset="1" stopColor="#7FD957" />
+                                    <stop stopColor="#2E7D32" />
+                                    <stop offset="1" stopColor="#388E3C" />
                                   </linearGradient>
                                   <linearGradient
                                     id="paint1_linear_3043_11"
@@ -299,8 +299,8 @@ const HeroAreaHomeOne = () => {
                                     y2="19.1953"
                                     gradientUnits="userSpaceOnUse"
                                   >
-                                    <stop stopColor="#5CB85C" />
-                                    <stop offset="1" stopColor="#7FD957" />
+                                    <stop stopColor="#2E7D32" />
+                                    <stop offset="1" stopColor="#388E3C" />
                                   </linearGradient>
                                   <linearGradient
                                     id="paint2_linear_3043_11"
@@ -310,8 +310,8 @@ const HeroAreaHomeOne = () => {
                                     y2="18"
                                     gradientUnits="userSpaceOnUse"
                                   >
-                                    <stop stopColor="#5CB85C" />
-                                    <stop offset="1" stopColor="#7FD957" />
+                                    <stop stopColor="#2E7D32" />
+                                    <stop offset="1" stopColor="#388E3C" />
                                   </linearGradient>
                                 </defs>
                               </svg>

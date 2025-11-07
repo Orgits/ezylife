@@ -15,3 +15,19 @@
 
 
 @import "../../public/assets/scss/main.scss"; 
+
+
+// Custom testimonial styles for responsive overflow handling
+.testimonial-description {
+  line-height: 1.4;
+  
+  // For medium screens (768px to 991px), limit text to prevent overflow
+  @media (min-width: 768px) and (max-width: 991px) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 5.6em; // 4 lines * 1.4 line-height
+  }
+}

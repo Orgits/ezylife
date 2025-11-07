@@ -35,7 +35,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
                   className="tp-section-title-pre"
                   style={{
                     background:
-                      "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                      "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -64,7 +64,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
                     <h4
                       style={{
                         background:
-                          "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                          "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text",
@@ -80,7 +80,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
                         <i
                           style={{
                             background:
-                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -93,7 +93,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
                         <i
                           style={{
                             background:
-                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -111,7 +111,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
                         href="/blog-details"
                         style={{
                           background:
-                            "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                            "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                           backgroundClip: "text",
