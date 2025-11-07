@@ -1,3 +1,4 @@
+"use client";
 import blog_data from "@/data/BlogData";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,6 +24,145 @@ const blogs = blog_data.filter((item) => item.home === 1);
 const BlogAreaHomeOne = ({ style }: any) => {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 991px) {
+          .tp-blog-area {
+            padding-top: 80px !important;
+            padding-bottom: 60px !important;
+          }
+          
+          .tp-blog-title-wrapper {
+            margin-bottom: 30px !important;
+          }
+          
+          .tp-blog-item-wrapper {
+            margin-bottom: 25px !important;
+          }
+          
+          .tp-blog-item-thumb img {
+            width: 100% !important;
+            height: 200px !important;
+            object-fit: cover;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .tp-blog-area {
+            padding-top: 60px !important;
+            padding-bottom: 50px !important;
+          }
+          
+          .tp-section-title {
+            font-size: 24px !important;
+            line-height: 1.3 !important;
+            margin-bottom: 20px;
+          }
+          
+          .tp-blog-item-thumb img {
+            height: 180px !important;
+          }
+          
+          .tp-blog-item-date h4 {
+            font-size: 18px !important;
+          }
+          
+          .tp-blog-item-date p {
+            font-size: 12px !important;
+          }
+          
+          .tp-blog-item-content {
+            padding: 15px !important;
+          }
+          
+          .tp-blog-item-info span {
+            font-size: 12px !important;
+            margin-right: 15px !important;
+          }
+          
+          .tp-blog-item-info span a {
+            font-size: 12px !important;
+          }
+          
+          .tp-blog-item-title {
+            font-size: 16px !important;
+            line-height: 1.4 !important;
+            margin: 10px 0 !important;
+          }
+          
+          .tp-blog-item-btn a {
+            font-size: 13px !important;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .tp-blog-area {
+            padding-top: 50px !important;
+            padding-bottom: 40px !important;
+          }
+          
+          .tp-section-title {
+            font-size: 20px !important;
+            line-height: 1.4 !important;
+          }
+          
+          .tp-section-title-pre {
+            font-size: 12px !important;
+            margin-bottom: 10px;
+          }
+          
+          .tp-blog-title-wrapper {
+            margin-bottom: 25px !important;
+          }
+          
+          .tp-blog-item-wrapper {
+            margin-bottom: 20px !important;
+          }
+          
+          .tp-blog-item-thumb img {
+            height: 160px !important;
+          }
+          
+          .tp-blog-item-date {
+            padding: 8px 12px !important;
+          }
+          
+          .tp-blog-item-date h4 {
+            font-size: 16px !important;
+          }
+          
+          .tp-blog-item-date p {
+            font-size: 11px !important;
+          }
+          
+          .tp-blog-item-content {
+            padding: 12px !important;
+          }
+          
+          .tp-blog-item-info {
+            margin-bottom: 8px !important;
+            flex-wrap: wrap;
+          }
+          
+          .tp-blog-item-info span {
+            font-size: 11px !important;
+            margin-right: 10px !important;
+            margin-bottom: 5px;
+          }
+          
+          .tp-blog-item-title {
+            font-size: 15px !important;
+            margin: 8px 0 !important;
+          }
+          
+          .tp-blog-item-btn a {
+            font-size: 12px !important;
+          }
+          
+          .col-xl-4.col-lg-6.col-md-6 {
+            margin-bottom: 20px;
+          }
+        }
+      `}</style>
       <section
         id="blog-one-page"
         className={`tp-blog-area pt-120 ${style ? "" : "pb-90"}`}

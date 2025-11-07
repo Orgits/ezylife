@@ -1,5 +1,6 @@
 
 
+"use client";
 import service_data from '@/data/ServiceData';
 import ServiceIconOne from '@/svg/home-1/ServiceIconOne';
 import ServiceIconThree from '@/svg/home-1/ServiceIconThree';
@@ -13,6 +14,88 @@ const services = service_data.filter(item => item.home === 'service');
 const ServiceArea = () => {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 991px) {
+          .tp-service-breadcrumb-area {
+            padding-top: 80px !important;
+            padding-bottom: 30px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 50px !important;
+            height: auto !important;
+          }
+          
+          .tp-service-item-thumb img {
+            width: 100% !important;
+            height: 200px !important;
+            object-fit: cover;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .tp-service-breadcrumb-area {
+            padding-top: 60px !important;
+            padding-bottom: 25px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 40px !important;
+            padding: 20px !important;
+          }
+          
+          .tp-service-item-title {
+            font-size: 18px !important;
+            line-height: 1.3 !important;
+            margin-bottom: 15px;
+          }
+          
+          .tp-service-item-content p {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+            min-height: auto !important;
+            max-height: none !important;
+          }
+          
+          .tp-service-item-thumb img {
+            height: 180px !important;
+          }
+          
+          .tp-service-item-icon {
+            margin-bottom: 15px;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .tp-service-breadcrumb-area {
+            padding-top: 50px !important;
+            padding-bottom: 20px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 30px !important;
+            padding: 15px !important;
+          }
+          
+          .tp-service-item-title {
+            font-size: 16px !important;
+            margin-bottom: 12px;
+          }
+          
+          .tp-service-item-content p {
+            font-size: 13px !important;
+            margin-bottom: 15px !important;
+          }
+          
+          .tp-service-item-thumb img {
+            height: 160px !important;
+          }
+          
+          .col-lg-4.col-md-6 {
+            margin-bottom: 20px;
+          }
+        }
+      `}</style>
       <section className="tp-service-breadcrumb-area pt-120 pb-40">
         <div className="container">
           <div className="row">

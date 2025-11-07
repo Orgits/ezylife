@@ -21,14 +21,25 @@ const Count = ({ number, text, add_style }: CountType) => {
 
   return (
     <>
+      <style jsx>{`
+        .count-wrapper span {
+          color: black !important;
+        }
+        
+        @media (max-width: 767px) {
+          .count-wrapper span {
+            color: black !important;
+          }
+        }
+      `}</style>
       <CountUp start={focus ? 0 : undefined} end={number} duration={3}>
         {({ countUpRef }) => (
-          <div className={`d-flex ${add_style ? "align-items-center justify-content-center" : ""} `}>
-            <span ref={countUpRef} />
+          <div className={`d-flex count-wrapper ${add_style ? "align-items-center justify-content-center" : ""} `}>
+            <span ref={countUpRef} style={{ color: 'black' }} />
             <InView
               as="span"
               onChange={(inView: any) => visibleChangeHandler(inView)}>
-              {text && <span>{text}</span>} 
+              {text && <span style={{ color: 'black' }}>{text}</span>}
             </InView>
           </div>
         )}

@@ -7,7 +7,7 @@ import ServiceIconOne from "@/svg/home-1/ServiceIconOne";
 import ServiceIconTwo from "@/svg/home-1/ServiceIconTwo";
 import ServiceIconThree from "@/svg/home-1/ServiceIconThree";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
@@ -107,6 +107,10 @@ const setting = {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     "1700": {
       slidesPerView: 3,
@@ -137,6 +141,110 @@ const setting = {
 const ServiceAreaHomeOne = () => {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 991px) {
+          .tp-service-area {
+            padding-top: 80px !important;
+            padding-bottom: 60px !important;
+          }
+          
+          .tp-service-title-wrapper {
+            margin-bottom: 30px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 25px !important;
+            height: auto !important;
+          }
+          
+          .tp-service-item-thumb img {
+            width: 100% !important;
+            height: 200px !important;
+            max-width: 100% !important;
+            object-fit: cover;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .tp-service-area {
+            padding-top: 60px !important;
+            padding-bottom: 50px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 20px !important;
+            padding: 15px !important;
+            height: auto !important;
+          }
+          
+          .tp-service-item-title {
+            font-size: 18px !important;
+            line-height: 1.4 !important;
+            margin-bottom: 12px;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-service-item-content p {
+            font-size: 15px !important;
+            line-height: 1.7 !important;
+            min-height: auto !important;
+            max-height: none !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-service-item-thumb img {
+            width: 100% !important;
+            height: 180px !important;
+            max-width: 100% !important;
+            object-fit: cover;
+          }
+          
+          .tp-service-nav {
+            text-align: center !important;
+            margin-bottom: 20px;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .tp-service-area {
+            padding-top: 50px !important;
+            padding-bottom: 40px !important;
+          }
+          
+          .tp-service-item-wrapper {
+            margin-bottom: 15px !important;
+            padding: 12px !important;
+          }
+          
+          .tp-service-item-title {
+            font-size: 17px !important;
+            line-height: 1.4 !important;
+            margin-bottom: 10px;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-service-item-content p {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+            margin-bottom: 12px !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-service-item-thumb img {
+            width: 100% !important;
+            height: 160px !important;
+            max-width: 100% !important;
+            object-fit: cover;
+          }
+          
+          .tp-service-nav button {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 12px !important;
+            margin: 0 5px;
+          }
+        }
+      `}</style>
       <section
         id="services-one-page"
         className="tp-service-area pt-120 pb-90"
@@ -177,7 +285,7 @@ const ServiceAreaHomeOne = () => {
             <Swiper
               {...setting}
               loop={true}
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
               className="tp-service-active swiper-container wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".3s"

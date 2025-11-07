@@ -61,9 +61,6 @@ const setting = {
   fadeEffect: {
     crossFade: true, // Enable crossfade for smoother transitions
   },
-  autoplay: {
-    delay: 5000,
-  },
   // Navigation arrows
   navigation: {
     nextEl: ".hero-button-next-1",
@@ -145,6 +142,126 @@ const HeroAreaHomeOne = () => {
         @media (max-width: 991px) {
           .tp-promise-item {
             width: 100%;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+          }
+          
+          .tp-promises-list {
+            flex-direction: column;
+          }
+          
+          .tp-hero-content {
+            text-align: center;
+          }
+          
+          .tp-hero-button-wrapper {
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+          }
+          
+          .tp-hero-btn {
+            margin-right: 0 !important;
+          }
+          
+          .tp-hero-call {
+            justify-content: center;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .swiper-slide {
+            padding-top: 100px !important;
+            padding-bottom: 80px !important;
+          }
+          
+          .tp-hero-title {
+            font-size: 32px !important;
+            line-height: 1.3 !important;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+          }
+          
+          .tp-hero-subtitle {
+            font-size: 16px !important;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+          }
+          
+          .tp-hero-content p {
+            font-size: 16px !important;
+            line-height: 1.6 !important;
+            margin-bottom: 25px;
+            letter-spacing: 0.3px;
+          }
+          
+          .tp-promises-title {
+            font-size: 20px !important;
+            margin-bottom: 12px !important;
+            letter-spacing: 0.3px;
+          }
+          
+          .tp-promise-item p {
+            font-size: 15px !important;
+            line-height: 1.5 !important;
+            letter-spacing: 0.2px;
+          }
+          
+          .tp-hero-thumb {
+            display: none !important;
+          }
+          
+          .tp-hero-thumb-shape .shape-1,
+          .tp-hero-thumb-shape .shape-2,
+          .tp-hero-thumb-shape .shape-3 {
+            display: none;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .swiper-slide {
+            padding-top: 80px !important;
+            padding-bottom: 60px !important;
+          }
+          
+          .tp-hero-title {
+            font-size: 28px !important;
+            line-height: 1.4 !important;
+            letter-spacing: -0.3px;
+          }
+          
+          .tp-hero-content p {
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+            padding: 0 10px;
+            letter-spacing: 0.2px;
+          }
+          
+          .tp-promises-title {
+            font-size: 18px !important;
+            letter-spacing: 0.2px;
+          }
+          
+          .tp-promise-item p {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+            letter-spacing: 0.1px;
+          }
+          
+          .tp-hero-thumb img {
+            max-width: 240px !important;
+            width: 240px !important;
+            height: auto !important;
+          }
+          
+          .tp-hero-call-inner p {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+          }
+          
+          .tp-hero-call-inner span a {
+            font-size: 16px !important;
+            letter-spacing: 0.2px;
           }
         }
       `}</style>
