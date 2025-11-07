@@ -22,14 +22,23 @@ const { subtitle, title, sm_des } = faq_content;
 const FaqAreaHomeOne = () => {
   return (
     <>
-      <section className="tp-faq-area p-relative pt-120 pb-120"  style={{ backgroundImage: 'url(/assets/img/faq/bg-shape.png)' }}>
+
+      <section className="tp-faq-area p-relative pt-120 pb-120"  style={{ backgroundImage: 'url(/assets/img/faq/bg-shape.png)', background: 'linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)' }}>
             <div className="tp-faq-bg"></div>
             <div className="container">
                <div className="row">
                   <div className="col-lg-5">
                      <div className="tp-faq-wrapper">
                         <div className="tp-faq-title-wrapper">
-                           <span className="tp-section-title-pre">{subtitle}</span>
+                           <span
+                             className="tp-section-title-pre"
+                             style={{
+                               background: "linear-gradient(90deg, #81C784 0%, #66BB6A 100%)",
+                               WebkitBackgroundClip: "text",
+                               WebkitTextFillColor: "transparent",
+                               backgroundClip: "text",
+                             }}
+                           >{subtitle}</span>
                            <h3 className="tp-section-title"> {title} </h3>
                            <p> {sm_des}</p>
                         </div>

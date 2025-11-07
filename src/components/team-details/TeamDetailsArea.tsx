@@ -1,81 +1,42 @@
 import React from "react";
 import SocialLinks from "../common/SocialLinks";
-import avatar_img from "@/assets/img/team/breadcrumb-img.jpg";
+import team_data from "@/data/TeamData";
 import Image from "next/image";
 
-interface DataType {
-  name: string;
-  info: string;
-  description: React.JSX.Element;
-  phone: string;
-  email: string;
-  website: string;
-  address: string;
-  skill_des: string;
-  progress: {
-    title: string;
-    value: number;
-  }[];
-  outher_title: string;
-  features: string[];
-  sm_info: string;
+interface TeamDetailsAreaProps {
+  teamId?: number;
 }
 
-const team_details_content: DataType = {
-  name: "Albert Flores",
-  info: "Human Resource",
-  description: (
-    <>
-      sed ut perspiciatis unde omnis iste natus error sit voluptatem <br />{" "}
-      accusantium doloremque laudantium, totam rem aperiam
-    </>
-  ),
-  phone: "(319) 555-0115",
-  email: "debra.holt@example.com",
-  website: "http://yoursite.com/themepure",
-  address: "6391 Elgin St. Celina, Delaware 10299",
-  skill_des:
-    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's in the ou standard dummy text ever since the 1500s, when an unknown printer took",
-  progress: [
-    {
-      title: "Energy",
-      value: 90,
-    },
-    {
-      title: "Tecnical",
-      value: 95,
-    },
-    {
-      title: "Clients Satisfaction",
-      value: 85,
-    },
-  ],
-  outher_title: "Others Value",
-  features: [
-    "Mistakes To Avoid to the dummy",
-    "Your Startup industry standard loream saum.",
-    "Knew About Fonts text the printing and ",
-    "Mistakes To Avoid to the dummy printing y",
-  ],
-  sm_info:
-    "Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's in the abouti standard dummy",
-};
-const {
-  name,
-  info,
-  description,
-  phone,
-  email,
-  website,
-  address,
-  skill_des,
-  progress,
-  outher_title,
-  features,
-  sm_info,
-} = team_details_content;
+const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
+  // Find the team member by ID, default to first member if not found
+  const teamMember = team_data.find(member => member.id === teamId) || team_data[0];
+  
+  // Fallback data if team member doesn't have complete information
+  const defaultSkills = [
+    { title: "Financial Expertise", value: 90 },
+    { title: "Client Relations", value: 85 },
+    { title: "Professional Excellence", value: 88 }
+  ];
+  
+  const defaultFeatures = [
+    "Certified Financial Professional",
+    "Expert in financial planning and advisory",
+    "Committed to client success",
+    "Years of industry experience"
+  ];
 
-const TeamDetailsArea = () => {
+  const name = teamMember?.title || "Team Member";
+  const info = teamMember?.designation || "Financial Advisor";
+  const description = teamMember?.description || "Dedicated financial professional committed to helping clients achieve their financial goals through expert guidance and personalized service.";
+  const phone = teamMember?.phone || "+91-11-45584780";
+  const email = teamMember?.email || "info@ezylife.in";
+  const website = teamMember?.website || "https://www.ezylife.in";
+  const address = teamMember?.address || "Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001";
+  const skill_des = teamMember?.bio || "Professional with extensive experience in financial services, dedicated to providing comprehensive financial solutions and building long-term client relationships.";
+  const progress = teamMember?.skills || defaultSkills;
+  const outher_title = "Professional Skills";
+  const features = teamMember?.features || defaultFeatures;
+  const sm_info = teamMember?.bio || "Committed to excellence in financial advisory services with a focus on client satisfaction and long-term financial success.";
   return (
     <>
       <section className="tp-team-details-breadcrumb-area pt-120 pb-90">
@@ -84,9 +45,11 @@ const TeamDetailsArea = () => {
             <div className="col-lg-5">
               <div className="tp-team-details-thumb mb-85">
                 <Image
-                  src={avatar_img}
+                  src={teamMember?.img || "/placeholder-team.jpg"}
                   style={{ width: "100%", height: "auto" }}
-                  alt="image-title-here"
+                  alt={`${name} - ${info}`}
+                  width={400}
+                  height={500}
                 />
               </div>
             </div>
@@ -108,15 +71,15 @@ const TeamDetailsArea = () => {
                 <p>{description}</p>
                 <div className="tp-team-details-information">
                   <h4>
-                    <span>Phone :</span> <a href="tel:5550115">{phone}</a>
+                    <span>Phone :</span> <a href={`tel:${phone}`}>{phone}</a>
                   </h4>
                   <h4>
                     <span>Email :</span>{" "}
-                    <a href="mailto:debra.holt@example.com">{email}</a>
+                    <a href={`mailto:${email}`}>{email}</a>
                   </h4>
                   <h4>
                     <span>Website :</span>{" "}
-                    <a href="mailto:debra.holt@example.com">{website}</a>
+                    <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
                   </h4>
                   <h4>
                     <span>Address :</span>{" "}

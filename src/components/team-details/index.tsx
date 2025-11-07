@@ -6,13 +6,17 @@ import TeamDetailsArea from './TeamDetailsArea';
 import CtaAreaHomeOne from '../homes/multi-page/home/CtaAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 
-const TeamDetails = () => {
+interface TeamDetailsProps {
+  teamId?: number;
+}
+
+const TeamDetails = ({ teamId }: TeamDetailsProps) => {
   return (
     <>
       <HeaderOne />
       <main>
         <Breadcrumb page_title='Team Details' title='Team Details' />
-        <TeamDetailsArea />
+        <TeamDetailsArea teamId={teamId} />
         <CtaAreaHomeOne />
       </main>
       <FooterOne />

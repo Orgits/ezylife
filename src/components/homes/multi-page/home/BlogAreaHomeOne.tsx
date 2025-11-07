@@ -9,10 +9,10 @@ type DataType = {
 };
 
 const blog_content: DataType = {
-  subtitle: "New blogs",
+  subtitle: "Financial Insights",
   title: (
     <>
-      Building better businesses <br /> together
+      Expert guidance for your <br /> financial journey
     </>
   ),
 };

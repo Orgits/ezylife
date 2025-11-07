@@ -15,7 +15,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="tp-team-title-wrapper text-center mb-40">
+              <div className="tp-team-title-wrapper text-center mb-40" style={{marginTop: '4rem'}}>
                 <span
                   className="tp-section-title-pre"
                   style={{
@@ -45,11 +45,11 @@ const TeamAreaHomeOne = ({ style }: any) => {
                       data-wow-delay={item.delay}
                     >
                       <div className="tp-team-item-thumb">
-                        <Link href="/team-details">
+                        <Link href={`/team-details/${item.id}`}>
                           <Image
                             src={item.img}
                             style={{ width: "100%", height: "auto" }}
-                            alt="image-title-here"
+                            alt={`${item.title} - ${item.designation}`}
                             height={400}
                             width={400}
                           />
@@ -60,7 +60,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                       </div>
                       <div className="tp-team-info text-center">
                         <h4 className="tp-team-info-title">
-                          <Link href="/team-details">{item.title}</Link>
+                          <Link href={`/team-details/${item.id}`}>{item.title}</Link>
                         </h4>
                         <p>{item.designation}</p>
                       </div>
