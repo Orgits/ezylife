@@ -24,7 +24,17 @@ const ContactForm = () => {
           </div>
           <div className="col-md-12">
             <div className="tp-contact-breadcrumb-btn">
-              <button type="submit" className="tp-btn">SUBMIT</button> 
+              <button
+                type="submit"
+                className="tp-btn"
+                style={{
+                  background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                  color: "white",
+                  border: "none"
+                }}
+              >
+                SUBMIT
+              </button>
             </div>
           </div>
         </div>
