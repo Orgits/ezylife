@@ -12,20 +12,20 @@ const post_data = [
   {
     id: 1,
     img: post_thumb_1,
-    title: "Transforming businesses for the digital age",
-    date: "October 19, 2024",
+    title: "Smart Investment Strategies for Building Long-Term Wealth",
+    date: "November 15, 2024",
   },
   {
     id: 2,
     img: post_thumb_2,
-    title: "Unlocking the potential of your business",
-    date: "October 19, 2024",
+    title: "Tax-Efficient Investment Planning: Maximize Your Returns",
+    date: "November 12, 2024",
   },
   {
     id: 3,
     img: post_thumb_3,
-    title: "Navigating challenges to reach new heights",
-    date: "October 19, 2024",
+    title: "Retirement Planning Guide: Secure Your Financial Future",
+    date: "November 8, 2024",
   },
 ];
 
@@ -65,7 +65,7 @@ const BlogSlidebar = () => {
                         backgroundClip: "text",
                       }}
                     ></i>{" "}
-                    Agency
+                    Investment Planning
                   </Link>
                 </li>
                 <li>
@@ -80,7 +80,7 @@ const BlogSlidebar = () => {
                         backgroundClip: "text",
                       }}
                     ></i>{" "}
-                    Corporate
+                    Wealth Management
                   </Link>
                 </li>
                 <li>
@@ -95,7 +95,7 @@ const BlogSlidebar = () => {
                         backgroundClip: "text",
                       }}
                     ></i>{" "}
-                    Business
+                    Tax Planning
                   </Link>
                 </li>
               </ul>
@@ -148,7 +148,7 @@ const BlogSlidebar = () => {
               backgroundImage: "url(/assets/img/blog/postbox/img-8.jpg)",
             }}
           >
-            <h3 className="tp-sidebar-work-title text-center">Work with us</h3>
+            <h3 className="tp-sidebar-work-title text-center">Start Your Financial Journey</h3>
             <div className="tp-sidebar-work-content text-center">
               <div className="tp-sidebar-work-icon">
                 <span>
@@ -156,8 +156,7 @@ const BlogSlidebar = () => {
                 </span>
               </div>
               <p>
-                Aliquam posuere loborti viverra atti ullamcer posuere viverra
-                .Aliquam er.Aliquam r justo, posuere loborti viverra atti ullam
+                Ready to secure your financial future? Our expert team of Chartered Accountants and investment advisors are here to guide you every step of the way.
               </p>
             </div>
           </div>
@@ -166,11 +165,11 @@ const BlogSlidebar = () => {
             <h3 className="tp-sidebar-widget-title">Tags</h3>
             <div className="tp-sidebar-widget-content">
               <div className="tagcloud">
-                <a href="#">Start shape</a>
-                <a href="#">Architecture</a>
-                <a href="#">Large</a>
-                <a href="#">Business</a>
-                <a href="#">Stretegy</a>
+                <a href="#">Investment</a>
+                <a href="#">Retirement</a>
+                <a href="#">Tax Planning</a>
+                <a href="#">Mutual Funds</a>
+                <a href="#">Portfolio</a>
               </div>
             </div>
           </div>

@@ -159,9 +159,37 @@ const TestimonialAreaHomeOne = () => {
   return (
     <>
       <section
-        className="tp-testimonial-area tp-testimonial-bg-color p-relative pt-80 pb-50"
-        style={{ backgroundColor: "#F6F6F9" }}
+        className="tp-testimonial-area p-relative pt-80 pb-50"
+        style={{
+          backgroundColor: "#F6F6F9",
+          position: "relative"
+        }}
       >
+        <style jsx>{`
+          .tp-testimonial-area::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            z-index: 0;
+            width: 49%;
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%);
+            clip-path: polygon(42% 1%, 100% -159%, 100% 100%, 0% 100%);
+          }
+          
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .tp-testimonial-area::after {
+              width: 42%;
+            }
+          }
+          
+          @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+            .tp-testimonial-area::after {
+              display: none;
+            }
+          }
+        `}</style>
         <div className="tp-testimonial-bg">
           <Image
             src={testimonial_shape || "/placeholder.svg"}
