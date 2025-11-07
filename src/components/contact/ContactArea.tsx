@@ -24,8 +24,7 @@ const contact_data: DataType[] = [
   {
     icon: "fa-solid fa-phone",
     title: "Telephone",
-    info_1: "(123) 456-7890",
-    info_2: "(123) 456-7891",
+    info_1: "011-45584780",
   },
 ];
 
@@ -40,14 +39,14 @@ const ContactArea = ({ style }: any) => {
       >
         <div className="container">
           <div className="tp-contact-breadcrumb-box">
-            <div className="tp-contact-breadcrumb-social">
-              <a href="#">
+            <div className="tp-contact-breadcrumb-social" style={{background: 'linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)'}}>
+              <a href="#" style={{ color: "white" }}>
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#">
+              <a href="#" style={{ color: "white" }}>
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#">
+              <a href="#" style={{ color: "white" }}>
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>

@@ -61,7 +61,17 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                            </div> */}
                            <div className="tp-header-contact-inner d-flex align-items-center">
                               <div className="tp-header-contact-icon">
-                                 <span><i className="fa-solid fa-phone"></i></span>
+                                 <span style={{
+                                   background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                   color: "white",
+                                   padding: "15px",
+                                   borderRadius: "50%",
+                                   display: "inline-flex",
+                                   alignItems: "center",
+                                   justifyContent: "center",
+                                   width: "50px",
+                                   height: "50px"
+                                 }}><i className="fa-solid fa-phone"></i></span>
                               </div>
                               <div className="tp-header-contact-content">
                                  <p>Requesting A Call:</p>
@@ -80,7 +90,17 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                   </div>
                </div>
                <div className="tp-header-btn" style={{backgroundColor: 'white'}}>
-                  <Link className="tp-btn d-none d-xl-block" href="/contact">Get in touch <i className="fa-regular fa-arrow-right"></i></Link>
+                  <Link
+                    className="tp-btn d-none d-xl-block"
+                    href="/contact"
+                    style={{
+                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                      color: "white",
+                      border: "none"
+                    }}
+                  >
+                    Get in touch <i className="fa-regular fa-arrow-right"></i>
+                  </Link>
                   <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn">
                      <button className="hamburger-btn" onClick={() => setMenuOpen(true)}>
                         <span></span>
@@ -119,7 +139,17 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               </div> */}
                               <div className="tp-header-contact-inner d-none d-xl-flex align-items-center">
                                  <div className="tp-header-contact-icon">
-                                    <span><i className="fa-solid fa-phone"></i></span>
+                                    <span style={{
+                                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                      color: "white",
+                                      padding: "15px",
+                                      borderRadius: "50%",
+                                      display: "inline-flex",
+                                      alignItems: "center",
+                                      justifyContent: "center",
+                                      width: "50px",
+                                      height: "50px"
+                                    }}><i className="fa-solid fa-phone"></i></span>
                                  </div>
                                  <div className="tp-header-contact-content">
                                     <p>Requesting A Call:</p>
