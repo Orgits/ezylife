@@ -87,7 +87,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                                        </div>
                                        <div className="tp-header-contact-content">
                                           <p>Requesting A Call:</p>
-                                          <span><a href="tel:555-0111">(629) 555-0129</a></span>
+                                          <span><a href="tel:555-0111">011-45584780</a></span>
                                        </div>
                                     </div>
                                     <div className="tp-header-contact-search-3 search-open-btn">
@@ -144,7 +144,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                                  </div>
                                  <div className="tp-header-contact-content">
                                     <p>Requesting A Call:</p>
-                                    <span><a href="tel:555-0111">(629) 555-0129</a></span>
+                                    <span><a href="tel:555-0111">011-45584780</a></span>
                                  </div>
                               </div>
                            </div>

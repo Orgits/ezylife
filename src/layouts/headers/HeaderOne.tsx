@@ -34,7 +34,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      <div className="tp-header-top-info">
                         <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span style={{
                             background:
-                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -65,7 +65,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               </div>
                               <div className="tp-header-contact-content">
                                  <p>Requesting A Call:</p>
-                                 <span><a href="tel:555-0111">(629) 555-0129</a></span>
+                                 <span><a href="tel:555-0111">011-45584780</a></span>
                               </div>
                            </div>
                         </div>
@@ -123,7 +123,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                                  </div>
                                  <div className="tp-header-contact-content">
                                     <p>Requesting A Call:</p>
-                                    <span><a href="tel:555-0111">(629) 555-0129</a></span>
+                                    <span><a href="tel:555-0111">011-45584780</a></span>
                                  </div>
                               </div>
                            </div>

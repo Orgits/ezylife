@@ -53,7 +53,7 @@ const TeamAreaHomeTwo = () => {
                   </div>
                   <div className="tp-team-info-2 text-center">
                     <h4 className="tp-team-info-title"><Link href="/team-details">{item.title}</Link></h4>
-                    <p>{item.designatio}</p>
+                    <p>{item.designation}</p>
                   </div>
                 </div>
               </div>

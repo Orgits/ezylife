@@ -77,7 +77,7 @@ const ContactArea = ({ style }: any) => {
                             fontSize: "40px",
                             fontWeight: "900",
                             background:
-                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",

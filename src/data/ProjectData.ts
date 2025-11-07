@@ -101,7 +101,7 @@ const project_data: DataType[] = [
   {
     tab_id: "home",
     home: 1,
-    tab_name: "Business",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_1,
@@ -111,34 +111,34 @@ const project_data: DataType[] = [
       {
         img: project_img_2,
         title: "Our Projects",
-        name: "Investment Planning",
+        name: "Financial Planning",
       },
       {
         img: project_img_3,
         title: "Our Projects",
-        name: "Wealth Management",
+        name: "Financial Planning",
       },
       {
         img: project_img_11,
         title: "Our Projects",
-        name: "Women Entrepreneurs",
+        name: "Financial Planning",
       }
     ]
   },
   {
     tab_id: "profile",
     home: 1,
-    tab_name: "Architecher",
+    tab_name: "Investment Planning",
     tab_items: [
       {
         img: project_img_4,
         title: "Our Projects",
-        name: "Women Entrepreneurs",
+        name: "Investment Planning",
       },
       {
         img: project_img_5,
         title: "Our Projects",
-        name: "Financial Planning",
+        name: "Investment Planning",
       },
       {
         img: project_img_6,
@@ -148,32 +148,32 @@ const project_data: DataType[] = [
       {
         img: project_img_7,
         title: "Our Projects",
-        name: "Wealth Management",
+        name: "Investment Planning",
       }
     ]
   },
   {
     tab_id: "contact",
     home: 1,
-    tab_name: "Large",
+    tab_name: "Wealth Management",
     tab_items: [
       {
         img: project_img_8,
         title: "Our Projects",
-        name: "Women Entrepreneurs",
-      },
-      {
-        img: project_img_2,
-        title: "Our Projects",
-        name: "Financial Planning",
+        name: "Wealth Management",
       },
       {
         img: project_img_10,
         title: "Our Projects",
-        name: "Investment Planning",
+        name: "Wealth Management",
       },
       {
-        img: project_img_7,
+        img: project_img_13,
+        title: "Our Projects",
+        name: "Wealth Management",
+      },
+      {
+        img: project_img_14,
         title: "Our Projects",
         name: "Wealth Management",
       }
@@ -182,352 +182,350 @@ const project_data: DataType[] = [
   {
     tab_id: "interiour",
     home: 1,
-    tab_name: "Interiour",
+    tab_name: "Women Entrepreneurs",
     tab_items: [
       {
-        img: project_img_13,
+        img: project_img_15,
         title: "Our Projects",
         name: "Women Entrepreneurs",
       },
       {
-        img: project_img_14,
-        title: "Our Projects",
-        name: "Financial Planning",
-      },
-      {
-        img: project_img_15,
-        title: "Our Projects",
-        name: "Investment Planning",
-      },
-      {
         img: project_img_16,
         title: "Our Projects",
-        name: "Wealth Management",
-      }
-    ]
-  },
-  {
-    tab_id: "about",
-    home: 1,
-    tab_name: "House",
-    tab_items: [
+        name: "Women Entrepreneurs",
+      },
       {
         img: project_img_17,
         title: "Our Projects",
         name: "Women Entrepreneurs",
       },
       {
-        img: project_img_14,
-        title: "Our Projects",
-        name: "Financial Planning",
-      },
-      {
-        img: project_img_6,
-        title: "Our Projects",
-        name: "Investment Planning",
-      },
-      {
         img: project_img_18,
         title: "Our Projects",
-        name: "Wealth Management",
+        name: "Women Entrepreneurs",
       }
     ]
   },
-  // home 02 
+  // home 02
   {
     tab_id: "home",
     home: 2,
-    tab_name: "Business",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_2_1,
-        category: "New product unlocked",
+        category: "Financial Planning",
         name: "Budget Buddy",
       },
       {
         img: project_img_2_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Retirement Planning",
       },
       {
         img: project_img_2_3,
-        category: "Set your goals for",
+        category: "Financial Planning",
         name: "Smart Savings",
       },
       {
         img: project_img_2_4,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Financial Planning",
+        name: "Tax Planning",
       },
       {
         img: project_img_2_5,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Investment Advisory",
       },
       {
         img: project_img_2_6,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Financial Planning",
+        name: "Wealth Building",
       },
     ]
   },
   {
     tab_id: "profile",
     home: 2,
-    tab_name: "Architecher",
+    tab_name: "Investment Planning",
     tab_items: [
       {
         img: project_img_2_7,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Investment Planning",
+        name: "Mutual Funds",
       },
       {
         img: project_img_2_8,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Investment Planning",
+        name: "SIP Planning",
       },
       {
         img: project_img_2_9,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Investment Planning",
+        name: "Equity Investment",
       },
       {
         img: project_img_2_10,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Investment Planning",
+        name: "Portfolio Management",
       },
       {
         img: project_img_2_11,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Investment Planning",
+        name: "Asset Allocation",
       },
       {
         img: project_img_2_12,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Investment Planning",
+        name: "Risk Assessment",
       },
     ]
   },
   {
     tab_id: "contact",
     home: 2,
-    tab_name: "Large",
+    tab_name: "Wealth Management",
     tab_items: [
       {
         img: project_img_2_13,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Wealth Management",
+        name: "Asset Management",
       },
       {
         img: project_img_2_14,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Wealth Management",
+        name: "Risk Management",
       },
       {
         img: project_img_2_15,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Wealth Management",
+        name: "Estate Planning",
       },
       {
         img: project_img_2_16,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Wealth Management",
+        name: "Wealth Preservation",
       },
       {
         img: project_img_2_17,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Wealth Management",
+        name: "Legacy Planning",
       },
       {
         img: project_img_2_18,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Wealth Management",
+        name: "Trust Services",
       },
     ]
   },
   {
     tab_id: "interiour",
     home: 2,
-    tab_name: "Interiour",
+    tab_name: "Women Entrepreneurs",
     tab_items: [
       {
         img: project_img_2_19,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Women Entrepreneurs",
+        name: "Business Funding",
       },
       {
         img: project_img_2_20,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Women Entrepreneurs",
+        name: "Startup Support",
       },
       {
         img: project_img_2_21,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Women Entrepreneurs",
+        name: "Financial Guidance",
       },
       {
         img: project_img_2_22,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Women Entrepreneurs",
+        name: "Growth Planning",
       },
       {
         img: project_img_2_23,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Women Entrepreneurs",
+        name: "Business Advisory",
       },
       {
         img: project_img_2_24,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Women Entrepreneurs",
+        name: "Mentorship Programs",
       },
     ]
   },
   {
     tab_id: "about",
     home: 2,
-    tab_name: "House",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_2_25,
-        category: "New product unlocked",
+        category: "Financial Planning",
         name: "Budget Buddy",
       },
       {
         img: project_img_2_26,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Retirement Planning",
       },
       {
         img: project_img_2_27,
-        category: "Set your goals for",
+        category: "Financial Planning",
         name: "Smart Savings",
       },
       {
         img: project_img_2_28,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Financial Planning",
+        name: "Tax Planning",
       },
       {
         img: project_img_2_29,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Goal Setting",
       },
       {
         img: project_img_2_30,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Financial Planning",
+        name: "Financial Review",
       },
     ]
   },
 
-  // home 03 
+  // home 03
   {
     tab_id: "home",
     home: 3,
-    tab_name: "Business",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_3_1,
-        category: "New product unlocked",
+        category: "Financial Planning",
         name: "Budget Buddy",
       },
       {
         img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Retirement Planning",
       },
       {
         img: project_img_3_3,
-        category: "Set your goals for",
+        category: "Financial Planning",
         name: "Smart Savings",
+      },
+      {
+        img: project_img_3_4,
+        category: "Financial Planning",
+        name: "Tax Planning",
       },
     ]
   },
   {
     tab_id: "profile",
     home: 3,
-    tab_name: "Architecher",
+    tab_name: "Investment Planning",
     tab_items: [
       {
-        img: project_img_3_4,
-        category: "New product unlocked",
-        name: "Budget Buddy",
-      },
-      {
         img: project_img_3_5,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Investment Planning",
+        name: "Mutual Funds",
       },
       {
         img: project_img_3_6,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Investment Planning",
+        name: "SIP Planning",
+      },
+      {
+        img: project_img_3_7,
+        category: "Investment Planning",
+        name: "Equity Investment",
+      },
+      {
+        img: project_img_3_8,
+        category: "Investment Planning",
+        name: "Portfolio Management",
       },
     ]
   },
   {
     tab_id: "contact",
     home: 3,
-    tab_name: "Large",
+    tab_name: "Wealth Management",
     tab_items: [
       {
-        img: project_img_3_7,
-        category: "New product unlocked",
-        name: "Budget Buddy",
-      },
-      {
-        img: project_img_3_8,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
         img: project_img_3_9,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Wealth Management",
+        name: "Asset Management",
+      },
+      {
+        img: project_img_3_10,
+        category: "Wealth Management",
+        name: "Risk Management",
+      },
+      {
+        img: project_img_3_11,
+        category: "Wealth Management",
+        name: "Estate Planning",
+      },
+      {
+        img: project_img_3_12,
+        category: "Wealth Management",
+        name: "Wealth Preservation",
       },
     ]
   },
   {
     tab_id: "interiour",
     home: 3,
-    tab_name: "Interiour",
+    tab_name: "Women Entrepreneurs",
     tab_items: [
       {
-        img: project_img_3_10,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        img: project_img_3_13,
+        category: "Women Entrepreneurs",
+        name: "Business Funding",
       },
       {
-        img: project_img_3_11,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        img: project_img_3_1,
+        category: "Women Entrepreneurs",
+        name: "Startup Support",
       },
       {
-        img: project_img_3_12,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        img: project_img_3_2,
+        category: "Women Entrepreneurs",
+        name: "Financial Guidance",
+      },
+      {
+        img: project_img_3_3,
+        category: "Women Entrepreneurs",
+        name: "Growth Planning",
       },
     ]
   },
   {
     tab_id: "about",
     home: 3,
-    tab_name: "House",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_3_13,
-        category: "New product unlocked",
+        category: "Financial Planning",
         name: "Budget Buddy",
       },
       {
         img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Retirement Planning",
       },
       {
         img: project_img_3_3,
-        category: "Set your goals for",
+        category: "Financial Planning",
         name: "Smart Savings",
+      },
+      {
+        img: project_img_3_4,
+        category: "Financial Planning",
+        name: "Tax Planning",
       },
     ]
   },
@@ -536,185 +534,135 @@ const project_data: DataType[] = [
   {
     tab_id: "home",
     home: 'project',
-    tab_name: "Business",
+    tab_name: "Financial Planning",
     tab_items: [
       {
         img: project_img_3_1,
-        category: "New product unlocked",
+        category: "Financial Planning",
         name: "Budget Buddy",
       },
       {
         img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Financial Planning",
+        name: "Retirement Planning",
       },
       {
         img: project_img_3_3,
-        category: "Set your goals for",
+        category: "Financial Planning",
         name: "Smart Savings",
       },
       {
         img: project_img_3_4,
-        category: "New product unlocked",
-        name: "Budget Buddy",
-      },
-      {
-        img: project_img_3_5,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_6,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Financial Planning",
+        name: "Tax Planning",
       },
     ]
   },
   {
     tab_id: "profile",
     home: 'project',
-    tab_name: "Architecher",
+    tab_name: "Investment Planning",
     tab_items: [
       {
         img: project_img_3_7,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Investment Planning",
+        name: "Mutual Funds",
       },
       {
         img: project_img_3_8,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        category: "Investment Planning",
+        name: "SIP Planning",
       },
       {
         img: project_img_3_9,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Investment Planning",
+        name: "Equity Investment",
       },
       {
         img: project_img_3_10,
-        category: "New product unlocked",
-        name: "Budget Buddy",
-      },
-      {
-        img: project_img_3_11,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_12,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        category: "Investment Planning",
+        name: "Portfolio Management",
       },
     ]
   },
   {
     tab_id: "contact",
     home: 'project',
-    tab_name: "Large",
+    tab_name: "Wealth Management",
     tab_items: [
       {
+        img: project_img_3_11,
+        category: "Wealth Management",
+        name: "Asset Management",
+      },
+      {
+        img: project_img_3_12,
+        category: "Wealth Management",
+        name: "Risk Management",
+      },
+      {
         img: project_img_3_13,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Wealth Management",
+        name: "Estate Planning",
       },
       {
-        img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_3,
-        category: "Set your goals for",
-        name: "Smart Savings",
-      },
-      {
-        img: project_img_3_7,
-        category: "New product unlocked",
-        name: "Budget Buddy",
-      },
-      {
-        img: project_img_3_1,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_2,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        img: project_img_3_5,
+        category: "Wealth Management",
+        name: "Wealth Preservation",
       },
     ]
   },
   {
     tab_id: "interiour",
     home: 'project',
-    tab_name: "Interiour",
+    tab_name: "Women Entrepreneurs",
     tab_items: [
       {
-        img: project_img_3_10,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        img: project_img_3_6,
+        category: "Women Entrepreneurs",
+        name: "Business Funding",
       },
       {
-        img: project_img_3_11,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        img: project_img_2_1,
+        category: "Women Entrepreneurs",
+        name: "Startup Support",
       },
       {
-        img: project_img_3_12,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        img: project_img_2_2,
+        category: "Women Entrepreneurs",
+        name: "Financial Guidance",
       },
       {
-        img: project_img_3_8,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_9,
-        category: "Set your goals for",
-        name: "Smart Savings",
-      },
-      {
-        img: project_img_3_10,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        img: project_img_2_3,
+        category: "Women Entrepreneurs",
+        name: "Growth Planning",
       },
     ]
   },
   {
     tab_id: "about",
     home: 'project',
-    tab_name: "House",
+    tab_name: "Women Entrepreneurs",
     tab_items: [
       {
         img: project_img_3_13,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        category: "Women Entrepreneurs",
+        name: "Business Funding",
       },
       {
-        img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
+        img: project_img_2_4,
+        category: "Women Entrepreneurs",
+        name: "Startup Support",
       },
       {
-        img: project_img_3_3,
-        category: "Set your goals for",
-        name: "Smart Savings",
+        img: project_img_2_5,
+        category: "Women Entrepreneurs",
+        name: "Financial Guidance",
       },
       {
-        img: project_img_3_2,
-        category: "Artificial Intelligent",
-        name: "Automotive System",
-      },
-      {
-        img: project_img_3_5,
-        category: "Set your goals for",
-        name: "Smart Savings",
-      },
-      {
-        img: project_img_3_7,
-        category: "New product unlocked",
-        name: "Budget Buddy",
+        img: project_img_2_6,
+        category: "Women Entrepreneurs",
+        name: "Growth Planning",
       },
     ]
   },

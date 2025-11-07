@@ -422,8 +422,8 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                         border-radius: 50%;
                         background: linear-gradient(
                           90deg,
-                          #6af363 0%,
-                          #0dee36 100%
+                          #4CAF50 0%,
+                          #2E7D32 100%
                         );
                         margin-right: 12px;
                         display: inline-block;
@@ -538,7 +538,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                           className="fa-solid fa-phone"
                           style={{
                             background:
-                              "linear-gradient(90deg, #6af363 0%, #0dee36 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -577,8 +577,8 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                           border-radius: 50%;
                           background: linear-gradient(
                             90deg,
-                            #6af363 0%,
-                            #0dee36 100%
+                            #4CAF50 0%,
+                            #2E7D32 100%
                           );
                           margin-right: 12px;
                           display: inline-block;

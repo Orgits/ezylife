@@ -54,26 +54,15 @@ const menu_data: DataType[] = [
   },
   {
     id: 4,
-    title: "Pages",
-    link: "#",
-    has_dropdown: true,
-    sub_menus: [
-      { link: "/project", title: "Project" },
-      { link: "/project-details", title: "Project Details" },
-      { link: "/team", title: "Team " },
-      { link: "/team-details", title: "Team Details" },
-      { link: "/faq", title: "FAQ" },
-    ],
+    title: "FAQ",
+    link: "/faq",
+    has_dropdown: false,
   },
   {
     id: 5,
     title: "Blog",
-    link: "#",
-    has_dropdown: true,
-    sub_menus: [
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-details", title: "Blog Details" },
-    ],
+    link: "/blog",
+    has_dropdown: false,
   },
   {
     id: 6,

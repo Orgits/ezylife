@@ -13,9 +13,9 @@ interface DataType {
 }
 
 const faq_content: DataType = {
-  subtitle: 'ask anything',
-  title: <>You can contact <br /> us for any question</>,
-  sm_des: 'Fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader ished fact that ',
+  subtitle: 'Have Questions?',
+  title: <>Get expert answers to <br /> your financial queries</>,
+  sm_des: 'Our team of Chartered Accountants and financial experts are here to address all your investment and financial planning questions. We believe in transparency and are committed to helping you make informed decisions.',
 }
 const { subtitle, title, sm_des } = faq_content;
 
@@ -41,9 +41,9 @@ const FaqAreaHomeOne = () => {
                                  </span>
                               </div>
                               <div className="tp-faq-counter-content">
-                                 <h4 className="tp-faq-counter-title d-flex"> 
+                                 <h4 className="tp-faq-counter-title d-flex">
                                   <Count number={10} /> +</h4>
-                                 <p>Experiences</p>
+                                 <p>Years Experience</p>
                               </div>
                            </div>
                            <div className="tp-faq-counter d-flex align-items-center mb-30">
@@ -53,9 +53,9 @@ const FaqAreaHomeOne = () => {
                                  </span>
                               </div>
                               <div className="tp-faq-counter-content">
-                                 <h4 className="tp-faq-counter-title d-flex"> 
+                                 <h4 className="tp-faq-counter-title d-flex">
                                   <Count number={500} /> +</h4>
-                                 <p>Happy Client</p>
+                                 <p>Satisfied Clients</p>
                               </div>
                            </div>
                         </div>

@@ -151,10 +151,8 @@ type copy_right_text_type = {
 }
 
 const copy_right_text: copy_right_text_type = {
-  copy_right: <>  
-    <span>© Finbest {new Date().getFullYear()} ||
-      <Link target="_blank" href="https://themeforest.net/user/hixstudio/portfolio"> {' '}HixStudio{' '}</Link>
-      All Rights Reserved </span>
+  copy_right: <>
+    <span>© Ezylife {new Date().getFullYear()} All Rights Reserved</span>
   </>
 }
 
