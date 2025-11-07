@@ -19,7 +19,7 @@ const team_data: DataType[] = [
     home: 1,
     delay: ".3s",
     img: '/ratan.png',
-    title: "Albert Flores",
+    title: "CA Ratan Singh",
     designation: "Founder & CEO"
   },
   {
@@ -27,7 +27,7 @@ const team_data: DataType[] = [
     home: 1,
     delay: ".5s",
     img: '/sachin.png',
-    title: "Kathryn Murphy",
+    title: "CA Sachin Grover",
     designation: "Co-Founder"
   },
   // {
