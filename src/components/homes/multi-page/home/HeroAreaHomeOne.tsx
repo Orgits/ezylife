@@ -31,7 +31,7 @@ const hero_data: DataType[] = [
     title: "Makes Your Life Easy Your trusted partner in financial growth",
     sm_des:
       "At Ezylife, we empower individuals, families, and businesses to achieve their financial goals with expert guidance, innovative solutions, and transparent practices. As a registered sub-broker with IIFL Capitaland AMFI distributor, we bring you the best of investments, trading, and advisory services under one roof.",
-    phone: "+91 9876543210",
+    phone: "+91 9899829830",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const hero_data: DataType[] = [
     title: "Where your financial dreams become reality",
     sm_des:
       "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9876543210",
+    phone: "+91 9899829830",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const hero_data: DataType[] = [
     title: "Our mission is your financial success",
     sm_des:
       "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9876543210",
+    phone: "+91 9899829830",
   },
 ];
 
