@@ -8,7 +8,7 @@ import about_shape from "@/assets/img/about/shape-3.png";
 import about_shape_1 from "@/assets/img/about/img-2.jpg";
 import about_shape_2 from "@/assets/img/about/shape-1.png";
 import about_shape_3 from "@/assets/img/about/shape-2.png";
-import about_shape_4 from "@/assets/img/about/shape-4.png";
+// import about_shape_4 from "@/assets/img/about/shape-4.png";
 
 interface DataType {
   subtitle: string;
@@ -190,11 +190,11 @@ const AboutAreaHomeOne = () => {
                   src={about_shape_3}
                   alt="image-title-here"
                 />
-                <Image
+                {/* <Image
                   className="shape-4"
                   src={about_shape_4}
                   alt="image-title-here"
-                />
+                /> */}
               </div>
             </div>
             <div className="col-lg-6">
