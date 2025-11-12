@@ -311,7 +311,7 @@ const HeroAreaHomeOne = () => {
                   className="tp-hero-bg"
                   style={{
                     backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.5) 60%, #4ad353ff ), url('/assets/img/hero/hero-2.jpg')",
+              "linear-gradient(rgba(0,0,0,0.5) 70%, #4ad35391 ), url('/assets/img/hero/hero-2.jpg')",
                   }}
                 ></div>
 
