@@ -10,7 +10,7 @@ interface social_links_type {
 
 const social_links: social_links_type[] = [
   {
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/EZYLIFEIN/",
     target: "_blank",
     icon: "fab fa-facebook-f",
   },
@@ -20,7 +20,7 @@ const social_links: social_links_type[] = [
     icon: "fab fa-twitter",
   },
   {
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/company/ezylife-in/",
     target: "_blank",
     icon: "fab fa-linkedin-in",
   },
@@ -59,7 +59,7 @@ interface social_links_type_2 {
 
 const social_links_2: social_links_type_2[] = [
   {
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/EZYLIFEIN",
     color: "footer-facebook",
     icon: "fa-brands fa-facebook-f",
   },
@@ -69,7 +69,7 @@ const social_links_2: social_links_type_2[] = [
     icon: "fa-brands fa-twitter",
   },
   {
-    link: "http://www.linkedin.com",
+    link: "http://www.linkedin.com/company/ezylife-in/",
     color: "footer-linkedin",
     icon: "fa-brands fa-linkedin-in",
   },
@@ -108,7 +108,7 @@ interface DataType {
 const team_social_data: DataType[] = [
   {
     id: 1,
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/EZYLIFEIN",
     icon: "fa-brands fa-facebook-f",
   },
   {
@@ -123,7 +123,7 @@ const team_social_data: DataType[] = [
   },
   {
     id: 4,
-    link: "http://linkedin.com",
+    link: "http://linkedin.com/company/ezylife-in/",
     icon: "fa-brands fa-linkedin-in",
   },
 ]

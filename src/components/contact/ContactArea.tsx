@@ -25,7 +25,9 @@ const contact_data: DataType[] = [
     icon: "fa-solid fa-phone",
     title: "Telephone",
     info_1: "011-45584780",
-  },
+    info_2: "+91 98998 29830",
+  }
+  
 ];
 
 const ContactArea = ({ style }: any) => {

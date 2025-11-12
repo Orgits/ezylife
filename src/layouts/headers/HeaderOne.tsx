@@ -75,7 +75,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               </div>
                               <div className="tp-header-contact-content">
                                  <p>Requesting A Call:</p>
-                                 <span><a href="tel:555-0111">011-45584780</a></span>
+                                 <span><a href="tel:9899829830">+91 98998 29830</a></span>
                               </div>
                            </div>
                         </div>
@@ -153,7 +153,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                                  </div>
                                  <div className="tp-header-contact-content">
                                     <p>Requesting A Call:</p>
-                                    <span><a href="tel:555-0111">011-45584780</a></span>
+                                    <span><a href="tel:9899829830">+91 98998 29830</a></span>
                                  </div>
                               </div>
                            </div>
