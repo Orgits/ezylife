@@ -88,7 +88,7 @@ const HeroAreaHomeOne = () => {
           width: 12px;
           height: 12px;
           border-radius: 50%;
-          background: linear-gradient(to right, #2E7D32, #388E3C);
+          background: linear-gradient(to right, #010101ff, #388E3C);
           flex-shrink: 0;
         }
 
@@ -300,7 +300,7 @@ const HeroAreaHomeOne = () => {
                 key={index}
                 className="swiper-slide pt-160 pb-115"
                 style={{
-                  backgroundColor: "#2E7D32",
+                  background: "linear-gradient(rgba(0,0,0,0.5) 40%, #4ad353ff )",
                   position: "relative",
                   width: "100%",
                   height: "auto",
@@ -310,7 +310,8 @@ const HeroAreaHomeOne = () => {
                 <div
                   className="tp-hero-bg"
                   style={{
-                    backgroundImage: `url(/assets/img/hero/shape-bg.png)`,
+                    backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.5) 60%, #4ad353ff ), url('/assets/img/hero/hero-2.jpg')",
                   }}
                 ></div>
 
