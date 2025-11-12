@@ -15,7 +15,7 @@ const Contact = () => {
          <section className="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix">
           <div className="breadcrumb__bg" style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.5) 60% , #4ad353ff ), url('/assets/img/breadcrumb/Contact-us.png')",
+              "linear-gradient(rgba(0,0,0,0.5) 60% , #4ad353ff ), url('/assets/img/breadcrumb/contact-us.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}></div>
