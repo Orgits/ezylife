@@ -11,7 +11,7 @@ interface DataType {
 const Breadcrumb = ({ title, page_title }: DataType) => {
   return (
     <>
-      <section className="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix" style={{ backgroundColor: '#2E7D32' }}>
+      <section className="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix" style={{ backgroundColor: '#4dae52ff' }}>
         <div className="breadcrumb__bg" style={{ backgroundImage: "url(/assets/img/breadcrumb/bg.png)" }}></div>
         <div className="container">
           <div className="row align-items-center">

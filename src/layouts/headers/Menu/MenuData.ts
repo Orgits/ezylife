@@ -37,7 +37,7 @@ const menu_data: DataType[] = [
   {
     id: 3,
     title: "Service",
-    link: "#",
+    link: "/services",
     has_dropdown: true,
     sub_menus: [
       { link: "/services-details/1", title: "Equity & Derivatives Trading" },
