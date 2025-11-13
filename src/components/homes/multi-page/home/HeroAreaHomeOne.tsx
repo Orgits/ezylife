@@ -300,7 +300,7 @@ const HeroAreaHomeOne = () => {
                 key={index}
                 className="swiper-slide pt-160 pb-115"
                 style={{
-                  background: "linear-gradient(rgba(0,0,0,0.5) 40%, #4ad353ff )",
+                  background: "linear-gradient(rgba(0,0,0,0.5) 90%, #4ad353ff ), url(/assets/img/hero/ai.jpg) no-repeat center center/cover",
                   position: "relative",
                   width: "100%",
                   height: "auto",
@@ -308,7 +308,7 @@ const HeroAreaHomeOne = () => {
                 }}
               >
                 <div className="tp-hero-bg relative w-full h-[100vh] overflow-hidden">
-{/* Background video */}
+{/* Background video
 <video
   autoPlay
   loop
@@ -318,9 +318,9 @@ const HeroAreaHomeOne = () => {
 >
   <source src="/assets/img/hero/hero-video.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>
+</video> */}
 </div>
-{/* Background video */}
+
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7">
