@@ -300,12 +300,11 @@ const HeroAreaHomeOne = () => {
                 key={index}
                 className="swiper-slide pt-160 pb-115"
                 style={{
-                  background: "linear-gradient(rgba(0,0,0,0.5) 90%, #4ad353ff ), url(/assets/img/hero/ai.jpg) no-repeat center center/cover",
-                  position: "relative",
-                  width: "100%",
-                  height: "auto",
-                  overflow: "hidden",
-                }}
+    background:
+      "linear-gradient(rgba(0,0,0,0.5) 90%, #4ad353ff ), url(/assets/img/hero/ai.jpg) no-repeat center center/cover",
+    position: "relative",
+    overflow: "hidden",
+  }}
               >
                 <div className="tp-hero-bg relative w-full h-[100vh] overflow-hidden">
 {/* Background video

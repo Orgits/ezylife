@@ -40,7 +40,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
                 <div className="offcanvas__contact-content-content">
-                  <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
+                  <a href="https://maps.app.goo.gl/u5yfuW8V89MUFQJv7">Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001 </a>
                 </div>
               </div>
               <div className="offcanvas__contact-content d-flex">
@@ -48,7 +48,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
                   <i className="fa-solid fa-envelope"></i>
                 </div>
                 <div className="offcanvas__contact-content-content">
-                  <a href="mailto:needhelp@company.com"> Needhelp@company.com  </a>
+                  <a href="mailto:needhelp@company.com"> info@ezylife.in </a>
                 </div>
               </div>
               <div className="offcanvas__contact-content d-flex">
@@ -56,7 +56,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
                   <i className="fa-solid fa-phone"></i>
                 </div>
                 <div className="offcanvas__contact-content-content">
-                  <a href="tel:01310-069824"> +92 666 888 0000</a>
+                  <a href="tel:+919899829830"> +91 98998 29830</a>
                 </div>
               </div>
             </div>
