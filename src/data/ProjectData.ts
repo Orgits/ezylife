@@ -22,7 +22,7 @@ import project_img_18 from "@/assets/img/project/img-13.jpg";
 
 
 // home 03 imgages 
-import project_img_3_1 from "@/assets/img/project/home-3/img-1.jpg";
+import project_img_3_1 from "@/assets/img/project/home-3/img-2.jpg";
 import project_img_3_2 from "@/assets/img/project/home-3/img-2.jpg";
 import project_img_3_3 from "@/assets/img/project/home-3/img-3.jpg";
 import project_img_3_4 from "@/assets/img/project/home-3/img-4.jpg";
@@ -38,7 +38,7 @@ import project_img_3_13 from "@/assets/img/project/home-3/img-13.jpg";
 
 
 
-import project_img_2_1 from "@/assets/img/project/home-2/img-1.jpg";
+import project_img_2_1 from "@/assets/img/project/home-2/img-5.jpg";
 import project_img_2_2 from "@/assets/img/project/home-2/img-2.jpg";
 import project_img_2_3 from "@/assets/img/project/home-2/img-3.jpg";
 import project_img_2_4 from "@/assets/img/project/home-2/img-4.jpg";
@@ -105,23 +105,23 @@ const project_data: DataType[] = [
     tab_items: [
       {
         img: project_img_1,
-        title: "Our Projects",
-        name: "Financial Planning",
+        title: "Financial Planning",
+        name: "Mutual Funds & SIPs",
       },
       {
         img: project_img_2,
-        title: "Our Projects",
-        name: "Financial Planning",
+        title: "Financial Planning",
+        name: "Index Funds",
       },
       {
         img: project_img_3,
-        title: "Our Projects",
-        name: "Financial Planning",
+        title: "Financial Planning",
+        name: "Bonds & Debentures",
       },
       {
         img: project_img_11,
-        title: "Our Projects",
-        name: "Financial Planning",
+        title: "Financial Planning",
+        name: "Retirement Planning",
       }
     ]
   },
@@ -179,33 +179,7 @@ const project_data: DataType[] = [
       }
     ]
   },
-  {
-    tab_id: "interiour",
-    home: 1,
-    tab_name: "Women Entrepreneurs",
-    tab_items: [
-      {
-        img: project_img_15,
-        title: "Our Projects",
-        name: "Women Entrepreneurs",
-      },
-      {
-        img: project_img_16,
-        title: "Our Projects",
-        name: "Women Entrepreneurs",
-      },
-      {
-        img: project_img_17,
-        title: "Our Projects",
-        name: "Women Entrepreneurs",
-      },
-      {
-        img: project_img_18,
-        title: "Our Projects",
-        name: "Women Entrepreneurs",
-      }
-    ]
-  },
+  
   // home 02
   {
     tab_id: "home",

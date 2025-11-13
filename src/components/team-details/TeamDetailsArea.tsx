@@ -36,7 +36,7 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
   const progress = teamMember?.skills || defaultSkills;
   const outher_title = "Professional Skills";
   const features = teamMember?.features || defaultFeatures;
-  const sm_info = teamMember?.bio || "Committed to excellence in financial advisory services with a focus on client satisfaction and long-term financial success.";
+  // const sm_info = teamMember?.bio || "Committed to excellence in financial advisory services with a focus on client satisfaction and long-term financial success.";
   return (
     <>
       <section className="tp-team-details-breadcrumb-area pt-120 pb-90">
@@ -142,7 +142,7 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
                     </li>
                   ))}
                 </ul>
-                <p>{sm_info}</p>
+                {/* <p>{sm_info}</p> */}
               </div>
             </div>
           </div>

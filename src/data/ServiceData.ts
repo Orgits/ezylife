@@ -3,8 +3,8 @@ import  ServiceIconOne  from '@/svg/home-1/ServiceIconOne';
 
 import { StaticImageData } from "next/image";
 
-import service_img_2 from "@/assets/img/service/home-2/img-2.jpg";
-import service_img_1 from "@/assets/img/service/home-2/img-1.jpg";
+import service_img_2 from "@/assets/img/service/home-2/img-3.jpg";
+import service_img_1 from "@/assets/img/service/img-3.jpg";
 import service_img_3 from "@/assets/img/service/home-2/img-3.jpg";
 import service_img_4 from "@/assets/img/service/home-2/img-4.jpg";
 
@@ -13,7 +13,7 @@ import service_icon_2 from "@/assets/img/service/home-2/icon-2.svg";
 import service_icon_3 from "@/assets/img/service/home-2/icon-3.svg";
 import service_icon_4 from "@/assets/img/service/home-2/icon-4.svg";
 
-import service_thumb_img_1 from "@/assets/img/service/img-1.jpg";
+import service_thumb_img_1 from "@/assets/img/service/img-2.jpg";
 import service_thumb_img_2 from "@/assets/img/service/img-2.jpg";
 import service_thumb_img_3 from "@/assets/img/service/img-3.jpg";
 

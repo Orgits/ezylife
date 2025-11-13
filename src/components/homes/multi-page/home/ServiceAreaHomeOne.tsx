@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import service_img_1 from "@/assets/img/service/img-1.jpg";
+import service_img_1 from "@/assets/img/service/img-2.jpg";
 import service_img_2 from "@/assets/img/service/img-2.jpg";
 import service_img_3 from "@/assets/img/service/img-3.jpg";
 import ServiceIconOne from "@/svg/home-1/ServiceIconOne";

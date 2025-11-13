@@ -64,7 +64,7 @@ const FooterOne = () => {
     <>
       <footer
         className="tp-footer-area pt-80  z-index-1"
-        style={{ backgroundColor: "#2E7D32" }}
+        style={{ backgroundColor: "#37A042" }}
       >
         <div className="tp-footer-bg-shape">
           <Image src={footer_shape_1} alt="image-title-here" />
@@ -137,7 +137,7 @@ const FooterOne = () => {
                   <div className="tp-footer-widget-content">
                     <div
                       className="tp-footer-widget-contact"
-                      style={{ backgroundColor: "#2E7D32", border: "none" }}
+                      style={{ backgroundColor: "#37A042", border: "none" }}
                     >
                       <div className="tp-footer-widget-contact-inner">
                         <a

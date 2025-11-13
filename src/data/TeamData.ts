@@ -75,7 +75,7 @@ const team_data: DataType[] = [
       "AMFI registered mutual fund distributor",
       "Expert in equity and debt investments"
     ],
-    bio: "CA Sachin Grover co-founded Ezylife with a mission to make investment planning accessible to everyone. His expertise in portfolio management and risk assessment ensures clients receive well-balanced investment strategies tailored to their risk appetite and financial goals."
+     bio: "CA Sachin Grover co-founded Ezylife with a mission to make investment planning accessible to everyone. His expertise in portfolio management and risk assessment ensures clients receive well-balanced investment strategies tailored to their risk appetite and financial goals."
   },
   // {
   //   id: 3,

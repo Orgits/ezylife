@@ -88,7 +88,7 @@ const HeroAreaHomeOne = () => {
           width: 12px;
           height: 12px;
           border-radius: 50%;
-          background: linear-gradient(to right, #010101ff, #388E3C);
+          background-color: #388E3C;
           flex-shrink: 0;
         }
 
@@ -307,14 +307,20 @@ const HeroAreaHomeOne = () => {
                   overflow: "hidden",
                 }}
               >
-                <div
-                  className="tp-hero-bg"
-                  style={{
-                    backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.5) 70%, #4ad35391 ), url('/assets/img/hero/hero-2.jpg')",
-                  }}
-                ></div>
-
+                <div className="tp-hero-bg relative w-full h-[100vh] overflow-hidden">
+{/* Background video */}
+<video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute top-0 left-0 w-full h-full object-cover"
+>
+  <source src="/assets/img/hero/hero-video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</div>
+{/* Background video */}
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7">
@@ -444,7 +450,7 @@ const HeroAreaHomeOne = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    {/* <div className="col-lg-5">
                       <div className="tp-hero-thumb p-relative">
                         <div className="tp-hero-thumb-shape">
                           <Image
@@ -465,7 +471,7 @@ const HeroAreaHomeOne = () => {
                         </div>
                         <Image src={item.img} alt="image-title-here" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SwiperSlide>

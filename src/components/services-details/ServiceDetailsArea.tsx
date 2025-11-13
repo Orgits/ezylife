@@ -547,7 +547,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                       </span>
                     </div>
                     <p>Requesting A Call:</p>
-                    <a href="tel:55555555">000 555-0129</a>
+                    <a href="tel:55555555">011-45584780</a>
                   </div>
                 </div>
 
