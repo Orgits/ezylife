@@ -9852,7 +9852,7 @@ blockquote::after {
 .tp-process-thumb .shape-1 {
   position: absolute;
   right: 0;
-  bottom: -82%;
+  bottom: -130%;
   z-index: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

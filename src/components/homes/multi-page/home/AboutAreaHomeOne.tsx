@@ -2,13 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import about_img from "@/assets/img/about/img-1.jpg";
+import about_img from "@/assets/img/about/img-1.png";
 import about_shape from "@/assets/img/about/shape-3.png";
 
-import about_shape_1 from "@/assets/img/about/img-2.jpg";
+import about_shape_1 from "@/assets/img/about/img-2.png";
 import about_shape_2 from "@/assets/img/about/shape-1.png";
 import about_shape_3 from "@/assets/img/about/shape-2.png";
-// import about_shape_4 from "@/assets/img/about/shape-4.png";
+import about_shape_4 from "@/assets/img/about/shape-4.png";
 
 interface DataType {
   subtitle: string;
@@ -39,18 +39,18 @@ const AboutAreaHomeOne = () => {
             padding-top: 80px !important;
             padding-bottom: 120px !important;
           }
-          
+
           .tp-about-thumb-wrapper {
             margin-bottom: 40px;
           }
-          
+
           .tp-about-thumb-wrapper .main img {
             max-width: 100% !important;
             width: 100% !important;
             height: auto !important;
             object-fit: cover;
           }
-          
+
           .tp-about-thumb-wrapper .shape-1,
           .tp-about-thumb-wrapper .shape-2,
           .tp-about-thumb-wrapper .shape-3,
@@ -58,40 +58,40 @@ const AboutAreaHomeOne = () => {
             display: none;
           }
         }
-        
+
         @media (max-width: 767px) {
           .tp-about-area {
             padding-top: 60px !important;
             padding-bottom: 80px !important;
           }
-          
+
           .tp-section-title {
             font-size: 28px !important;
             line-height: 1.4 !important;
             margin-bottom: 20px;
             letter-spacing: -0.3px;
           }
-          
+
           .tp-about-wrapper p {
             font-size: 16px !important;
             line-height: 1.7 !important;
             margin-bottom: 20px;
             letter-spacing: 0.2px;
           }
-          
+
           .tp-about-mission h4 {
             font-size: 20px !important;
             margin-bottom: 12px !important;
             letter-spacing: 0.2px;
           }
-          
+
           .tp-about-wrapper-list ul li {
             font-size: 16px !important;
             line-height: 1.6 !important;
             margin-bottom: 10px;
             letter-spacing: 0.1px;
           }
-          
+
           .tp-about-thumb-wrapper .main img {
             max-width: 300px !important;
             width: 300px !important;
@@ -101,55 +101,55 @@ const AboutAreaHomeOne = () => {
             object-fit: cover;
           }
         }
-        
+
         @media (max-width: 575px) {
           .tp-about-area {
             padding-top: 50px !important;
             padding-bottom: 60px !important;
           }
-          
+
           .tp-section-title {
             font-size: 24px !important;
             line-height: 1.5 !important;
             letter-spacing: -0.2px;
           }
-          
+
           .tp-section-title-pre {
             font-size: 14px !important;
             margin-bottom: 10px;
             letter-spacing: 0.3px;
           }
-          
+
           .tp-about-wrapper p {
             font-size: 15px !important;
             line-height: 1.6 !important;
             padding: 0 10px;
             letter-spacing: 0.1px;
           }
-          
+
           .tp-about-mission {
             margin-top: 20px !important;
             margin-bottom: 25px !important;
           }
-          
+
           .tp-about-mission h4 {
             font-size: 18px !important;
             letter-spacing: 0.1px;
           }
-          
+
           .tp-about-wrapper-list ul li {
             font-size: 15px !important;
             line-height: 1.5 !important;
             letter-spacing: 0.1px;
           }
-          
+
           .tp-about-thumb-wrapper .main img {
             max-width: 250px !important;
             width: 250px !important;
             height: auto !important;
             object-fit: cover;
           }
-          
+
           .tp-btn {
             padding: 12px 25px !important;
             font-size: 16px !important;
@@ -173,12 +173,31 @@ const AboutAreaHomeOne = () => {
                 data-wow-delay=".3s"
               >
                 <div className="main">
-                  <Image src={about_img} alt="image-title-here" />
+                  <Image
+                    src={about_img}
+                    alt="image-title-here"
+                    width={450}
+                    height={350}
+                    style={{ width: "100%", height: "auto", maxWidth: "450px" }}
+                  />
                 </div>
                 <Image
                   className="shape-1"
                   src={about_shape_1}
                   alt="image-title-here"
+                  width={280}
+                  height={200}
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                    maxWidth: "300px",
+                    position: "absolute",
+                    bottom: "-100px",
+                    right: "50px",
+                    border: "8px solid white",
+                    borderRadius: "20px",
+                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                  }}
                 />
                 <Image
                   className="shape-2"
@@ -190,11 +209,11 @@ const AboutAreaHomeOne = () => {
                   src={about_shape_3}
                   alt="image-title-here"
                 />
-                {/* <Image
+                <Image
                   className="shape-4"
                   src={about_shape_4}
                   alt="image-title-here"
-                /> */}
+                />
               </div>
             </div>
             <div className="col-lg-6">

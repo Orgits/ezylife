@@ -3,7 +3,7 @@ import { TeamSocialLinks } from "@/components/common/SocialLinks";
 import team_data from "@/data/TeamData";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { Fragment } from "react";
 
 const TeamAreaHomeOne = ({ style }: any) => {
   return (
@@ -166,7 +166,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
           </div>
           <div className="row justify-content-center">
             {team_data.slice(0, 4).map((item, index) => (
-              <>
+              <Fragment key={index}>
                 {item.home === 1 && (
                   <div key={index} className="col-lg-3 col-md-6 col-sm-8 col-10">
                     <div
@@ -197,7 +197,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                     </div>
                   </div>
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
