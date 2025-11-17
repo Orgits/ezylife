@@ -2,14 +2,43 @@
 import project_data from "@/data/ProjectData";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const projects = project_data.filter((item) => item.home === 1);
 
 const ProjectAreaHomeOne = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <>
       <style jsx>{`
+        .tp-project-thumb {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .tp-project-thumb img {
+          width: 100% !important;
+          height: 350px !important;
+          object-fit: cover !important;
+        }
+        
+        .tp-project-thumb-info {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        
+        .tab-pane {
+          display: none !important;
+        }
+        
+        .tab-pane.active {
+          display: block !important;
+        }
+        
         @media (max-width: 991px) {
           .tp-project-area {
             padding-bottom: 60px !important;
@@ -27,6 +56,10 @@ const ProjectAreaHomeOne = () => {
           
           .tp-project-thumb {
             margin-bottom: 20px !important;
+          }
+          
+          .tp-project-thumb img {
+            height: 300px !important;
           }
           
           .tp-project-thumb-info h4 {
@@ -63,12 +96,8 @@ const ProjectAreaHomeOne = () => {
           
           .tp-project-thumb img {
             width: 100% !important;
-            height: 200px !important;
-            object-fit: cover;
-          }
-          
-          .tp-project-thumb.small img {
-            height: 150px !important;
+            height: 280px !important;
+            object-fit: cover !important;
           }
           
           .tp-project-thumb-info {
@@ -108,11 +137,7 @@ const ProjectAreaHomeOne = () => {
           }
           
           .tp-project-thumb img {
-            height: 180px !important;
-          }
-          
-          .tp-project-thumb.small img {
-            height: 120px !important;
+            height: 250px !important;
           }
           
           .tp-project-thumb-info {
@@ -171,14 +196,10 @@ const ProjectAreaHomeOne = () => {
                   {projects.map((item, index) => (
                     <li className="nav-item" role="presentation" key={index}>
                       <button
-                        className={`nav-link ${index === 0 ? "active" : ""}`}
-                        id={`pills-${item.tab_id}-tab`}
-                        data-bs-toggle="pill"
-                        data-bs-target={`#pills-${item.tab_id}`}
+                        className={`nav-link ${index === activeTab ? "active" : ""}`}
+                        onClick={() => setActiveTab(index)}
                         type="button"
                         role="tab"
-                        aria-controls={`pills-${item.tab_id}`}
-                        aria-selected={index === 0 ? "true" : "false"}
                       >
                         {item.tab_name}
                       </button>
@@ -190,21 +211,28 @@ const ProjectAreaHomeOne = () => {
                   {projects.map((item, index) => (
                     <div
                       key={index}
-                      className={`tab-pane fade ${
-                        index === 0 ? "show active" : ""
-                      }`}
-                      id={`pills-${item.tab_id}`}
-                      role="tabpanel"
-                      aria-labelledby={`pills-${item.tab_id}-tab`}
+                      className={`tab-pane ${index === activeTab ? "active" : ""}`}
+                      style={{ display: index === activeTab ? 'block' : 'none' }}
                     >
                       <div className="row">
-                        <div className="col-lg-6 col-md-6">
-                          <div className="tp-project-thumb mb-25">
-                            <Image
-                              src={item.tab_items[0].img}
-                              style={{ width: "100%", height: "auto" }}
-                              alt="image-title-here"
-                            />
+                        <div className="col-lg-6 col-md-6 mb-4">
+                          <div className="tp-project-thumb">
+                            {typeof item.tab_items[0].img === 'string' ? (
+                              <img
+                                src={item.tab_items[0].img}
+                                style={{ width: "100%", height: "350px", objectFit: "cover" }}
+                                alt={item.tab_items[0].name}
+                              />
+                            ) : (
+                              <Image
+                                src={item.tab_items[0].img}
+                                width={400}
+                                height={350}
+                                style={{ width: "100%", height: "350px", objectFit: "cover" }}
+                                alt={item.tab_items[0].name}
+                                priority={true}
+                              />
+                            )}
                             <div className="tp-project-thumb-info">
                               <p>{item.tab_items[0].title}</p>
                               <h4 className="tp-project-thumb-title">
@@ -215,13 +243,24 @@ const ProjectAreaHomeOne = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-6 col-md-6">
-                          <div className="tp-project-thumb mb-25">
-                            <Image
-                              src={item.tab_items[1].img}
-                              style={{ width: "100%", height: "auto" }}
-                              alt="image-title-here"
-                            />
+                        <div className="col-lg-6 col-md-6 mb-4">
+                          <div className="tp-project-thumb">
+                            {typeof item.tab_items[1].img === 'string' ? (
+                              <img
+                                src={item.tab_items[1].img}
+                                style={{ width: "100%", height: "350px", objectFit: "cover" }}
+                                alt={item.tab_items[1].name}
+                              />
+                            ) : (
+                              <Image
+                                src={item.tab_items[1].img}
+                                width={400}
+                                height={350}
+                                style={{ width: "100%", height: "350px", objectFit: "cover" }}
+                                alt={item.tab_items[1].name}
+                                priority={true}
+                              />
+                            )}
                             <div className="tp-project-thumb-info">
                               <p>{item.tab_items[1].title}</p>
                               <h4 className="tp-project-thumb-title">
@@ -229,43 +268,6 @@ const ProjectAreaHomeOne = () => {
                                   {item.tab_items[1].name}
                                 </Link>
                               </h4>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-lg-6 col-md-6 col-sm-6">
-                              <div className="tp-project-thumb small mb-25">
-                                <Image
-                                  src={item.tab_items[2].img}
-                                  style={{ width: "100%", height: "auto" }}
-                                  alt="image-title-here"
-                                />
-                                <div className="tp-project-thumb-info">
-                                  <p>{item.tab_items[2].title}</p>
-                                  <h4 className="tp-project-thumb-title">
-                                    <Link href="/project-details">
-                                      {item.tab_items[2].name}
-                                    </Link>
-                                  </h4>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6 col-sm-6">
-                              <div className="tp-project-thumb small mb-25">
-                                <Image
-                                  src={item.tab_items[3].img}
-                                  style={{ width: "100%", height: "auto" }}
-                                  alt="image-title-here"
-                                />
-                                <div className="tp-project-thumb-info">
-                                  <p>{item.tab_items[3].title}</p>
-                                  <h4 className="tp-project-thumb-title">
-                                    <Link href="/project-details">
-                                      {item.tab_items[3].name}
-                                    </Link>
-                                  </h4>
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>

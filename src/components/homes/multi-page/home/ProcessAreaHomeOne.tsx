@@ -290,12 +290,21 @@ const ProcessAreaHomeOne = () => {
               >
                 <div className="tp-process-thumb p-relative">
                   <div className="main">
-                    <Image src={process_img_1} alt="image-title-here" />
+                    <Image
+                      src={process_img_1}
+                      alt="image-title-here"
+                      width={400}
+                      height={350}
+                      style={{ width: '100%', height: 'auto', maxWidth: '400px' }}
+                    />
                   </div>
                   <Image
                     className="shape-1"
                     src={process_img_2}
                     alt="image-title-here"
+                    width={300}
+                    height={200}
+                    style={{ width: 'auto', height: 'auto', maxWidth: '300px', bottom: '-130%', right: '10%' }}
                   />
                 </div>
                 <div className="tp-process-counter d-flex align-items-center">
