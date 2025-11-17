@@ -299,20 +299,23 @@ const HeroAreaHomeOne = () => {
               <SwiperSlide
                 key={index}
                 className="swiper-slide pt-160 pb-115"
-                style={{
-                  backgroundColor: "#2E7D32",
-                  position: "relative",
-                  width: "100%",
-                  height: "auto",
-                  overflow: "hidden",
-                }}
+              
+                
               >
                 <div
+  className="tp-hero-bg"
+ style={{
+  background: `linear-gradient(180deg, rgba(0, 0, 0, 0.35) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/ai.jpg)`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+}}
+></div>
+                {/* <div
                   className="tp-hero-bg"
                   style={{
-                    backgroundImage: `url(/assets/img/hero/shape-bg.png)`,
+                    backgroundImage: `url(/assets/img/hero/ai.jpg)`,
                   }}
-                ></div>
+                ></div> */}
 
                 <div className="container">
                   <div className="row">
