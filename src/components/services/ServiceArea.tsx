@@ -102,7 +102,7 @@ const ServiceArea = () => {
             {services.map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
                 <div className="tp-service-item-wrapper p-relative mb-80 wow fadeInUp d-flex flex-column"
-                     style={{ height: '475px' }}
+                     style={{ height: '525px' }}
                      data-wow-duration="1s"
                      data-wow-delay={item.delay}>
                   <div className="tp-service-item-icon">
@@ -125,7 +125,17 @@ const ServiceArea = () => {
                   </div>
                   <div className="tp-service-item-thumb mt-auto">
                     <Link href={`/services-details/${item.id}`}>
-                      <Image src={item.img} alt="image-title-here" />
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        width={400}
+                        height={250}
+                        style={{
+                          width: '100%',
+                          height: '200px',
+                          objectFit: 'cover'
+                        }}
+                      />
                     </Link>
                   </div>
                 </div>
