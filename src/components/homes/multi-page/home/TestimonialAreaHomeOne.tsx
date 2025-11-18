@@ -162,7 +162,7 @@ const TestimonialAreaHomeOne = () => {
         className="tp-testimonial-area p-relative pt-80 pb-50"
         style={{
           backgroundColor: "#F6F6F9",
-          position: "relative"
+          position: "relative",
         }}
       >
         <style jsx>{`
@@ -174,74 +174,76 @@ const TestimonialAreaHomeOne = () => {
             z-index: 0;
             width: 49%;
             height: 100%;
-            background: linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%);
+            background: #37A042;
+            opacity: 0.9;
             clip-path: polygon(42% 1%, 100% -159%, 100% 100%, 0% 100%);
           }
-          
+
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .tp-testimonial-area::after {
               width: 42%;
             }
           }
-          
-          @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+
+          @media only screen and (min-width: 576px) and (max-width: 767px),
+            (max-width: 575px) {
             .tp-testimonial-area::after {
               display: none;
             }
           }
-          
+
           @media (max-width: 991px) {
             .tp-testimonial-area {
               padding-top: 60px !important;
               padding-bottom: 40px !important;
             }
-            
+
             .tp-testimonial-title {
               margin-bottom: 30px !important;
               text-align: center;
             }
-            
+
             .tp-testimonial-item-content {
               padding: 20px !important;
             }
           }
-          
+
           @media (max-width: 767px) {
             .tp-testimonial-area {
               padding-top: 50px !important;
               padding-bottom: 30px !important;
             }
-            
+
             .tp-section-title {
               font-size: 24px !important;
               line-height: 1.3 !important;
               margin-bottom: 20px;
             }
-            
+
             .tp-testimonial-item-content {
               padding: 15px !important;
             }
-            
+
             .tp-testimonial-item-content h5 {
               font-size: 16px !important;
               margin-bottom: 10px !important;
             }
-            
+
             .testimonial-description {
               font-size: 13px !important;
               line-height: 1.6 !important;
               margin-bottom: 15px !important;
             }
-            
+
             .tp-testimonial-item-title {
               font-size: 14px !important;
             }
-            
+
             .tp-testimonial-nav {
               margin-top: 20px;
               text-align: center !important;
             }
-            
+
             .tp-testimonial-nav button {
               width: 35px !important;
               height: 35px !important;
@@ -249,56 +251,58 @@ const TestimonialAreaHomeOne = () => {
               margin: 0 5px;
             }
           }
-          
+
           @media (max-width: 575px) {
             .tp-testimonial-area {
               padding-top: 40px !important;
               padding-bottom: 25px !important;
             }
-            
+
             .tp-section-title {
               font-size: 20px !important;
               line-height: 1.4 !important;
             }
-            
+
             .tp-section-title-pre {
               font-size: 12px !important;
               margin-bottom: 10px;
             }
-            
+
             .tp-testimonial-title {
               margin-bottom: 25px !important;
             }
-            
+
             .tp-testimonial-item-content {
               padding: 12px !important;
             }
-            
+
             .tp-testimonial-item-content h5 {
               font-size: 15px !important;
             }
-            
+
             .testimonial-description {
               font-size: 12px !important;
               margin-bottom: 12px !important;
             }
-            
+
             .tp-testimonial-item-title {
               font-size: 13px !important;
             }
-            
+
             .tp-testimonial-nav button {
               width: 30px !important;
               height: 30px !important;
               font-size: 10px !important;
             }
-            
+
             .swiper-container {
               padding-bottom: 20px !important;
             }
           }
         `}</style>
-        <div className="tp-testimonial-bg">
+        <div
+          className="tp-testimonial-bg"
+        >
           <Image
             src={testimonial_shape || "/placeholder.svg"}
             alt="Testimonial background shape"
@@ -332,13 +336,13 @@ const TestimonialAreaHomeOne = () => {
                 loop={true}
                 modules={[Navigation]}
                 className="tp-testimonial-active swiper-container"
-                style={{ paddingBottom: '30px' }}
+                style={{ paddingBottom: "30px" }}
               >
                 {testimonial_data.map((item, index) => (
                   <SwiperSlide
                     key={item.id}
                     className="swiper-slide"
-                    style={{ height: 'auto', display: 'flex' }}
+                    style={{ height: "auto", display: "flex" }}
                   >
                     <div className="tp-testimonial-item-wrapper d-flex flex-column w-100 h-100">
                       <div className="tp-testimonial-item-content p-relative d-flex flex-column justify-content-between flex-grow-1 p-3 p-md-4 p-lg-4">
@@ -351,8 +355,12 @@ const TestimonialAreaHomeOne = () => {
                           </p>
                         </div>
                         <div className="mt-auto pt-1 lg:pt-3">
-                          <h4 className="tp-testimonial-item-title mb-1 fs-6">{item.name}</h4>
-                          <span className="text-muted small">{item.designation}</span>
+                          <h4 className="tp-testimonial-item-title mb-1 fs-6">
+                            {item.name}
+                          </h4>
+                          <span className="text-muted small">
+                            {item.designation}
+                          </span>
                         </div>
                         <div className="tp-testimonial-item-quot position-absolute">
                           <Image

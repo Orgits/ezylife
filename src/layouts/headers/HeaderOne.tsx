@@ -51,7 +51,6 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                         <nav className="tp-main-menu-content">
                            {!onePageHomeOne && <NavMenu />}
                            {onePageHomeOne && <OnPageMenu onePageHomeOne={onePageHomeOne} />}
-
                         </nav>
                      </div>
                      <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
@@ -62,7 +61,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                            <div className="tp-header-contact-inner d-flex align-items-center">
                               <div className="tp-header-contact-icon">
                                  <span style={{
-                                   background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                   background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
                                    color: "white",
                                    padding: "15px",
                                    borderRadius: "50%",
@@ -94,7 +93,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                     className="tp-btn d-none d-xl-block"
                     href="/contact"
                     style={{
-                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                      background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
                       color: "white",
                       border: "none"
                     }}
@@ -140,7 +139,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               <div className="tp-header-contact-inner d-none d-xl-flex align-items-center">
                                  <div className="tp-header-contact-icon">
                                     <span style={{
-                                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                      background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
                                       color: "white",
                                       padding: "15px",
                                       borderRadius: "50%",
