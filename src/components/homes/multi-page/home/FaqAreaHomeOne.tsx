@@ -189,10 +189,11 @@ const FaqAreaHomeOne = () => {
         className="tp-faq-area p-relative pt-120 pb-120"
         style={{
           backgroundImage: "url(/assets/img/faq/bg-shape.png)",
-          background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+          background: "#37A042",
+          opacity: "0.9"
         }}
       >
-        <div className="tp-faq-bg"></div>
+        {/* <div className="tp-faq-bg"></div> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-5">

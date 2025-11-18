@@ -306,7 +306,7 @@
                   <SwiperSlide key={index} className="swiper-slide mb-30 mt-40">
                     <div
                       className="tp-service-item-wrapper p-relative d-flex flex-column"
-                      style={{ height: "475px" }}
+                      style={{ height: "525px" }}
                     >
                       <div className="tp-service-item-icon">
                         <span>{item.icon}</span>
