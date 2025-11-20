@@ -19,7 +19,7 @@
   const service_data: DataType[] = [
     {
       id: 1,
-      img: "/services/equity_and_derivatives_trading.png",
+      img: "/services/Trading.jpg",
       icon: <ServiceIconOne />,
       title: "Equity & Derivatives Trading",
       sm_des:
@@ -27,7 +27,7 @@
     },
     {
       id: 2,
-      img: "/services/mutualfunds_and_sips.png",
+      img: "/services/mutual-funds.png",
       icon: <ServiceIconTwo />,
       title: "Mutual Funds & SIPs",
       sm_des:
@@ -35,7 +35,7 @@
     },
     {
       id: 3,
-      img: "/services/ipo_investments.png",
+      img: "/services/ipo.avif",
       icon: <ServiceIconThree />,
       title: "IPO Investments",
       sm_des:
@@ -44,7 +44,7 @@
     // for swiper
     {
       id: 4,
-      img: "/services/bonds_and_debentures.png",
+      img: "/services/bonds.jpg",
       icon: <ServiceIconOne />,
       title: "Bonds & Debentures",
       sm_des:
@@ -270,7 +270,7 @@
                     className="tp-section-title-pre"
                     style={{
                       background:
-                        "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                        "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",

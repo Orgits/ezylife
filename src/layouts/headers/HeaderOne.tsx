@@ -34,7 +34,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      <div className="tp-header-top-info">
                         <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span style={{
                             background:
-                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                              "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -61,7 +61,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                            <div className="tp-header-contact-inner d-flex align-items-center">
                               <div className="tp-header-contact-icon">
                                  <span style={{
-                                   background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
+                                   background: "linear-gradient(90deg, #4CAF50 0%, #89e550ff 100%)",
                                    color: "white",
                                    padding: "15px",
                                    borderRadius: "50%",
@@ -73,7 +73,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                                  }}><i className="fa-solid fa-phone"></i></span>
                               </div>
                               <div className="tp-header-contact-content">
-                                 <p>Requesting A Call:</p>
+                                 <p>Get In touch</p>
                                  <span><a href="tel:9899829830">+91 98998 29830</a></span>
                               </div>
                            </div>
@@ -93,12 +93,12 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                     className="tp-btn d-none d-xl-block"
                     href="/contact"
                     style={{
-                      background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
+                      background: "linear-gradient(90deg, #4CAF50 0%, #89e550ff 100%)",
                       color: "white",
                       border: "none"
                     }}
                   >
-                    Get in touch <i className="fa-regular fa-arrow-right"></i>
+                  Schedule a Callback <i className="fa-regular fa-arrow-right"></i>
                   </Link>
                   <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn">
                      <button className="hamburger-btn" onClick={() => setMenuOpen(true)}>
@@ -139,7 +139,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               <div className="tp-header-contact-inner d-none d-xl-flex align-items-center">
                                  <div className="tp-header-contact-icon">
                                     <span style={{
-                                      background: "linear-gradient(90deg, #7DD87D 0%, #A5F077 100%)",
+                                      background: "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                                       color: "white",
                                       padding: "15px",
                                       borderRadius: "50%",
@@ -151,7 +151,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                                     }}><i className="fa-solid fa-phone"></i></span>
                                  </div>
                                  <div className="tp-header-contact-content">
-                                    <p>Requesting A Call:</p>
+                                    <p>Get In touch</p>
                                     <span><a href="tel:9899829830">+91 98998 29830</a></span>
                                  </div>
                               </div>

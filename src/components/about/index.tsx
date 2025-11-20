@@ -18,9 +18,9 @@ const About = () => {
        <section className="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix">
           <div className="breadcrumb__bg" style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.5) 60% , #4ad353ff ), url('/assets/img/breadcrumb/About us Banner.png')",
+              "linear-gradient(rgba(0,0,0,0.5) 60% , #4ad353ff ), url('/assets/img/breadcrumb/trade.jpg')",
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: "top",
           }}></div>
           <div className="container">
             <div className="row align-items-center">

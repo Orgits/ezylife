@@ -71,7 +71,7 @@ const service_details_data: ServiceDetail[] = [
         "Comprehensive solutions for wealth growth and risk management.",
       ],
     },
-    img: "/services/equity_and_derivatives_trading.png",
+    img: "/services/Trading.jpg",
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ const service_details_data: ServiceDetail[] = [
         "Long-term wealth creation with disciplined planning.",
       ],
     },
-    img: "/services/mutualfunds_and_sips.png",
+    img: "/services/mutual-funds.png",
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ const service_details_data: ServiceDetail[] = [
         "Step-by-step support from application to post-listing management.",
       ],
     },
-    img: "/services/ipo_investments.png",
+    img: "/services/ipo.avif",
   },
   {
     id: 4,
@@ -148,7 +148,7 @@ const service_details_data: ServiceDetail[] = [
         "Safe and reliable options for portfolio diversification.",
       ],
     },
-    img: "/services/bonds_and_debentures.png",
+    img: "/services/bonds.jpg",
   },
   {
     id: 5,
@@ -377,7 +377,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
   } = service_details;
   return (
     <>
-      <section className="tp-service-details-area pt-120 pb-120">
+      <section className="tp-service-details-area pt-50 pb-120">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
@@ -385,7 +385,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                 <div className="tp-service-details-thumb">
                   <Image
                     src={currentService ? currentService.img : service_details_img_1}
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "800px", height: "auto" }}
                     alt="image-title-here"
                     width={800}
                     height={400}
@@ -540,7 +540,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                           className="fa-solid fa-phone"
                           style={{
                             background:
-                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -548,8 +548,8 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                         ></i>
                       </span>
                     </div>
-                    <p>Requesting A Call:</p>
-                    <a href="tel:55555555">011-45584780</a>
+                    <p>Get In touch</p>
+                    <a href="tel:01145584780">011-45584780</a>
                   </div>
                 </div>
 

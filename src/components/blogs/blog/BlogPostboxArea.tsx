@@ -284,7 +284,7 @@ const BlogPostboxArea = () => {
                           <span
                             style={{
                               background:
-                                "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                               WebkitBackgroundClip: "text",
                               WebkitTextFillColor: "transparent",
                               backgroundClip: "text",
@@ -318,7 +318,7 @@ const BlogPostboxArea = () => {
                           <span
                             style={{
                               background:
-                                "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                               WebkitBackgroundClip: "text",
                               WebkitTextFillColor: "transparent",
                               backgroundClip: "text",
@@ -355,7 +355,7 @@ const BlogPostboxArea = () => {
                           <span
                             style={{
                               background:
-                                "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                               WebkitBackgroundClip: "text",
                               WebkitTextFillColor: "transparent",
                               backgroundClip: "text",
@@ -383,7 +383,7 @@ const BlogPostboxArea = () => {
                             className="fa-regular fa-user"
                             style={{
                               background:
-                                "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                               WebkitBackgroundClip: "text",
                               WebkitTextFillColor: "transparent",
                               backgroundClip: "text",
@@ -407,7 +407,7 @@ const BlogPostboxArea = () => {
                           className="tp-postbox-btn"
                           style={{
                             background:
-                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                              "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",

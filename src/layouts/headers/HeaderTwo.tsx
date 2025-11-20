@@ -47,8 +47,8 @@ const HeaderTwo = ({onePageHomeOne} : any) => {
                                  <span><i className="fa-solid fa-phone"></i></span>
                               </div>
                               <div className="tp-header-contact-content">
-                                 <p>Requesting A Call:</p>
-                                 <span><a href="tel:555-0111">011-45584780</a></span>
+                                 <p>Get In touch</p>
+                                 <span><a href="tel:01145584780">011-45584780</a></span>
                               </div>
                            </div>
                         </div>

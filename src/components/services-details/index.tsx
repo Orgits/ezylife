@@ -11,7 +11,7 @@ const ServicesDetails = ({ serviceId }: { serviceId?: string }) => {
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb page_title='Services Details' title='Services Details' />
+        {/* <Breadcrumb page_title='Services Details' title='Services Details' /> */}
         <ServiceDetailsArea serviceId={serviceId} />
         <CtaAreaHomeOne />
       </main>

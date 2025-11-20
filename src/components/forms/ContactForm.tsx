@@ -28,7 +28,7 @@ const ContactForm = () => {
                 type="submit"
                 className="tp-btn"
                 style={{
-                  background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                  background: "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                   color: "white",
                   border: "none"
                 }}

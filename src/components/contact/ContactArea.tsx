@@ -41,7 +41,7 @@ const ContactArea = ({ style }: any) => {
       >
         <div className="container">
           <div className="tp-contact-breadcrumb-box">
-            <div className="tp-contact-breadcrumb-social" style={{background: 'linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)'}}>
+            <div className="tp-contact-breadcrumb-social" style={{background: 'linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)'}}>
               <a href="#" style={{ color: "white" }}>
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -55,7 +55,7 @@ const ContactArea = ({ style }: any) => {
             <div className="row">
               <div className="col-lg-7">
                 <div className="tp-contact-breadcrumb-content">
-                  <h3 className="tp-contact-breadcrumb-title">Get in touch</h3>
+                  <h3 className="tp-contact-breadcrumb-title">Schedule a Callback</h3>
                   <p>
                     We are here for you! how can we help, We are here for you!{" "}
                   </p>
@@ -78,7 +78,7 @@ const ContactArea = ({ style }: any) => {
                             fontSize: "40px",
                             fontWeight: "900",
                             background:
-                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                              "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",

@@ -236,7 +236,7 @@ const FaqAreaHomeOne = () => {
                     </div>
                     <div className="tp-faq-counter-content">
                       <h4 className="tp-faq-counter-title d-flex">
-                        <Count number={500} /> +
+                        <Count number={1000} /> +
                       </h4>
                       <p>Satisfied Clients</p>
                     </div>

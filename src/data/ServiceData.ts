@@ -75,7 +75,7 @@ const service_data: DataType[] = [
   {
     id: 1,
     home: 'service',
-    img: "/services/equity_and_derivatives_trading.png",
+    img: "/services/Trading.jpg",
     title: "Equity & Derivatives Trading",
     sm_des: "Ezylife provides seamless access to the Indian stock market through NSE and BSE, offering both equity and derivatives trading solutions tailored for beginners and seasoned investors.",
     delay: ".3s",
@@ -83,7 +83,7 @@ const service_data: DataType[] = [
   {
     id: 2,
     home: 'service',
-    img: "/services/mutualfunds_and_sips.png",
+    img: "/services/mutual-funds.png",
     title: "Mutual Funds & SIPs",
     sm_des: "Ezylife helps you invest in mutual funds and systematic investment plans (SIPs) to build wealth steadily and efficiently.",
     delay: ".5s",
@@ -91,7 +91,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 'service',
-    img: "/services/ipo_investments.png",
+    img: "/services/ipo.avif",
     title: "IPO Investments",
     sm_des: "Ezylife provides end-to-end support for Initial Public Offerings (IPOs), helping you participate in new and emerging opportunities in the stock market.",
     delay: ".7s",
@@ -99,7 +99,7 @@ const service_data: DataType[] = [
   {
     id: 4,
     home: 'service',
-    img: "/services/bonds_and_debentures.png",
+    img: "/services/bonds.jpg",
     title: "Bonds & Debentures",
     sm_des: "Ezylife offers fixed-income investment options for conservative investors seeking predictable returns and portfolio diversification.",
     delay: ".3s",

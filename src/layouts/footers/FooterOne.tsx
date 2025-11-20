@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import footer_shape_1 from "@/assets/img/footer/bg-shape.png";
 import SocialLinks, { CopyRight } from "@/components/common/SocialLinks";
+import { url } from "inspector";
 
 interface DataType {
   sm_info: string;
@@ -18,6 +19,7 @@ interface DataType {
     publish: string;
     link: string;
   }[];
+  
   footer_links: string[];
 }
 
@@ -49,7 +51,11 @@ const footer_content: DataType = {
       publish: "Strategic Approach",
       link: "/services",
     },
+    
+
+
   ],
+
   footer_links: [
     "Disclaimer",
     "Privacy Policy",
@@ -64,7 +70,12 @@ const FooterOne = () => {
     <>
       <footer
         className="tp-footer-area pt-80  z-index-1"
-        style={{ backgroundColor: "#37A042" }}
+        style={{
+    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/ai.webp)`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "centre",
+}}
       >
         <div className="tp-footer-bg-shape">
           <Image src={footer_shape_1} alt="image-title-here" />
@@ -130,14 +141,14 @@ const FooterOne = () => {
                 <div className="tp-footer-widget tp-footer-col-4 mb-50">
                   <h3
                     className="tp-footer-widget-title"
-                    style={{ marginBottom: "0" }}
+                    style={{ marginBottom: "0" , backgroundColor: 'transparent', border: 'none'}}
                   >
                     Contact us
                   </h3>
                   <div className="tp-footer-widget-content">
                     <div
-                      className="tp-footer-widget-contact"
-                      style={{ backgroundColor: "#37A042", border: "none" }}
+                      className="tp-footer-widget-contact no-bg"
+                      style={{ backgroundColor: 'transparent', border: 'none' }}
                     >
                       <div className="tp-footer-widget-contact-inner">
                         <a
@@ -150,7 +161,7 @@ const FooterOne = () => {
                         </a>
                       </div>
                       <div className="tp-footer-widget-contact-inner">
-                        <a href="tel:123456765">
+                        <a href="tel:01145584780">
                           <i className="fa-solid fa-phone"></i> 011-45584780
                         </a>
                       </div>

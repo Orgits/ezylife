@@ -31,7 +31,7 @@ const hero_data: DataType[] = [
     title: "Makes Your Life Easy Your trusted partner in financial growth",
     sm_des:
       "At Ezylife, we empower individuals, families, and businesses to achieve their financial goals with expert guidance, innovative solutions, and transparent practices. As a registered sub-broker with IIFL Capitaland AMFI distributor, we bring you the best of investments, trading, and advisory services under one roof.",
-    phone: "+91 9876543210",
+    phone: "+91 98998 29830",
   },
   {
     id: 2,
@@ -39,8 +39,8 @@ const hero_data: DataType[] = [
     subtitle: "Welcome to Ezylife",
     title: "Where your financial dreams become reality",
     sm_des:
-      "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9876543210",
+      "And in order to scale a business, strategic financial decisions play an important role. Similarly, turning growth into success requires trusted advisors.",
+    phone: "+91 98998 29830",
   },
   {
     id: 3,
@@ -48,8 +48,8 @@ const hero_data: DataType[] = [
     subtitle: "Welcome to Ezylife",
     title: "Our mission is your financial success",
     sm_des:
-      "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9876543210",
+      "Every growing business needs insight, and every smart decision starts with expert financial guidance.",
+    phone: "+91 98998 29830",
   },
 ];
 
@@ -299,17 +299,18 @@ const HeroAreaHomeOne = () => {
               <SwiperSlide
                 key={index}
                 className="swiper-slide pt-160 pb-115"
-              
-                
+
+
               >
                 <div
-  className="tp-hero-bg"
- style={{
-  background: `linear-gradient(180deg, rgba(0, 0, 0, 0.35) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/ai.jpg)`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-}}
-></div>
+                  className="tp-hero-bg"
+                  style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/bse2.jpg)`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "centre",
+                  }}
+                ></div>
                 {/* <div
                   className="tp-hero-bg"
                   style={{
@@ -446,7 +447,7 @@ const HeroAreaHomeOne = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    {/* <div className="col-lg-5">
                       <div className="tp-hero-thumb p-relative">
                         <div className="tp-hero-thumb-shape">
                           <Image
@@ -467,7 +468,7 @@ const HeroAreaHomeOne = () => {
                         </div>
                         <Image src={item.img} alt="image-title-here" style={{height: '550px'}} />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SwiperSlide>

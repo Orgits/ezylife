@@ -18,7 +18,7 @@ const RiskDisclosurePage = () => {
                 <div className="tp-about-content">
                   <div className="tp-about-title-wrapper mb-40">
                     <span className="tp-section-title-pre" style={{
-                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                      background: "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",

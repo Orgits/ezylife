@@ -8,7 +8,7 @@ import about_shape from "@/assets/img/about/shape-3.png";
 import about_shape_1 from "@/assets/img/about/img-2.png";
 import about_shape_2 from "@/assets/img/about/shape-1.png";
 import about_shape_3 from "@/assets/img/about/shape-2.png";
-import about_shape_4 from "@/assets/img/about/shape-4.png";
+import about_shape_4 from "@/assets/img/about/10years.jpg";
 
 interface DataType {
   subtitle: string;
@@ -209,11 +209,12 @@ const AboutAreaHomeOne = () => {
                   src={about_shape_3}
                   alt="image-title-here"
                 />
-                <Image
+                {/* <Image
                   className="shape-4"
                   src={about_shape_4}
                   alt="image-title-here"
-                />
+                  quality={100}
+                /> */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -223,7 +224,7 @@ const AboutAreaHomeOne = () => {
                     className="tp-section-title-pre"
                     style={{
                       background:
-                        "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                        "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
