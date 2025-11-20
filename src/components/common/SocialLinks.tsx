@@ -15,14 +15,19 @@ const social_links: social_links_type[] = [
     icon: "fab fa-facebook-f",
   },
   {
-    link: "http://twitter.com",
+    link: "https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09",
     target: "_blank",
-    icon: "fab fa-twitter",
+    icon: "fab fa-x",
   },
   {
     link: "https://www.linkedin.com/company/ezylife-in/",
     target: "_blank",
     icon: "fab fa-linkedin-in",
+  },
+  {
+    link: "https://www.instagram.com/ezylife_in/",
+    target: "_blank",
+    icon: "fa-brands fa-instagram",
   },
   {
     link: "https://wa.me/919899829830",
@@ -64,9 +69,9 @@ const social_links_2: social_links_type_2[] = [
     icon: "fa-brands fa-facebook-f",
   },
   {
-    link: "http://twitter.com",
-    color: "",
-    icon: "fa-brands fa-twitter",
+    link: "https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09",
+    color: "footer-x",
+    icon: "fa-brands fa-x",
   },
   {
     link: "http://www.linkedin.com/company/ezylife-in/",
@@ -74,9 +79,14 @@ const social_links_2: social_links_type_2[] = [
     icon: "fa-brands fa-linkedin-in",
   },
   {
-    link: "http://www.instagram.com",
+    link: "https://www.instagram.com/ezylife_in/",
     color: "footer-insta",
     icon: "fa-brands fa-instagram",
+  },
+  {
+    link: "https://wa.me/919899829830",
+    color: "footer-whatsapp",
+    icon: "fa-brands fa-whatsapp",
   },
 ];
 
@@ -113,19 +123,25 @@ const team_social_data: DataType[] = [
   },
   {
     id: 2,
-    link: "http://instagram.com",
+    link: "https://www.instagram.com/ezylife_in/",
     icon: "fa-brands fa-instagram",
   },
   {
     id: 3,
-    link: "http://twitter.com",
-    icon: "fa-brands fa-twitter",
+    link: "https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09",
+    icon: "fa-brands fa-x",
   },
   {
     id: 4,
     link: "http://linkedin.com/company/ezylife-in/",
     icon: "fa-brands fa-linkedin-in",
   },
+{
+    id: 5,
+    link: "https://wa.me/919899829830",
+    icon: "fa-brands fa-whatsapp",
+  },  
+
 ]
 
 export const TeamSocialLinks = () => {

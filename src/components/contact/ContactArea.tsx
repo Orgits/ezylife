@@ -42,16 +42,19 @@ const ContactArea = ({ style }: any) => {
         <div className="container">
           <div className="tp-contact-breadcrumb-box">
             <div className="tp-contact-breadcrumb-social" style={{background: 'linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)'}}>
-              <a href="#" style={{ color: "white" }}>
+              <a href="https://www.facebook.com/EZYLIFEIN" style={{ color: "white" }}>
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" style={{ color: "white" }}>
-                <i className="fab fa-twitter"></i>
+              <a href="https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09" style={{ color: "white" }}>
+                <i className="fab fa-x"></i>
               </a>
-              <a href="#" style={{ color: "white" }}>
+              <a href="https://www.instagram.com/ezylife_in/" style={{ color: "white" }}>
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="#" style={{ color: "white" }}>
+              <a href="http://www.linkedin.com/company/ezylife-in/" style={{ color: "white" }}>
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+               <a href="https://wa.me/919899829830" style={{ color: "white" }}>
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
             </div>

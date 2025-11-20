@@ -61,10 +61,11 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
               </div>
             </div>
             <div className="offcanvas__social"> 
-              <a className="icon facebook" href="#"><i className="fab fa-facebook-f"></i></a>
-              <a className="icon twitter" href="#"><i className="fab fa-twitter"></i></a>
-              <a className="icon youtube" href="#"><i className="fab fa-youtube"></i></a>
-              <a className="icon linkedin" href="#"><i className="fab fa-linkedin"></i></a>
+              <a className="icon facebook" href="https://www.facebook.com/EZYLIFEIN"><i className="fab fa-facebook-f"></i></a>
+              <a className="icon twitter" href="https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09"><i className="fab fa-x"></i></a>
+              <a className="icon instagram" href="https://www.instagram.com/ezylife_in/"><i className="fab fa-instagram"></i></a>
+              <a className="icon linkedin" href="http://www.linkedin.com/company/ezylife-in/"><i className="fab fa-linkedin"></i></a>
+              <a className="icon whatsapp" href="https://wa.me/919899829830"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
