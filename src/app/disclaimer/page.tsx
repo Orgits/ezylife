@@ -9,9 +9,9 @@ const DisclaimerPage = () => {
     <Wrapper>
       <HeaderOne />
       <main>
-        <Breadcrumb title="Compliance & Disclaimer" page_title="Disclaimer" />
+        {/* <Breadcrumb title="Compliance & Disclaimer" page_title="Disclaimer" /> */}
 
-        <section className="tp-about-area pt-120 pb-120">
+        <section className="tp-about-area pt-70 pb-120">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
