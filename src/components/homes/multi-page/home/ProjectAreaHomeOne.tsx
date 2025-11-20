@@ -236,9 +236,9 @@ const ProjectAreaHomeOne = () => {
                             <div className="tp-project-thumb-info">
                               <p>{item.tab_items[0].title}</p>
                               <h4 className="tp-project-thumb-title">
-                                <Link href="/project-details">
+                                {/* <Link href="#"> */}
                                   {item.tab_items[0].name}
-                                </Link>
+                                {/* </Link> */}
                               </h4>
                             </div>
                           </div>
@@ -264,9 +264,9 @@ const ProjectAreaHomeOne = () => {
                             <div className="tp-project-thumb-info">
                               <p>{item.tab_items[1].title}</p>
                               <h4 className="tp-project-thumb-title">
-                                <Link href="/project-details">
+                                {/* <Link href="#"> */}
                                   {item.tab_items[1].name}
-                                </Link>
+                                {/* </Link> */}
                               </h4>
                             </div>
                           </div>
