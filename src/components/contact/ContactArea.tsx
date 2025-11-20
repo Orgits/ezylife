@@ -51,6 +51,9 @@ const ContactArea = ({ style }: any) => {
               <a href="#" style={{ color: "white" }}>
                 <i className="fa-brands fa-instagram"></i>
               </a>
+              <a href="#" style={{ color: "white" }}>
+                <i className="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
             <div className="row">
               <div className="col-lg-7">

@@ -25,9 +25,9 @@ const social_links: social_links_type[] = [
     icon: "fab fa-linkedin-in",
   },
   {
-    link: "https://www.vimeo.com",
+    link: "https://wa.me/919899829830",
     target: "_blank",
-    icon: "fab fa-vimeo-v",
+    icon: "fab fa-whatsapp",
   },
 ];
 
