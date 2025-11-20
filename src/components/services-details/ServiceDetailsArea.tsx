@@ -123,7 +123,7 @@ const service_details_data: ServiceDetail[] = [
         "Step-by-step support from application to post-listing management.",
       ],
     },
-    img: "/services/ipo.avif",
+    img: "/services/IPO.avif",
   },
   {
     id: 4,

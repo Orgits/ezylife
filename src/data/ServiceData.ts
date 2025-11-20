@@ -91,7 +91,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 'service',
-    img: "/services/ipo.avif",
+    img: "/services/IPO.avif",
     title: "IPO Investments",
     sm_des: "Ezylife provides end-to-end support for Initial Public Offerings (IPOs), helping you participate in new and emerging opportunities in the stock market.",
     delay: ".7s",

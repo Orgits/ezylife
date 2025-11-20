@@ -35,7 +35,7 @@
     },
     {
       id: 3,
-      img: "/services/ipo.avif",
+      img: "/services/IPO.avif",
       icon: <ServiceIconThree />,
       title: "IPO Investments",
       sm_des:
