@@ -10,7 +10,7 @@ const team_members = team_data.filter(member => member.home === 1);
 const TeamArea = () => {
   return (
     <>
-      <section className="tp-team-breadcrumb-area pt-120 pb-70">
+      <section className="tp-team-breadcrumb-area pt-40 pb-70">
         <div className="container">
 
           <div className="row">

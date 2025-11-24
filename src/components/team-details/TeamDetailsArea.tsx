@@ -68,7 +68,7 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
                 >
                   {info}
                 </span>
-                <p>{description}</p>
+                <p style={{textAlign: "justify",}}>{description}</p>
                 <div className="tp-team-details-information">
                   <h4>
                     <span>Phone :</span> <a href={`tel:${phone}`}>{phone}</a>
@@ -96,14 +96,14 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
             <div className="col-lg-8 col-md-12">
               <div className="tp-team-details-skills fix">
                 <h3 className="tp-team-details-title">{outher_title}</h3>
-                <p>{skill_des}</p>
+                <p style={{textAlign: "justify",}}>{skill_des}</p>
                 <div className="tp-team-details-skills-progress">
                   {progress.map((item, index) => (
                     <div key={index} className="tp-team-details-progress-item">
                       <div className="tp-team-details-progress-title p-relative">
                         <h5>
                           {item.title}{" "}
-                          <span
+                          <span 
                             className={`pursent-${
                               index === 0 ? "1" : index === 1 ? "2" : "3"
                             } wow slideInLeft`}
@@ -134,7 +134,7 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
             <div className="col-lg-4 col-md-12">
               <div className="tp-team-details-value">
                 <h3 className="tp-team-details-title">{outher_title}</h3>
-                <ul>
+                <ul >
                   {features.map((item, index) => (
                     <li key={index}>
                       <i className="fa-solid fa-check"></i>

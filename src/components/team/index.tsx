@@ -11,7 +11,17 @@ const Team = () => {
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb page_title='Team' title='Team' />
+        <div>
+          <h2 
+          style={{ textAlign: "center", 
+          paddingTop: "30px",
+          fontFamily: "serif", 
+          fontSize: "2.6rem", 
+          fontWeight: "700" }} >
+            <b>Our Team</b> </h2>
+        </div>
+
+        {/* <Breadcrumb page_title='Team' title='Team' /> */}
         <TeamArea />
         <CtaAreaHomeOne />
       </main>
