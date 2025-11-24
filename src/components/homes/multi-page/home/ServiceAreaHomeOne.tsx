@@ -311,6 +311,7 @@ const ServiceAreaHomeOne = () => {
                           minHeight: "80px",
                           maxHeight: "150px",
                           overflow: "hidden",
+                          textAlign: 'justify'
                         }}
                       >
                         {item.sm_des}

@@ -211,7 +211,7 @@ const FaqAreaHomeOne = () => {
                     {subtitle}
                   </span>
                   <h3 className="tp-section-title"> {title} </h3>
-                  <p> {sm_des}</p>
+                  <p style={{textAlign: 'justify'}}> {sm_des}</p>
                 </div>
                 <div className="tp-faq-counter-wrapper d-flex">
                   <div className="tp-faq-counter d-flex align-items-center mr-20 mb-30">
@@ -280,7 +280,7 @@ const FaqAreaHomeOne = () => {
                         data-bs-parent="#general_accordion"
                       >
                         <div className="accordion-body">
-                          <p>{item.answer}</p>
+                          <p style={{textAlign: 'justify'}}>{item.answer}</p>
                         </div>
                       </div>
                     </div>

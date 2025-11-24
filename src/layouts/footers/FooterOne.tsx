@@ -87,7 +87,7 @@ const FooterOne = () => {
                     </Link>
                   </div>
                   <div className="tp-footer-widget-content">
-                    <p>{sm_info}</p>
+                    <p style={{textAlign: 'justify'}}>{sm_info}</p>
                     <div className="tp-footer-widget-social">
                       <SocialLinks />
                     </div>

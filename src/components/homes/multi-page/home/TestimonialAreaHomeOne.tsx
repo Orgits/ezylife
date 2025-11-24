@@ -346,7 +346,7 @@ const TestimonialAreaHomeOne = () => {
                           <h5 className="font-semibold text-gray-800 mb-2 mb-md-3 fs-6 fs-md-5">
                             {item.title}
                           </h5>
-                          <p className="mb-2 mb-lg-4 testimonial-description">
+                          <p className="mb-2 mb-lg-4 testimonial-description" style={{textAlign: 'justify'}}>
                             {item.sm_des}
                           </p>
                         </div>
