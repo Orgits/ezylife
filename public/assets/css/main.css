@@ -2651,6 +2651,12 @@ div.demo img {
 .offcanvas__social .icon.linkedin {
   background-color: #0072b1;
 }
+.offcanvas__social .icon.instagram {
+  background-color: #d62963;
+} 
+.offcanvas__social .icon.whatsapp {
+  background-color: #14c914;
+}
 .offcanvas__social .icon:hover {
   transform: translateY(-8px);
 }

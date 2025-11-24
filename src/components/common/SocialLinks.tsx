@@ -27,7 +27,7 @@ const social_links: social_links_type[] = [
   {
     link: "https://www.instagram.com/ezylife_in/",
     target: "_blank",
-    icon: "fa-brands fa-instagram",
+    icon: "fab fa-instagram",
   },
   {
     link: "https://wa.me/919899829830",

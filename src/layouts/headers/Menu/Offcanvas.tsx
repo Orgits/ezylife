@@ -48,7 +48,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
                   <i className="fa-solid fa-envelope"></i>
                 </div>
                 <div className="offcanvas__contact-content-content">
-                  <a href="mailto:needhelp@company.com"> info@ezylife.in </a>
+                  <a href="mailto:info@ezylife.in"> info@ezylife.in </a>
                 </div>
               </div>
               <div className="offcanvas__contact-content d-flex">
@@ -63,9 +63,9 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
             <div className="offcanvas__social"> 
               <a className="icon facebook" href="https://www.facebook.com/EZYLIFEIN"><i className="fab fa-facebook-f"></i></a>
               <a className="icon twitter" href="https://x.com/EzyLife_In?t=35wnC81n6LQrScDn14zT6Q&s=09"><i className="fab fa-x"></i></a>
-              <a className="icon instagram" href="https://www.instagram.com/ezylife_in/"><i className="fab fa-instagram"></i></a>
+              <a  style={{backgroundColor: "#c81876ff" }} className="icon instagram" href="https://www.instagram.com/ezylife_in/"><i className="fab fa-instagram"></i></a>
               <a className="icon linkedin" href="http://www.linkedin.com/company/ezylife-in/"><i className="fab fa-linkedin"></i></a>
-              <a className="icon whatsapp" href="https://wa.me/919899829830"><i className="fab fa-whatsapp"></i></a>
+              <a style={{backgroundColor: "#18c84dff" }} className="icon whatsapp" href="https://wa.me/919899829830"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
