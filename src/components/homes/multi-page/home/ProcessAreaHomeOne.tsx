@@ -276,7 +276,7 @@ const ProcessAreaHomeOne = () => {
                     </div>
                     <div className="tp-process-item-content">
                       <h4 className="tp-process-item-title">{item.title}</h4>
-                      <p>{item.sm_des}</p>
+                      <p style={{textAlign: 'justify'}}>{item.sm_des}</p>
                     </div>
                   </div>
                 ))}

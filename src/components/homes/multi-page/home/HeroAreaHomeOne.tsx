@@ -326,7 +326,7 @@ const HeroAreaHomeOne = () => {
                             {item.subtitle}
                           </span>
                           <h2 className="tp-hero-title">{item.title}</h2>
-                          <p>{item.sm_des}</p>
+                          <p style={{textAlign: 'justify'}}>{item.sm_des}</p>
                         </div>
 
                         {/* Our Promises Section */}

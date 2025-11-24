@@ -234,7 +234,7 @@ const AboutAreaHomeOne = () => {
                   </span>
                   <h3 className="tp-section-title">{title}</h3>
                 </div>
-                <p>{sm_des}</p>
+                <p style={{textAlign: 'justify'}}>{sm_des}</p>
                 <div
                   className="tp-about-mission"
                   style={{ marginTop: "25px", marginBottom: "30px" }}

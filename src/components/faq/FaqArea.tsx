@@ -20,7 +20,7 @@ const FaqArea = () => {
                       </h2>
                       <div id={`collapse${item.id}`} className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`} aria-labelledby={`heading${item.id}`} data-bs-parent="#general_accordion">
                         <div className="accordion-body">
-                          <p>{item.answer}</p>
+                          <p style={{textAlign: 'justify'}}>{item.answer}</p>
                         </div>
                       </div>
                     </div>
@@ -48,7 +48,7 @@ const FaqArea = () => {
                         aria-labelledby={`heading${item.id}2`}
                         data-bs-parent="#general_accordion-2">
                         <div className="accordion-body">
-                          <p>{item.answer}</p>
+                          <p style={{textAlign: 'justify'}}>{item.answer}</p>
                         </div>
                       </div>
                     </div>
