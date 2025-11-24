@@ -34,7 +34,7 @@ const BlogSlidebar = () => {
     <>
       <div className="col-xxl-4 col-xl-4 col-lg-4">
         <div className="tp-sidebar-wrapper">
-          <div className="tp-sidebar-widget-search mb-40">
+          {/* <div className="tp-sidebar-widget-search mb-40">
             <div className="tp-sidebar-widget-content">
               <div className="tp-sidebar-search">
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -47,7 +47,7 @@ const BlogSlidebar = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="tp-sidebar-widget mb-40">
             <h3 className="tp-sidebar-widget-title">Categories</h3>
@@ -59,7 +59,7 @@ const BlogSlidebar = () => {
                       className="fa-solid fa-chevrons-right"
                       style={{
                         background:
-                          "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                          "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text",
@@ -74,7 +74,7 @@ const BlogSlidebar = () => {
                       className="fa-solid fa-chevrons-right"
                       style={{
                         background:
-                          "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                          "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text",
@@ -89,7 +89,7 @@ const BlogSlidebar = () => {
                       className="fa-solid fa-chevrons-right"
                       style={{
                         background:
-                          "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                          "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text",
@@ -126,7 +126,7 @@ const BlogSlidebar = () => {
                             className="fa-regular fa-calendar-days"
                             style={{
                               background:
-                                "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                                "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                               WebkitBackgroundClip: "text",
                               WebkitTextFillColor: "transparent",
                               backgroundClip: "text",

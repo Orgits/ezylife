@@ -30,7 +30,7 @@ const footer_content: Datatype = {
   sm_info: <>Get Latest Updated Subscribe to Our <br /> Newsletter</>,
   info: "Don't just take our word for it hear what our customers have to say about us!",
   phone: "+123-456-7890",
-  email: "info@example.com",
+  email: "info@ezylife.in",
   link_title: "Useful Links",
   usefull_link: [
     "About us",

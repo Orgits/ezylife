@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import hero_bg_1 from "@/assets/img/hero/img-1.jpg";
+import hero_bg_1 from "@/assets/img/hero/img-1.png";
 import hero_bg_2 from "@/assets/img/hero/img-2.jpg";
 import hero_bg_3 from "@/assets/img/hero/img-3.jpg";
 import Image, { StaticImageData } from "next/image";
@@ -31,7 +31,7 @@ const hero_data: DataType[] = [
     title: "Makes Your Life Easy Your trusted partner in financial growth",
     sm_des:
       "At Ezylife, we empower individuals, families, and businesses to achieve their financial goals with expert guidance, innovative solutions, and transparent practices. As a registered sub-broker with IIFL Capitaland AMFI distributor, we bring you the best of investments, trading, and advisory services under one roof.",
-    phone: "+91 9899829830",
+    phone: "+91 98998 29830",
   },
   {
     id: 2,
@@ -39,8 +39,8 @@ const hero_data: DataType[] = [
     subtitle: "Welcome to Ezylife",
     title: "Where your financial dreams become reality",
     sm_des:
-      "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9899829830",
+      "And in order to scale a business, strategic financial decisions play an important role. Similarly, turning growth into success requires trusted advisors.",
+    phone: "+91 98998 29830",
   },
   {
     id: 3,
@@ -48,8 +48,8 @@ const hero_data: DataType[] = [
     subtitle: "Welcome to Ezylife",
     title: "Our mission is your financial success",
     sm_des:
-      "And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.",
-    phone: "+91 9899829830",
+      "Every growing business needs insight, and every smart decision starts with expert financial guidance.",
+    phone: "+91 98998 29830",
   },
 ];
 
@@ -88,7 +88,7 @@ const HeroAreaHomeOne = () => {
           width: 12px;
           height: 12px;
           border-radius: 50%;
-          background-color: #388E3C;
+          background: linear-gradient(to right, #2E7D32, #388E3C);
           flex-shrink: 0;
         }
 
@@ -299,26 +299,23 @@ const HeroAreaHomeOne = () => {
               <SwiperSlide
                 key={index}
                 className="swiper-slide pt-160 pb-115"
-                style={{
-    background:
-      "linear-gradient(rgba(0,0,0,0.5) 90%, #4ad353ff ), url(/assets/img/hero/ai.jpg) no-repeat center center/cover",
-    position: "relative",
-    overflow: "hidden",
-  }}
+
+
               >
-                <div className="tp-hero-bg relative w-full h-[100vh] overflow-hidden">
-{/* Background video
-<video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute top-0 left-0 w-full h-full object-cover"
->
-  <source src="/assets/img/hero/hero-video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
-</div>
+                <div
+                  className="tp-hero-bg"
+                  style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/bse2.JPG)`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "centre",
+                  }}
+                ></div>
+                {/* <div
+                  className="tp-hero-bg"
+                  style={{
+                    backgroundImage: `url(/assets/img/hero/ai.jpg)`,
+                  }}
+                ></div> */}
 
                 <div className="container">
                   <div className="row">
@@ -468,7 +465,7 @@ const HeroAreaHomeOne = () => {
                             alt="image-title-here"
                           />
                         </div>
-                        <Image src={item.img} alt="image-title-here" />
+                        <Image src={item.img} alt="image-title-here" style={{height: '550px'}} />
                       </div>
                     </div> */}
                   </div>

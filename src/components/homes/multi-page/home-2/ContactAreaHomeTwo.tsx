@@ -15,7 +15,7 @@ const ContactAreaHomeTwo = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="tp-contact-wrapper">
-                <h3 className="tp-contact-title">Get in touch</h3>
+                <h3 className="tp-contact-title">Get In touch</h3>
                 <ContactFormHomeTwo />
               </div>
             </div>

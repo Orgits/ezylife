@@ -71,7 +71,7 @@ const service_details_data: ServiceDetail[] = [
         "Comprehensive solutions for wealth growth and risk management.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/Trading.jpg",
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ const service_details_data: ServiceDetail[] = [
         "Long-term wealth creation with disciplined planning.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/mutual-funds.png",
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ const service_details_data: ServiceDetail[] = [
         "Step-by-step support from application to post-listing management.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/IPO.avif",
   },
   {
     id: 4,
@@ -148,7 +148,7 @@ const service_details_data: ServiceDetail[] = [
         "Safe and reliable options for portfolio diversification.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/bonds.jpg",
   },
   {
     id: 5,
@@ -174,7 +174,7 @@ const service_details_data: ServiceDetail[] = [
         "Simplified investment planning — 'Makes Your Life Easy'.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/portfolio_advisory.png",
   },
   {
     id: 6,
@@ -201,7 +201,7 @@ const service_details_data: ServiceDetail[] = [
         "Simplifying complex financial decisions — 'Makes Your Life Easy'.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/financial_planning.jpg",
   },
   {
     id: 7,
@@ -225,7 +225,7 @@ const service_details_data: ServiceDetail[] = [
         "Simple, transparent, and actionable strategies — 'Makes Your Life Easy'.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/retirement_planning.jpg",
   },
   {
     id: 8,
@@ -249,7 +249,7 @@ const service_details_data: ServiceDetail[] = [
         "Simplified investment process with expert guidance — 'Makes Your Life Easy'.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/portfolio_management_services.jpg",
   },
   {
     id: 9,
@@ -275,7 +275,7 @@ const service_details_data: ServiceDetail[] = [
         "Ongoing support for policy management, renewals, and claims.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/insurance_services.jpg",
   },
   {
     id: 10,
@@ -301,7 +301,7 @@ const service_details_data: ServiceDetail[] = [
         "End-to-end support from planning to filing and compliance.",
       ],
     },
-    img: service_details_img_1,
+    img: "/services/tax_planning.jpg",
   },
 ];
 
@@ -377,16 +377,18 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
   } = service_details;
   return (
     <>
-      <section className="tp-service-details-area pt-120 pb-120">
+      <section className="tp-service-details-area pt-50 pb-120">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
               <div className="tp-service-details-wrapper">
                 <div className="tp-service-details-thumb">
                   <Image
-                    src={service_details_img_1}
-                    style={{ width: "100%", height: "auto" }}
+                    src={currentService ? currentService.img : service_details_img_1}
+                    style={{ width: "800px", height: "auto" }}
                     alt="image-title-here"
+                    width={800}
+                    height={400}
                   />
                 </div>
                 <h3 className="tp-service-details-title">
@@ -538,7 +540,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                           className="fa-solid fa-phone"
                           style={{
                             background:
-                              "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                              "linear-gradient(90deg, #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -546,8 +548,8 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                         ></i>
                       </span>
                     </div>
-                    <p>Requesting A Call:</p>
-                    <a href="tel:55555555">011-45584780</a>
+                    <p>Get In touch</p>
+                    <a href="tel:01145584780">011-45584780</a>
                   </div>
                 </div>
 

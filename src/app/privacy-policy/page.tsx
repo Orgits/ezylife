@@ -9,16 +9,16 @@ const PrivacyPolicyPage = () => {
     <Wrapper>
       <HeaderOne />
       <main>
-        <Breadcrumb title="Privacy Policy" page_title="Privacy Policy" />
+        {/* <Breadcrumb title="Privacy Policy" page_title="Privacy Policy" /> */}
 
-        <section className="tp-about-area pt-120 pb-120">
+        <section className="tp-about-area pt-50 pb-120">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="tp-about-content">
                   <div className="tp-about-title-wrapper mb-40">
                     <span className="tp-section-title-pre" style={{
-                      background: "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                      background: "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",

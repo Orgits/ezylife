@@ -247,7 +247,7 @@ const ProcessAreaHomeOne = () => {
                     className="tp-section-title-pre"
                     style={{
                       background:
-                        "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                        "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -290,12 +290,21 @@ const ProcessAreaHomeOne = () => {
               >
                 <div className="tp-process-thumb p-relative">
                   <div className="main">
-                    <Image src={process_img_1} alt="image-title-here" />
+                    <Image
+                      src={process_img_1}
+                      alt="image-title-here"
+                      width={400}
+                      height={350}
+                      style={{ width: '100%', height: 'auto', maxWidth: '400px' }}
+                    />
                   </div>
                   <Image
                     className="shape-1"
                     src={process_img_2}
                     alt="image-title-here"
+                    width={300}
+                    height={200}
+                    style={{ width: 'auto', height: 'auto', maxWidth: '300px', bottom: '-130%', right: '10%' }}
                   />
                 </div>
                 <div className="tp-process-counter d-flex align-items-center">
@@ -306,14 +315,14 @@ const ProcessAreaHomeOne = () => {
                   </div>
                   <div className="tp-process-content">
                     <h4 className="tp-process-counter-title d-flex">
-                      <Count number={10} /> k+
+                      <Count number={1000} /> +
                     </h4>
                     <p>Clients Served</p>
                   </div>
                 </div>
                 <div className="tp-process-trusted text-center">
                   <p>
-                    Trusted By <br /> <span>2345+</span> Investors
+                    Trusted By <br /> <span>1000+</span> Investors
                   </p>
                 </div>
               </div>

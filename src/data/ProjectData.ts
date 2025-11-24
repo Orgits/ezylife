@@ -22,7 +22,7 @@ import project_img_18 from "@/assets/img/project/img-13.jpg";
 
 
 // home 03 imgages 
-import project_img_3_1 from "@/assets/img/project/home-3/img-2.jpg";
+import project_img_3_1 from "@/assets/img/project/home-3/img-1.jpg";
 import project_img_3_2 from "@/assets/img/project/home-3/img-2.jpg";
 import project_img_3_3 from "@/assets/img/project/home-3/img-3.jpg";
 import project_img_3_4 from "@/assets/img/project/home-3/img-4.jpg";
@@ -38,7 +38,7 @@ import project_img_3_13 from "@/assets/img/project/home-3/img-13.jpg";
 
 
 
-import project_img_2_1 from "@/assets/img/project/home-2/img-5.jpg";
+import project_img_2_1 from "@/assets/img/project/home-2/img-1.jpg";
 import project_img_2_2 from "@/assets/img/project/home-2/img-2.jpg";
 import project_img_2_3 from "@/assets/img/project/home-2/img-3.jpg";
 import project_img_2_4 from "@/assets/img/project/home-2/img-4.jpg";
@@ -78,18 +78,12 @@ import project_img_2_28 from "@/assets/img/project/home-2/img-5.jpg";
 import project_img_2_29 from "@/assets/img/project/home-2/img-4.jpg";
 import project_img_2_30 from "@/assets/img/project/home-2/img-1.jpg";
 
-
-
-
-
-
-
 interface DataType {
   tab_id: string;
   home: number | string;
   tab_name: string;
   tab_items: {
-    img: StaticImageData;
+    img: StaticImageData | string;
     title?: string;
     category?: string;
     name: string;
@@ -104,25 +98,15 @@ const project_data: DataType[] = [
     tab_name: "Financial Planning",
     tab_items: [
       {
-        img: project_img_1,
-        title: "Financial Planning",
-        name: "Mutual Funds & SIPs",
+        img: "/projects/financial_planning_1.jpg",
+        title: "Our Projects",
+        name: "Financial Planning",
       },
       {
-        img: project_img_2,
-        title: "Financial Planning",
-        name: "Index Funds",
+        img: "/projects/financial_planning_2.jpg",
+        title: "Our Projects",
+        name: "Financial Planning",
       },
-      {
-        img: project_img_3,
-        title: "Financial Planning",
-        name: "Bonds & Debentures",
-      },
-      {
-        img: project_img_11,
-        title: "Financial Planning",
-        name: "Retirement Planning",
-      }
     ]
   },
   {
@@ -131,25 +115,15 @@ const project_data: DataType[] = [
     tab_name: "Investment Planning",
     tab_items: [
       {
-        img: project_img_4,
+        img: "/projects/investment_planning_1.jpg",
         title: "Our Projects",
         name: "Investment Planning",
       },
       {
-        img: project_img_5,
+        img: "/projects/investment_planning_2.jpg",
         title: "Our Projects",
         name: "Investment Planning",
       },
-      {
-        img: project_img_6,
-        title: "Our Projects",
-        name: "Investment Planning",
-      },
-      {
-        img: project_img_7,
-        title: "Our Projects",
-        name: "Investment Planning",
-      }
     ]
   },
   {
@@ -158,28 +132,34 @@ const project_data: DataType[] = [
     tab_name: "Wealth Management",
     tab_items: [
       {
-        img: project_img_8,
+        img: "/projects/wealth_manangement_1.jpg",
         title: "Our Projects",
         name: "Wealth Management",
       },
       {
-        img: project_img_10,
+        img: "/projects/wealth_manangement_2.jpeg",
         title: "Our Projects",
         name: "Wealth Management",
       },
-      {
-        img: project_img_13,
-        title: "Our Projects",
-        name: "Wealth Management",
-      },
-      {
-        img: project_img_14,
-        title: "Our Projects",
-        name: "Wealth Management",
-      }
     ]
   },
-  
+  {
+    tab_id: "interiour",
+    home: 1,
+    tab_name: "Women Entrepreneurs",
+    tab_items: [
+      {
+        img: "/projects/women_entrepreneur_1.jpg",
+        title: "Our Projects",
+        name: "Women Entrepreneurs",
+      },
+      {
+        img: "/projects/women_entrepreneur_2.jpeg",
+        title: "Our Projects",
+        name: "Women Entrepreneurs",
+      },
+    ]
+  },
   // home 02
   {
     tab_id: "home",

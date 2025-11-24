@@ -33,7 +33,7 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                               <div className="tp-header-top-info-3">
                                  <ul>
                                     <li>
-                                       <a href="mailto:info@example.com"><span><i className="fa-solid fa-envelope"></i></span>info@example.com</a>
+                                       <a href="mailto:info@ezylife.in"><span><i className="fa-solid fa-envelope"></i></span>info@ezylife.in</a>
                                     </li>
                                     <li>
                                        <a href="https://www.google.com/maps/search/6391+Elgin+St,+Wilmington,+DE,+USA/@39.7298967,-75.5645038,13z/data=!3m1!4b1" target="_blank"><span><i className="fa-sharp fa-solid fa-location-dot"></i></span>6391 Elgin St. Celina, 10299</a>
@@ -86,8 +86,8 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                                           <span><i className="fa-solid fa-phone"></i></span>
                                        </div>
                                        <div className="tp-header-contact-content">
-                                          <p>Requesting A Call:</p>
-                                          <span><a href="tel:555-0111">011-45584780</a></span>
+                                          <p>Get In touch</p>
+                                          <span><a href="tel:01145584780">011-45584780</a></span>
                                        </div>
                                     </div>
                                     <div className="tp-header-contact-search-3 search-open-btn">
@@ -143,8 +143,8 @@ const Headerthree = ({ onePageHomeOne }: any) => {
                                     <span><i className="fa-solid fa-phone"></i></span>
                                  </div>
                                  <div className="tp-header-contact-content">
-                                    <p>Requesting A Call:</p>
-                                    <span><a href="tel:555-0111">011-45584780</a></span>
+                                    <p>Get In touch</p>
+                                    <span><a href="tel:01145584780">011-45584780</a></span>
                                  </div>
                               </div>
                            </div>

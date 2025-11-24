@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ezylife.in/sitemap.xml

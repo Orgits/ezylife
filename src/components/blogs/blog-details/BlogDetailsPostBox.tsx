@@ -82,7 +82,7 @@ const { title, sm_des_1, sm_des_2, features_list, qoute, sm_des_3, sm_des_4, com
 const BlogDetailsPostBox = () => {
   return (
     <>
-      <section className="tp-postbox-area pt-120 pb-120">
+      <section className="tp-postbox-area pt-50 pb-120">
         <div className="container">
           <div className="row">
             <div className="col-xxl-8 col-xl-8 col-lg-8">

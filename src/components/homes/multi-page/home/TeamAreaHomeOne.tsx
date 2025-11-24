@@ -3,7 +3,7 @@ import { TeamSocialLinks } from "@/components/common/SocialLinks";
 import team_data from "@/data/TeamData";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { Fragment } from "react";
 
 const TeamAreaHomeOne = ({ style }: any) => {
   return (
@@ -150,7 +150,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                   className="tp-section-title-pre"
                   style={{
                     background:
-                      "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
+                      "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -166,7 +166,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
           </div>
           <div className="row justify-content-center">
             {team_data.slice(0, 4).map((item, index) => (
-              <>
+              <Fragment key={index}>
                 {item.home === 1 && (
                   <div key={index} className="col-lg-3 col-md-6 col-sm-8 col-10">
                     <div
@@ -197,7 +197,7 @@ const TeamAreaHomeOne = ({ style }: any) => {
                     </div>
                   </div>
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
