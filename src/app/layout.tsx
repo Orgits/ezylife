@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description" content="EzyLife - Make Your Life Easy" />
+        <meta name="google-site-verification" content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk" />
         <link rel="icon" href="favicon.ico" sizes="any" />
         <link
           rel="stylesheet"
