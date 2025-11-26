@@ -1,44 +1,41 @@
 "use client";
 import React from "react";
-import service_img_1 from "@/assets/img/service/img-2.jpg";
-import service_img_2 from "@/assets/img/service/img-2.jpg";
-import service_img_3 from "@/assets/img/service/img-3.jpg";
 import ServiceIconOne from "@/svg/home-1/ServiceIconOne";
 import ServiceIconTwo from "@/svg/home-1/ServiceIconTwo";
 import ServiceIconThree from "@/svg/home-1/ServiceIconThree";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface DataType {
   id: number;
-  img: StaticImageData;
+  img: string;
   icon: React.JSX.Element;
   title: string;
   sm_des: string;
 }
-[];
+
 const service_data: DataType[] = [
   {
     id: 1,
-    img: service_img_1,
+    img: "/services/equity_and_derivatives_trading.png",
     icon: <ServiceIconOne />,
     title: "Equity & Derivatives Trading",
     sm_des:
-      "Ezylife provides seamless access to the Indian stock marketthrough NSE and BSE, offering both equity and derivatives tradingsolutions tailored for beginners andseasoned investors.",
+      "Ezylife provides seamless access to the Indian stock market through NSE and BSE, offering both equity and derivatives trading solutions tailored for beginners and seasoned investors.",
   },
   {
     id: 2,
-    img: service_img_2,
+    img: "/services/mutualfunds_and_sips.png",
     icon: <ServiceIconTwo />,
     title: "Mutual Funds & SIPs",
     sm_des:
-      "Ezylife helps you invest in mutual fundsand systematic investment plans (SIPs)to build wealth steadily and efficiently.",
+      "Ezylife helps you invest in mutual funds and systematic investment plans (SIPs) to build wealth steadily and efficiently.",
   },
   {
     id: 3,
-    img: service_img_3,
+    img: "/services/ipo_investments.png",
     icon: <ServiceIconThree />,
     title: "IPO Investments",
     sm_des:
@@ -47,23 +44,23 @@ const service_data: DataType[] = [
   // for swiper
   {
     id: 4,
-    img: service_img_1,
+    img: "/services/bonds_and_debentures.png",
     icon: <ServiceIconOne />,
     title: "Bonds & Debentures",
     sm_des:
-      "Ezylife offers fixed-income investment optionsfor conservative investors seeking predictable returns and portfolio diversification.",
+      "Ezylife offers fixed-income investment options for conservative investors seeking predictable returns and portfolio diversification.",
   },
   {
     id: 5,
-    img: service_img_2,
+    img: "/services/portfolio_advisory.png",
     icon: <ServiceIconTwo />,
     title: "Portfolio Advisory",
     sm_des:
-      "Ezylife’s Portfolio Advisory serviceshelp clients design, monitor, and optimize their investments to achieve financial goals with confidence.",
+      "Ezylife's Portfolio Advisory services help clients design, monitor, and optimize their investments to achieve financial goals with confidence.",
   },
   {
     id: 6,
-    img: service_img_3,
+    img: "/services/financial_planning.jpg",
     icon: <ServiceIconThree />,
     title: "Financial Planning",
     sm_des:
@@ -71,35 +68,35 @@ const service_data: DataType[] = [
   },
   {
     id: 7,
-    img: service_img_1,
+    img: "/services/retirement_planning.jpg",
     icon: <ServiceIconOne />,
     title: "Retirement Planning",
     sm_des:
-      "Our Retirement Planning serviceshelp you build a financially independent and comfortable life after retirement.",
+      "Our Retirement Planning services help you build a financially independent and comfortable life after retirement.",
   },
   {
     id: 8,
-    img: service_img_2,
+    img: "/services/portfolio_management_services.jpg",
     icon: <ServiceIconTwo />,
     title: "Portfolio Management Services (PMS)",
     sm_des:
-      "Ezylife offers professional Portfolio Management Services (PMS)for investors seeking customized investment strategies and superior portfolio growth.",
+      "Ezylife offers professional Portfolio Management Services (PMS) for investors seeking customized investment strategies and superior portfolio growth.",
   },
   {
     id: 9,
-    img: service_img_3,
+    img: "/services/insurance_services.jpg",
     icon: <ServiceIconThree />,
     title: "Insurance Services",
     sm_des:
-      "Ezylife provides comprehensive insurance solutionsto protect you and your family against uncertainties.",
+      "Ezylife provides comprehensive insurance solutions to protect you and your family against uncertainties.",
   },
   {
     id: 10,
-    img: service_img_2,
+    img: "/services/tax_planning.jpg",
     icon: <ServiceIconOne />,
     title: "Tax Planning",
     sm_des:
-      "Ezylife helps you optimize your taxes legally and efficientlywith expert guidance from our Chartered Accountants (CAs). Our goal is to minimize your tax liability while ensuring compliance with all laws and regulations.",
+      "Ezylife helps you optimize your taxes legally and efficiently with expert guidance from our Chartered Accountants (CAs). Our goal is to minimize your tax liability while ensuring compliance with all laws and regulations.",
   },
 ];
 
@@ -190,7 +187,7 @@ const ServiceAreaHomeOne = () => {
                 <SwiperSlide key={index} className="swiper-slide mb-30 mt-40">
                   <div
                     className="tp-service-item-wrapper p-relative d-flex flex-column"
-                    style={{ height: "475px" }}
+                    style={{ height: "550px" }}
                   >
                     <div className="tp-service-item-icon">
                       <span>{item.icon}</span>
@@ -215,7 +212,13 @@ const ServiceAreaHomeOne = () => {
                     </div>
                     <div className="tp-service-item-thumb">
                       <Link href={`/services-details/${item.id}`}>
-                        <Image src={item.img} alt="image-title-here" />
+                        <Image
+                          src={item.img}
+                          alt={item.title}
+                          width={300}
+                          height={200}
+                          style={{objectFit: 'cover'}}
+                        />
                       </Link>
                     </div>
                   </div>
