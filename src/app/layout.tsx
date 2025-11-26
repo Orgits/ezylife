@@ -1,31 +1,67 @@
-
+import React from "react";
 import "../style/index.scss";
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: 'EzyLife - Make Your Life Easy',
-  description: 'A SEBI-registered sub-broker with IIFL Capital We are also registered with AMFI, enabling us to distribute mutual funds and SIPs across all major asset management companies. Our team of Chartered Accountants, Financial Advisors, and Wealth Experts simplifies financial decisions for our clients, ensuring they get the right solutions at the right time — true to our tagline, Makes Your Life Easy. Our Vision To simplify financial decisions and create wealth with trust, transparency, and innovation.',
-}
+  title: "EzyLife - Make Your Life Easy",
+  description:
+    "A SEBI-registered sub-broker with IIFL Capital. We are also registered with AMFI, enabling us to distribute mutual funds and SIPs across all major asset management companies. Our team of Chartered Accountants, Financial Advisors, and Wealth Experts simplifies financial decisions for our clients, ensuring they get the right solutions at the right time — true to our tagline, Makes Your Life Easy. Our Vision: To simplify financial decisions and create wealth with trust, transparency, and innovation.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <head>
-        <meta name="description" content="EzyLife - Make Your Life Easy" />
-        <meta name="google-site-verification" content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk" />
-        <link rel="icon" href="favicon.ico" sizes="any" />
+        <meta name="description" content={metadata.description ?? undefined} />
+        <meta
+          name="google-site-verification"
+          content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk"
+        />
+
+        {/* Google Fonts */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
         />
+
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
+        {/* Google Tag Manager script (placed in head) */}
+        <Script
+          id="gtm-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NCRCXNN6');`,
+          }}
+        />
       </head>
 
-      <body>{children}</body>
+      <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCXNN6"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="gtm-noscript"
+          />
+        </noscript>
+
+        {children}
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCXNN6"
+            height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
+        </noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+      </body>
     </html>
-  )
+  );
 }
