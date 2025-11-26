@@ -385,7 +385,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                 <div className="tp-service-details-thumb">
                   <Image
                     src={currentService ? currentService.img : service_details_img_1}
-                    style={{ width: "800px", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     alt="image-title-here"
                     width={800}
                     height={400}
