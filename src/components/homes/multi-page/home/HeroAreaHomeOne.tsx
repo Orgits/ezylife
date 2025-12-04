@@ -430,7 +430,7 @@ const HeroAreaHomeOne = () => {
                             <div className="tp-hero-call-inner">
                               <p>Need help?</p>
                               <span>
-                                <a href="tel:5550111">{item.phone}</a>
+                                <a href="tel:+919899829830">{item.phone}</a>
                               </span>
                             </div>
                           </div>

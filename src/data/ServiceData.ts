@@ -83,7 +83,7 @@ const service_data: DataType[] = [
   {
     id: 2,
     home: 'service',
-    img: "/services/mutual-funds.png",
+    img: "/services/mutualfunds.webp",
     title: "Mutual Funds & SIPs",
     sm_des: "Ezylife helps you invest in mutual funds and systematic investment plans (SIPs) to build wealth steadily and efficiently.",
     delay: ".5s",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import about_img from "@/assets/img/about/img-1.png";
 import about_shape from "@/assets/img/about/shape-3.png";
 
-import about_shape_1 from "@/assets/img/about/img-2.png";
+import about_shape_1 from "@/assets/img/about/fin-img.webp";
 import about_shape_2 from "@/assets/img/about/shape-1.png";
 import about_shape_3 from "@/assets/img/about/shape-2.png";
 import about_shape_4 from "@/assets/img/about/10years.jpg";

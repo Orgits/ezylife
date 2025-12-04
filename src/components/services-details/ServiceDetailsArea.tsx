@@ -98,7 +98,7 @@ const service_details_data: ServiceDetail[] = [
         "Long-term wealth creation with disciplined planning.",
       ],
     },
-    img: '/services/mutualfunds_and_sips.png',
+    img: '/services/mutualfund.jpg',
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ const service_details_data: ServiceDetail[] = [
         "Step-by-step support from application to post-listing management.",
       ],
     },
-    img: '/services/ipo_investments.png',
+    img: '/services/ipo.jpg',
   },
   {
     id: 4,
