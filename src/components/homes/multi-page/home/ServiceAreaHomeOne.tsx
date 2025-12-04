@@ -27,7 +27,7 @@ const service_data: DataType[] = [
   },
   {
     id: 2,
-    img: "/services/mutualfunds_and_sips.png",
+    img: "/services/mutualfunds.webp",
     icon: <ServiceIconTwo />,
     title: "Mutual Funds & SIPs",
     sm_des:
@@ -35,7 +35,7 @@ const service_data: DataType[] = [
   },
   {
     id: 3,
-    img: "/services/ipo_investments.png",
+    img: "/services/ipo.webp",
     icon: <ServiceIconThree />,
     title: "IPO Investments",
     sm_des:
