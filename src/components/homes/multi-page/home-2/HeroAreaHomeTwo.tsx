@@ -56,7 +56,7 @@ const HeroAreaHomeTwo = () => {
                           </span>
                           <div className="tp-hero-call-inner-2">
                           <p>Need help?</p>
-                          <span><a href="tel:5550111">{phone}</a></span>
+                          <span><a href="tel:+919899829830">{phone}</a></span>
                           </div>
                         </div>
                     </div>
