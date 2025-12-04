@@ -155,13 +155,11 @@ const ServiceAreaHomeOne = () => {
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
+                    marginBottom: "40px",
                   }}
                 >
                   Our services
                 </span>
-                <h3 className="tp-section-title">
-                  Innovate to dominate <br /> with us
-                </h3>
               </div>
             </div>
             <div className="col-lg-6 col-md-4">

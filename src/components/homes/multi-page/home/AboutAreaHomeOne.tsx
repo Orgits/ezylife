@@ -155,6 +155,11 @@ const AboutAreaHomeOne = () => {
             font-size: 16px !important;
             letter-spacing: 0.2px;
           }
+            .tp-about-wrapper-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
         }
       `}</style>
       <section
@@ -234,7 +239,7 @@ const AboutAreaHomeOne = () => {
                   </span>
                   <h3 className="tp-section-title">{title}</h3>
                 </div>
-                <p style={{textAlign: 'justify'}}>{sm_des}</p>
+                <p style={{ textAlign: 'justify' }}>{sm_des}</p>
                 <div
                   className="tp-about-mission"
                   style={{ marginTop: "25px", marginBottom: "30px" }}
@@ -248,25 +253,24 @@ const AboutAreaHomeOne = () => {
                   >
                     Our Missions
                   </h4>
-                  <div className="tp-about-wrapper-list">
-                    <ul>
+                  <div className="tp-about-wrapper-list" >
+                    <ul style={{ listStyleType: "circle", listStylePosition: "outside", paddingLeft: "20px", marginTop: "8px", }}>
                       {features.map((item, index) => (
-                        <li key={index} style={{ fontSize: "16px" }}>
+                        <li key={index} style={{ fontSize: "16px", alignItems: "left", display: "flex", gap: "8px" }}>
                           <span>
                             <i className="fa-regular fa-circle"></i>
-                          </span>{" "}
-                          {item}
+                          </span>{item}
+
                         </li>
                       ))}
                     </ul>
-                  </div>
-                </div>
+                  </div></div>
                 <div className="tp-about-btn">
                   <Link className="tp-btn" href="/about">
                     About Us{" "}
                     <span>
                       <i className="fa-regular fa-plus"></i>
-                    </span>
+                    </span>{" "}
                   </Link>
                 </div>
               </div>
