@@ -103,7 +103,7 @@ const project_data: DataType[] = [
         name: "Financial Planning",
       },
       {
-        img: "/projects/financial_planning_2.jpg",
+        img: "/projects/financial planning.webp",
         title: "Our Projects",
         name: "Financial Planning",
       },
@@ -132,12 +132,12 @@ const project_data: DataType[] = [
     tab_name: "Wealth Management",
     tab_items: [
       {
-        img: "/projects/wealth_manangement_1.jpg",
+        img: "/projects/wealthy.webp",
         title: "Our Projects",
         name: "Wealth Management",
       },
       {
-        img: "/projects/wealth_manangement_2.jpeg",
+        img: "/projects/wealth-management.webp",
         title: "Our Projects",
         name: "Wealth Management",
       },
@@ -146,17 +146,17 @@ const project_data: DataType[] = [
   {
     tab_id: "interiour",
     home: 1,
-    tab_name: "Women Entrepreneurs",
+    tab_name: "Tax Planning",
     tab_items: [
       {
-        img: "/projects/women_entrepreneur_1.jpg",
+        img: "/projects/income-tax.webp",
         title: "Our Projects",
-        name: "Women Entrepreneurs",
+        name: "Tax Planning",
       },
       {
-        img: "/projects/women_entrepreneur_2.jpeg",
+        img: "/projects/tax-planning.webp",
         title: "Our Projects",
-        name: "Women Entrepreneurs",
+        name: "Tax Planning",
       },
     ]
   },

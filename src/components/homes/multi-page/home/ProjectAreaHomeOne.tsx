@@ -26,10 +26,10 @@ const ProjectAreaHomeOne = () => {
                     backgroundClip: "text",
                   }}
                 >
-                  our latest project
+                 OUR SERVICES
                 </span>
-                <h3 className="tp-section-title">
-                  Together we can achieve <br /> anything
+                <h3 className="tp-section-title" >
+                 Your Goals, <br />Our Financial Expertise
                 </h3>
               </div>
             </div>
