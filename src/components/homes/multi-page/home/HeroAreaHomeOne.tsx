@@ -27,8 +27,8 @@ const hero_data: DataType[] = [
   {
     id: 1,
     img: hero_bg_1,
-    subtitle: "Welcome to Ezylife",
-    title: "Makes Your Life Easy Your trusted partner in financial growth",
+    subtitle: "Ezylife - Makes Your Life Easy",
+    title: "Your trusted partner in financial growth",
     sm_des:
       "At Ezylife, we empower individuals, families, and businesses to achieve their financial goals with expert guidance, innovative solutions, and transparent practices. As a registered sub-broker with IIFL Capitaland AMFI distributor, we bring you the best of investments, trading, and advisory services under one roof.",
     phone: "+91 98998 29830",
@@ -36,19 +36,10 @@ const hero_data: DataType[] = [
   {
     id: 2,
     img: hero_bg_2,
-    subtitle: "Welcome to Ezylife",
+    subtitle: "Ezylife - Makes Your Life Easy",
     title: "Where your financial dreams become reality",
     sm_des:
       "And in order to scale a business, strategic financial decisions play an important role. Similarly, turning growth into success requires trusted advisors.",
-    phone: "+91 98998 29830",
-  },
-  {
-    id: 3,
-    img: hero_bg_3,
-    subtitle: "Welcome to Ezylife",
-    title: "Our mission is your financial success",
-    sm_des:
-      "Every growing business needs insight, and every smart decision starts with expert financial guidance.",
     phone: "+91 98998 29830",
   },
 ];
@@ -305,7 +296,7 @@ const HeroAreaHomeOne = () => {
                 <div
                   className="tp-hero-bg"
                   style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/bse2.JPG)`,
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.66) 92%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/bse2.JPG)`,
                     backgroundSize: "cover",
                     backgroundPosition: "centre",
                   }}
@@ -322,11 +313,11 @@ const HeroAreaHomeOne = () => {
                     <div className="col-lg-7">
                       <div className="tp-hero-content p-relative">
                         <div className="tp-hero-title-wrapper">
-                          <span className="tp-hero-subtitle">
+                          <span style={{fontFamily: "Times-new-roman"}} className="tp-hero-subtitle">
                             {item.subtitle}
                           </span>
-                          <h2 className="tp-hero-title">{item.title}</h2>
-                          <p style={{textAlign: 'justify'}}>{item.sm_des}</p>
+                          <h2 style={{color: "#ffffffff"}} className="tp-hero-title">{item.title}</h2>
+                          <p style={{color: "#ffffffff", textAlign: 'justify', fontSize: "16px"}} >{item.sm_des}</p>
                         </div>
 
                         {/* Our Promises Section */}
