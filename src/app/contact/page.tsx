@@ -4,7 +4,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "Contact - Finbest - Banking and Finance React Next js Template",
+  title: "Contact - Ezylife Financial Services | Investment & Tax Insights.",
 }
 
 const index = () => {

@@ -3,7 +3,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "Services Details - Finbest - Banking and Finance React Next js Template",
+  title: "Services Details - Ezylife Financial Services | Investment & Tax Insights.",
 };
 
 const ServiceDetailsPage = ({ params }: { params: { id: string } }) => {

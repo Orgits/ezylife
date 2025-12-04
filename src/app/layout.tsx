@@ -7,7 +7,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "EzyLife - Make Your Life Easy",
   description:
-    "A SEBI-registered sub-broker with IIFL Capital. We are also registered with AMFI, enabling us to distribute mutual funds and SIPs across all major asset management companies. Our team of Chartered Accountants, Financial Advisors, and Wealth Experts simplifies financial decisions for our clients, ensuring they get the right solutions at the right time — true to our tagline, Makes Your Life Easy. Our Vision: To simplify financial decisions and create wealth with trust, transparency, and innovation.",
+    "SEBI-registered sub-broker with IIFL Capital offering mutual funds, SIPs, financial planning, and wealth management with trust, transparency, and innovation.",
 };
 
 export default function RootLayout({

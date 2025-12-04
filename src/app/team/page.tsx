@@ -5,7 +5,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Team - Finbest - Banking and Finance React Next js Template",
+  title: "Team - Ezylife Financial Services | Investment & Tax Insights.",
 };
 
 

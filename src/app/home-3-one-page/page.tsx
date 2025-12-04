@@ -4,7 +4,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "Finbest One Page Home Three - Finbest - Banking and Finance React Next js Template",
+  title: "Finbest One Page Home Three - Ezylife Financial Services | Investment & Tax Insights.",
 };
 
 const index = () => {
