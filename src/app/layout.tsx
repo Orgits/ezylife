@@ -23,6 +23,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk"
         />
+        <meta name="facebook-domain-verification" content="kzjlkm2ire9o3lbae99kga0vevz1kw" />
 
         {/* Google Fonts */}
         <link
