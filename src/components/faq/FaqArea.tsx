@@ -5,7 +5,7 @@ import accordion_data from '@/data/AccordionData';
 const FaqArea = () => {
   return (
     <>
-      <section className="tp-faq-breadcrumb-area pt-120 pb-100">
+      <section className="tp-faq-breadcrumb-area pt-40 pb-40 md:pt-120 md:pb-100">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">

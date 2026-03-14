@@ -377,7 +377,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
   } = service_details;
   return (
     <>
-      <section className="tp-service-details-area pt-120 pb-120">
+      <section className="tp-service-details-area pt-40 pb-40 lg:pt-120 lg:pb-120">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
@@ -571,6 +571,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                           margin-bottom: 12px;
                           display: flex;
                           align-items: flex-start;
+                          justify-content: flex-start;
                         }
 
                         .circle-icon {

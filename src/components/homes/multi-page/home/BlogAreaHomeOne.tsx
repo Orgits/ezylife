@@ -26,7 +26,7 @@ const BlogAreaHomeOne = ({ style }: any) => {
     <>
       <section
         id="blog-one-page"
-        className={`tp-blog-area pt-120 ${style ? "" : "pb-90"}`}
+        className={`tp-blog-area pt-60 md:pt-120 ${style ? "" : "pb-40 md:pb-80"}`}
       >
         <div className="container">
           <div className="row">
