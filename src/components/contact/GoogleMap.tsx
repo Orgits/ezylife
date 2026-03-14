@@ -13,7 +13,7 @@ const GoogleMap = () => {
           
           .tp-contact-map iframe {
             width: 100% !important;
-            height: 350px !important;
+            height: 550px !important;
           }
         }
         

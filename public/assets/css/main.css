@@ -9195,7 +9195,6 @@ blockquote::after {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
-  margin-left: 30px;
 }
 .tp-service-widget-list-content ul li i {
   position: absolute;
@@ -12709,7 +12708,7 @@ blockquote::after {
   margin-bottom: 12px;
 }
 .tp-contact-map {
-  height: 570px;
+  /* height: 570px; */
   width: 100%;
 }
 .tp-contact-map-area.map-margin {

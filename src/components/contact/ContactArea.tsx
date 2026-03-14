@@ -36,8 +36,8 @@ const ContactArea = ({ style }: any) => {
       <section
         id="contact-one-page"
         className={`tp-contact-breadcrumb-area ${
-          style ? "pt-100" : "pt-120"
-        } pb-120`}
+          style ? "pt-40 md:pt-100" : "pt-40 md:pt-120"
+        } pb-40 md:pb-120`}
       >
         <div className="container">
           <div className="tp-contact-breadcrumb-box">

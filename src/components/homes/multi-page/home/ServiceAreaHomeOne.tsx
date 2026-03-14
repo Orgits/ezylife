@@ -138,31 +138,46 @@ const setting = {
 const ServiceAreaHomeOne = () => {
   return (
     <>
+      <style jsx global>{`
+        .tp-service-active .swiper-wrapper {
+          align-items: stretch;
+        }
+        .tp-service-active .swiper-slide {
+          height: auto;
+        }
+        @media (min-width: 768px) {
+          .tp-service-item-wrapper {
+            height: 100%;
+          }
+          .tp-service-item-wrapper .tp-service-item-thumb {
+            margin-top: auto !important;
+          }
+        }
+      `}</style>
       <section
         id="services-one-page"
-        className="tp-service-area pt-120 pb-90"
+        className="tp-service-area pt-40 md:pt-120"
         style={{ backgroundColor: "#F6F6F9" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-8">
-              <div className="tp-service-title-wrapper mb-40">
+              <div className="tp-service-title-wrapper mb-20 md:mb-40">
                 <span
-                  className="tp-section-title-pre"
+                  className="tp-section-title-pre mb-20 md:mb-40"
                   style={{
                     background:
                       "linear-gradient(90deg, #4CAF50 0%, #2E7D32 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
-                    marginBottom: "40px",
                   }}
                 >
                   Our services
                 </span>
               </div>
             </div>
-            <div className="col-lg-6 col-md-4">
+            {/* <div className="col-lg-6 col-md-4">
               <div className="tp-service-nav text-end">
                 <button type="button" className="service-button-prev-1">
                   <i className="fa-regular fa-arrow-left"></i>
@@ -171,44 +186,37 @@ const ServiceAreaHomeOne = () => {
                   <i className="fa-regular fa-arrow-right"></i>
                 </button>
               </div>
-            </div>
+            </div> */}
 
             <Swiper
               {...setting}
               loop={true}
               modules={[Navigation, Autoplay]}
               className="tp-service-active swiper-container wow fadeInUp"
+              // style={{ paddingBottom: '80px' }}
               data-wow-duration="1s"
               data-wow-delay=".3s"
+              // style={{paddingTop: '40px'}}
             >
               {service_data.map((item, index) => (
                 <SwiperSlide key={index} className="swiper-slide mb-30 mt-40">
                   <div
                     className="tp-service-item-wrapper p-relative d-flex flex-column"
-                    style={{ height: "550px" }}
                   >
                     <div className="tp-service-item-icon">
                       <span>{item.icon}</span>
                     </div>
-                    <div className="tp-service-item-content flex-grow-1 d-flex flex-column">
+                    <div className="tp-service-item-content">
                       <h4 className="tp-service-item-title">
                         <Link href={`/services-details/${item.id}`}>
                           {item.title}
                         </Link>
                       </h4>
-                      <p
-                        className="mb-3"
-                        style={{
-                          minHeight: "80px",
-                          maxHeight: "150px",
-                          overflow: "hidden",
-                          textAlign: 'justify'
-                        }}
-                      >
+                      <p style={{ textAlign: 'justify' }}>
                         {item.sm_des}
                       </p>
                     </div>
-                    <div className="tp-service-item-thumb">
+                    <div className="tp-service-item-thumb" style={{ marginTop: '20px' }}>
                       <Link href={`/services-details/${item.id}`}>
                         <Image
                           src={item.img}

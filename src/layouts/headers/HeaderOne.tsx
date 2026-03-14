@@ -55,9 +55,6 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                      </div>
                      <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
                         <div className="tp-header-contact d-xl-flex align-items-center d-none">
-                           {/* <div className="tp-header-contact-search search-open-btn d-none d-xxl-block">
-                              <span onClick={() => setSearchOpen(true)}><i className="fa-solid fa-magnifying-glass"></i></span>
-                           </div> */}
                            <div className="tp-header-contact-inner d-flex align-items-center">
                               <div className="tp-header-contact-icon">
                                  <span style={{
@@ -78,7 +75,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                               </div>
                            </div>
                         </div>
-                        <div className="tp-header-sticky-hamburger d-xl-none offcanvas-open-btn">
+                        <div className="tp-header-sticky-hamburger d-xl-none offcanvas-open-btn" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                            <button className="hamburger-btn">
                               <span></span>
                               <span></span>
@@ -100,7 +97,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                   >
                   Schedule a Callback <i className="fa-regular fa-arrow-right"></i>
                   </Link>
-                  <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn">
+                  <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                      <button className="hamburger-btn" onClick={() => setMenuOpen(true)}>
                         <span></span>
                         <span></span>
@@ -111,14 +108,14 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
             </div>
          </header>
 
-         <header id="header-sticky" className={`tp-header-main-sticky p-relative ${sticky ? 'tp-header-sticky' : ''}`}>
-            <div className="tp-header-space-2">
+         <header id="header-sticky" className={`tp-header-main-sticky p-relative ${sticky ? 'tp-header-sticky' : ''}`} style={{paddingLeft: '4px', paddingRight: '40px'}}>
+            <div className="">
                <div className="container-fluid">
                   <div className="row align-items-center">
                      <div className="col-xl-3 col-6">
                         <div className="tp-header-logo-2 p-relative">
                            <Link href="/">
-                              <Image width={180} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
+                              <Image width={100} height={60} src='/logo.png' alt="image-title-here" style={{ objectFit: 'contain' }} />
                            </Link>
                         </div>
                      </div>
@@ -156,7 +153,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                                  </div>
                               </div>
                            </div>
-                           <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn text-end">
+                           <div className="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn text-end" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                               <button className="hamburger-btn" onClick={() => setMenuOpen(true)}>
                                  <span></span>
                                  <span></span>
