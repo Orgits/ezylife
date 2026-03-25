@@ -3,11 +3,14 @@ import "../style/index.scss";
 import type { Metadata } from "next";
 import Script from "next/script";
 
-
 export const metadata: Metadata = {
   title: "EzyLife - Make Your Life Easy",
   description:
     "SEBI-registered sub-broker with IIFL Capital offering mutual funds, SIPs, financial planning, and wealth management with trust, transparency, and innovation.",
+  metadataBase: new URL("https://www.ezylife.in"), // 👈 Add your actual domain
+  alternates: {
+    canonical: "/", // 👈 This generates the canonical tag automatically
+  },
 };
 
 export default function RootLayout({
@@ -18,24 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="description" content={metadata.description ?? undefined} />
-        <meta
-          name="google-site-verification"
-          content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk"
-        />
+        <meta name="google-site-verification" content="AwfYFpp4CTA_ULlBHZDyK08zRfxa5hWUrVDq8gmU1Uk" />
         <meta name="facebook-domain-verification" content="kzjlkm2ire9o3lbae99kga0vevz1kw" />
-
-        {/* Google Fonts */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
         />
-
-
-
         <link rel="icon" href="/favicon.ico" sizes="any" />
-
-        {/* Google Tag Manager script (placed in head) */}
         <Script
           id="gtm-script"
           strategy="beforeInteractive"
@@ -44,9 +36,7 @@ export default function RootLayout({
           }}
         />
       </head>
-
       <body>
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCXNN6"
@@ -56,14 +46,7 @@ export default function RootLayout({
             title="gtm-noscript"
           />
         </noscript>
-
         {children}
-        {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCXNN6"
-            height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
-        </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
       </body>
     </html>
   );

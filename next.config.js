@@ -2,11 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Fix legacy JavaScript (Save ~25 KiB)
-  experimental: {
-    legacyBrowsers: false,
-  },
-
   // Fix image delivery (Save ~722 KiB)
   images: {
     formats: ['image/avif', 'image/webp'],
