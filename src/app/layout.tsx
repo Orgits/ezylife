@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/index.scss";
-
 import type { Metadata } from "next";
 import Script from "next/script";
+
 
 export const metadata: Metadata = {
   title: "EzyLife - Make Your Life Easy",
@@ -30,6 +30,8 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
         />
+
+
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
