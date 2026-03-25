@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import about_img from "@/assets/img/about/img-1.png";
+import about_img from "@/assets/img/about/image.webp";
 import about_shape from "@/assets/img/about/shape-3.png";
 
 import about_shape_1 from "@/assets/img/about/fin-img.webp";
