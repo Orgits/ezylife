@@ -71,7 +71,7 @@ const service_details_data: ServiceDetail[] = [
         "Comprehensive solutions for wealth growth and risk management.",
       ],
     },
-    img: '/services/equity_and_derivatives_trading.png',
+    img: '/services/equity_and_derivatives_trading.webp',
   },
   {
     id: 2,
@@ -148,7 +148,7 @@ const service_details_data: ServiceDetail[] = [
         "Safe and reliable options for portfolio diversification.",
       ],
     },
-    img: '/services/bonds_and_debentures.png',
+    img: '/services/bonds_and_debentures.webp',
   },
   {
     id: 5,
@@ -174,7 +174,7 @@ const service_details_data: ServiceDetail[] = [
         "Simplified investment planning — 'Makes Your Life Easy'.",
       ],
     },
-    img: '/services/portfolio_advisory.png',
+    img: '/services/portfolio_advisory.webp',
   },
   {
     id: 6,
@@ -384,7 +384,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
               <div className="tp-service-details-wrapper">
                 <div className="tp-service-details-thumb">
                   <Image
-                    src={currentService?.img || "/services/equity_and_derivatives_trading.png"}
+                    src={currentService?.img || "/services/equity_and_derivatives_trading.webp"}
                     width={800}
                     height={400}
                     style={{ width: "100%", height: "auto" }}
@@ -557,7 +557,7 @@ const ServiceDetailsArea = ({ serviceId }: { serviceId?: string }) => {
                   <a href="#">
                     <span>
                       Download Profile
-                      <Image src={'/assets/img/process/pdf.png'} alt="icon" width={40} height={40} />
+                      <Image src={'/assets/img/process/pdf.webp'} alt="icon" width={40} height={40} />
                     </span>
                   </a>
                 </div>

@@ -120,7 +120,7 @@ const project_data: DataType[] = [
         name: "Investment Planning",
       },
       {
-        img: "/projects/investment_planning_2.jpg",
+        img: "/projects/investment_planning_2.webp",
         title: "Our Projects",
         name: "Investment Planning",
       },
