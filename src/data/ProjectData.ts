@@ -98,7 +98,7 @@ const project_data: DataType[] = [
     tab_name: "Financial Planning",
     tab_items: [
       {
-        img: "/projects/financial_planning_1.jpg",
+        img: "/projects/financial_planning_1.webp",
         title: "Our Projects",
         name: "Financial Planning",
       },
@@ -115,7 +115,7 @@ const project_data: DataType[] = [
     tab_name: "Investment Planning",
     tab_items: [
       {
-        img: "/projects/investment_planning_1.jpg",
+        img: "/projects/investment_planning_1.webp",
         title: "Our Projects",
         name: "Investment Planning",
       },
