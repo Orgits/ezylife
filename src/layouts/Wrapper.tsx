@@ -2,7 +2,6 @@
 
 import { useEffect } from "react"; 
 import { animationCreate } from "@/utils/utils";
-import ScrollToTop from "@/components/common/ScrollToTop";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -17,12 +16,11 @@ const Wrapper = ({ children }: any) => {
   
     return () => clearTimeout(timer);  
   }, []);
- 
+  
    
 
   return <>
     {children}
-    <ScrollToTop /> 
   </>;
 };
 
