@@ -90,7 +90,7 @@ const FooterOne = () => {
       enabled: true,
 
       chatButtonSetting: {
-        backgroundColor: "#00e785",
+        backgroundColor: "#7fd957",
         ctaText: "Chat with us",
         borderRadius: "25",
         marginLeft: "0",
