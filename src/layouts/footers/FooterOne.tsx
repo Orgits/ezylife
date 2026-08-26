@@ -1,10 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import footer_shape_1 from "@/assets/img/footer/bg-shape.png";
 import SocialLinks, { CopyRight } from "@/components/common/SocialLinks";
-import { url } from "inspector";
 
 interface DataType {
   sm_info: string;
@@ -19,7 +20,6 @@ interface DataType {
     publish: string;
     link: string;
   }[];
-  
   footer_links: string[];
 }
 
@@ -51,63 +51,138 @@ const footer_content: DataType = {
       publish: "Strategic Approach",
       link: "/services",
     },
-    
-
-
   ],
-
   footer_links: [
     "Disclaimer",
     "Privacy Policy",
     "Risk Disclosure",
   ],
 };
-const { sm_info, link_title, link_list, post_title, post_list, footer_links } =
-  footer_content;
+
+const {
+  sm_info,
+  link_title,
+  link_list,
+  post_title,
+  post_list,
+  footer_links,
+} = footer_content;
 
 const FooterOne = () => {
+  useEffect(() => {
+    // Prevent loading the WATI widget more than once
+    if (
+      typeof window === "undefined" ||
+      (window as any).CreateWhatsappChatWidget
+    ) {
+      return;
+    }
+
+    const url =
+      "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?68285";
+
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = url;
+
+    const options = {
+      enabled: true,
+
+      chatButtonSetting: {
+        backgroundColor: "#00e785",
+        ctaText: "Chat with us",
+        borderRadius: "25",
+        marginLeft: "0",
+        marginRight: "20",
+        marginBottom: "20",
+        ctaIconWATI: false,
+        position: "right",
+      },
+
+      brandSetting: {
+        brandName: "EzyLife",
+        brandSubTitle: "undefined",
+        brandImg:
+          "https://ezylife.in/assets/img/logo/ezylifelogo.jpg",
+        welcomeText: "Hi there!\nHow can I help you?",
+        messageText:
+          "Hello, %0A I have a question about {{page_link}}",
+        backgroundColor: "#62f60ce4",
+        ctaText: "Chat with us",
+        borderRadius: "25",
+        autoShow: false,
+        phoneNumber: "919899829830",
+      },
+    };
+
+    script.onload = () => {
+      if (typeof (window as any).CreateWhatsappChatWidget === "function") {
+        (window as any).CreateWhatsappChatWidget(options);
+      }
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      // Remove script when component is unmounted
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <>
       <footer
-        className="tp-footer-area pt-80  z-index-1"
+        className="tp-footer-area pt-80 z-index-1"
         style={{
-    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/ai.webp)`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "centre",
-}}
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.65) 90%, rgba(90, 206, 44, 0.79)), url(/assets/img/hero/ai.webp)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
       >
         <div className="tp-footer-bg-shape">
-          <Image src={footer_shape_1} alt="image-title-here" />
+          <Image src={footer_shape_1} alt="Footer background shape" />
         </div>
+
         <div className="tp-footer-main-area tp-footer-border">
           <div className="container">
             <div className="row">
+              {/* About */}
               <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-1 mb-50">
                   <div className="tp-footer-logo mb-20">
                     <Link href="/">
-                      {" "}
                       <Image
                         width={180}
                         height={60}
                         src="/logo.png"
-                        alt="image-title-here"
+                        alt="EzyLife Financial Services"
                         style={{ objectFit: "contain" }}
                       />
                     </Link>
                   </div>
+
                   <div className="tp-footer-widget-content">
-                    <p style={{textAlign: 'justify'}}>{sm_info}</p>
+                    <p style={{ textAlign: "justify" }}>{sm_info}</p>
+
                     <div className="tp-footer-widget-social">
                       <SocialLinks />
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* Quick Links */}
               <div className="col-xl-2 col-lg-4 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-2 mb-50">
-                  <h3 className="tp-footer-widget-title">{link_title}</h3>
+                  <h3 className="tp-footer-widget-title">
+                    {link_title}
+                  </h3>
+
                   <div className="tp-footer-widget-content">
                     <ul>
                       {link_list.map((item, index) => (
@@ -119,17 +194,26 @@ const FooterOne = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Services */}
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-3 mb-50">
-                  <h3 className="tp-footer-widget-title">{post_title}</h3>
+                  <h3 className="tp-footer-widget-title">
+                    {post_title}
+                  </h3>
+
                   <div className="tp-footer-widget-content">
                     {post_list.map((item, index) => (
-                      <div key={index} className="tp-footer-widget-item">
+                      <div
+                        key={index}
+                        className="tp-footer-widget-item"
+                      >
                         <h4 className="tp-footer-widget-item-title">
-                          <Link href="/blog-details">{item.title}</Link>
+                          <Link href={item.link}>{item.title}</Link>
                         </h4>
+
                         <span>
-                          <i className="fa-regular fa-calendar-days"></i>
+                          <i className="fa-regular fa-calendar-days"></i>{" "}
                           {item.publish}
                         </span>
                       </div>
@@ -137,34 +221,48 @@ const FooterOne = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Contact */}
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div className="tp-footer-widget tp-footer-col-4 mb-50">
                   <h3
                     className="tp-footer-widget-title"
-                    style={{ marginBottom: "0" , backgroundColor: 'transparent', border: 'none'}}
+                    style={{
+                      marginBottom: "0",
+                      backgroundColor: "transparent",
+                      border: "none",
+                    }}
                   >
                     Contact us
                   </h3>
+
                   <div className="tp-footer-widget-content">
                     <div
                       className="tp-footer-widget-contact no-bg"
-                      style={{ backgroundColor: 'transparent', border: 'none' }}
+                      style={{
+                        backgroundColor: "transparent",
+                        border: "none",
+                      }}
                     >
                       <div className="tp-footer-widget-contact-inner">
                         <a
                           href="https://maps.app.goo.gl/S8XKGo4GgUjRrX4S9"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fa-sharp fa-solid fa-location-dot"></i>{" "}
-                          Office No. 74D, 7th Floor, Himalaya House,KG Marg, New
-                          Delhi –110001
+                          Office No. 74D, 7th Floor, Himalaya House, KG Marg,
+                          New Delhi –110001
                         </a>
                       </div>
+
                       <div className="tp-footer-widget-contact-inner">
                         <a href="tel:01145584780">
-                          <i className="fa-solid fa-phone"></i> 011-45584780
+                          <i className="fa-solid fa-phone"></i>{" "}
+                          011-45584780
                         </a>
                       </div>
+
                       <div className="tp-footer-widget-contact-inner">
                         <a href="mailto:info@ezylife.in">
                           <i className="fa-solid fa-envelope"></i>{" "}
@@ -176,39 +274,58 @@ const FooterOne = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center p-4 mb-4" style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              borderRadius: '8px',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              color: 'white',
-              fontSize: '14px',
-              lineHeight: '1.6'
-            }}>
-              <strong>Ezylife Financial Services Pvt. Ltd.</strong> is a SEBI-registered
-              Sub-Broker with IIFL Capital (IIFL Securities) and an
-              AMFI-registered Mutual Fund Distributor. Investments in securities
-              are subject to market risks. Please read all related documents
-              carefully before investing. Ezylife does not guarantee returns.
-              For grievances, write to <a href="mailto:compliance@ezylife.in" style={{ color: '#FFD700', textDecoration: 'underline' }}>compliance@ezylife.in</a>.
+
+            {/* SEBI Disclaimer */}
+            <div
+              className="text-center p-4 mb-4"
+              style={{
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid rgba(255, 255, 255, 0.2)",
+                color: "white",
+                fontSize: "14px",
+                lineHeight: "1.6",
+              }}
+            >
+              <strong>Ezylife Financial Services Pvt. Ltd.</strong> is a
+              SEBI-registered Sub-Broker with IIFL Capital (IIFL Securities)
+              and an AMFI-registered Mutual Fund Distributor. Investments in
+              securities are subject to market risks. Please read all related
+              documents carefully before investing. Ezylife does not guarantee
+              returns. For grievances, write to{" "}
+              <a
+                href="mailto:compliance@ezylife.in"
+                style={{
+                  color: "#FFD700",
+                  textDecoration: "underline",
+                }}
+              >
+                compliance@ezylife.in
+              </a>
+              .
             </div>
           </div>
         </div>
+
+        {/* Copyright */}
         <div className="tp-footer-copyright-area p-relative">
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-lg-6">
                 <div className="tp-footer-copyright-inner">
                   <p>
-                    {" "}
-                    <CopyRight />{" "}
+                    <CopyRight />
                   </p>
                 </div>
               </div>
+
               <div className="col-md-12 col-lg-6">
                 <div className="tp-footer-copyright-inner text-lg-end">
                   <Link href="/disclaimer">Disclaimer</Link>
                   <Link href="/privacy-policy">Privacy Policy</Link>
-                  <Link href="/risk-disclosure">Risk Disclosure</Link>
+                  <Link href="/risk-disclosure">
+                    Risk Disclosure
+                  </Link>
                 </div>
               </div>
             </div>
