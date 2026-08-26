@@ -107,7 +107,7 @@ const FooterOne = () => {
           "https://ezylife.in/assets/img/logo/ezylifelogo.jpg",
         welcomeText: "Hi there!\nHow can I help you?",
         messageText:
-          "Hello, %0A I have a question about {{page_link}}",
+          "Hello, %0A I have a question about",
         backgroundColor: "#62f60ce4",
         ctaText: "Chat with us",
         borderRadius: "25",
