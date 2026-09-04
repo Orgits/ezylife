@@ -31,8 +31,7 @@ const TeamDetailsArea = ({ teamId }: TeamDetailsAreaProps) => {
   const phone = teamMember?.phone || "+91-11-45584780";
   const email = teamMember?.email || "info@ezylife.in";
   const website = teamMember?.website || "https://www.ezylife.in";
-  const address = teamMember?.address || "Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001
-";
+  const address = teamMember?.address || "Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001";
   const skill_des = teamMember?.bio || "Professional with extensive experience in financial services, dedicated to providing comprehensive financial solutions and building long-term client relationships.";
   const progress = teamMember?.skills || defaultSkills;
   const outher_title = "Professional Skills";
