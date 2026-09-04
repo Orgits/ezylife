@@ -71,7 +71,8 @@ const DisclaimerPage = () => {
                       <div className="p-4" style={{ backgroundColor: '#f8f9fa', borderRadius: '8px', border: '1px solid #e9ecef' }}>
                         <p><strong>Grievance Officer:</strong></p>
                         <p className="mb-2">Ezylife Financial Services Pvt. Ltd.</p>
-                        <p className="mb-2">Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001</p>
+                        <p className="mb-2">Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001
+</p>
                         <p className="mb-2">Email: <a href="mailto:compliance@ezylife.in" style={{ color: '#2E7D32' }}>compliance@ezylife.in</a></p>
                         <p className="mb-3">Phone: 011-45584780</p>
                         <p className="mb-0">If unresolved, escalate to: <a href="https://www.scores.gov.in" target="_blank" style={{ color: '#2E7D32' }}>SEBI SCORES – www.scores.gov.in</a></p>

@@ -251,8 +251,7 @@ const FooterOne = () => {
                           rel="noopener noreferrer"
                         >
                           <i className="fa-sharp fa-solid fa-location-dot"></i>{" "}
-                          Office No. 74D, 7th Floor, Himalaya House, KG Marg,
-                          New Delhi –110001
+                          Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001
                         </a>
                       </div>
 

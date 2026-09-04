@@ -13,7 +13,7 @@ const contact_data: DataType[] = [
     icon: "fa-solid fa-location-dot",
     title: "Address",
     info_1:
-      "Ezylife Financial Services Pvt. Ltd.Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001",
+      "Ezylife Financial Services Pvt. Ltd. Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001",
   },
   {
     icon: "fa-solid fa-envelope",

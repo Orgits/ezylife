@@ -35,7 +35,8 @@ const team_data: DataType[] = [
     phone: "+91-11-45584780",
     email: "ratan@ezylife.in",
     website: "https://www.ezylife.in",
-    address: "Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001",
+    address: "Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001",
+
     description: "CA Ratan Singh is the Founder and Chief Executive Officer of Ezylife Financial Services Pvt. Ltd., a SEBI-registered Sub-Broker with IIFL Capital and AMFI-registered Mutual Fund Distributor. A seasoned financial professional with over a decade of expertise in wealth management, taxation, investments, and financial advisory.",
     skills: [
       { title: "Financial Planning & Wealth Management", value: 95 },
@@ -62,7 +63,7 @@ const team_data: DataType[] = [
     phone: "+91-11-45584781",
     email: "sachin@ezylife.in",
     website: "https://www.ezylife.in",
-    address: "Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001",
+    address: "Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001",
     description: "Co-founding Ezylife with expertise in investment planning and portfolio management. Focuses on helping clients build diversified investment portfolios and achieve long-term financial success.",
     skills: [
       { title: "Investment Planning", value: 92 },

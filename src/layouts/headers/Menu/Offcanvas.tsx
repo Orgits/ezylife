@@ -40,7 +40,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen , onePageHomeOne}: any) => {
                   <i className="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
                 <div className="offcanvas__contact-content-content">
-                  <a href="https://maps.app.goo.gl/u5yfuW8V89MUFQJv7">Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001 </a>
+                  <a href="https://maps.app.goo.gl/u5yfuW8V89MUFQJv7">Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001 </a>
                 </div>
               </div>
               <div className="offcanvas__contact-content d-flex">

@@ -38,7 +38,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
-                          }}><i className="fa-sharp fa-solid fa-location-dot"></i></span>Office No. 74D, 7th Floor, Himalaya House,KG Marg, New Delhi –110001</a>
+                          }}><i className="fa-sharp fa-solid fa-location-dot"></i></span>Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001</a>
                      </div>
                      <div className="tp-header-top-right d-flex justify-content-end align-items-center">
                         <div className="header-social ">

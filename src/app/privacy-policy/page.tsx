@@ -113,7 +113,8 @@ const PrivacyPolicyPage = () => {
                         <p className="mb-2">For any privacy-related queries or concerns, please contact us:</p>
                         <p className="mb-2">Email: <a href="mailto:compliance@ezylife.in" style={{ color: '#2E7D32' }}>compliance@ezylife.in</a></p>
                         <p className="mb-2">Phone: 011-45584780</p>
-                        <p className="mb-0">Address: Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001</p>
+                        <p className="mb-0">Address: Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001
+</p>
                       </div>
                     </div>
                   </div>

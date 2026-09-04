@@ -130,7 +130,8 @@ const RiskDisclosurePage = () => {
                             <p className="mb-2"><strong>Primary Contact:</strong></p>
                             <p className="mb-1">Email: <a href="mailto:compliance@ezylife.in" style={{ color: '#2E7D32' }}>compliance@ezylife.in</a></p>
                             <p className="mb-1">Phone: 011-45584780</p>
-                            <p className="mb-0">Address: Office No. 74D, 7th Floor, Himalaya House, KG Marg, New Delhi – 110001</p>
+                            <p className="mb-0">Address: Office No. 412 4th floor Surya Kiran, KG Marg, New Delhi - 110001
+</p>
                           </div>
                           <div className="col-md-6">
                             <p className="mb-2"><strong>Escalation:</strong></p>
