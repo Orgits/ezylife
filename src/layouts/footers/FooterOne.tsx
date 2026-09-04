@@ -246,7 +246,7 @@ const FooterOne = () => {
                     >
                       <div className="tp-footer-widget-contact-inner">
                         <a
-                          href="https://maps.app.goo.gl/S8XKGo4GgUjRrX4S9"
+                          href="https://maps.app.goo.gl/7wvpAn8nAFFsFios6"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

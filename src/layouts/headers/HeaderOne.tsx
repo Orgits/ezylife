@@ -32,7 +32,7 @@ const HeaderOne = ({ onePageHomeOne }: any) => {
                <div className="tp-header-wrapper-inner header__sticky p-relative">
                   <div className="tp-header-top d-none d-xl-flex">
                      <div className="tp-header-top-info">
-                        <a href="https://maps.app.goo.gl/FGVYg7bmKbMZFwP58" target="_blank"><span style={{
+                        <a href="https://maps.app.goo.gl/7wvpAn8nAFFsFios6" target="_blank"><span style={{
                             background:
                               "linear-gradient(90deg,  #4CAF50 0%, #89e550ff 100%)",
                             WebkitBackgroundClip: "text",
